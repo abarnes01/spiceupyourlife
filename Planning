@@ -31,3 +31,12 @@ Template:
 
 </body>
 </html>
+
+Relationships:
+A spice has a name (e.g. Cinnamon), description (e.g. tasty spice), quantity (e.g. 5), price (e.g. £3.00)
+Spices can be included in multiple recipes and many recipes can include the same spice (ManyToMany) (bidirectional)
+
+A spice_recipe has measurements (e.g. 10 grams)
+
+A recipe has a name (e.g. apple pie), servings (e.g. 4), time (e.g. 30 minutes), author (e.g. Hairy Bikers)
+Recipes can include multiple spices and the same spice can included in many recipes (ManyToMany) (bidirectional)

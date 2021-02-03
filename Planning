@@ -40,3 +40,9 @@ A spice_recipe has measurements (e.g. 10 grams)
 
 A recipe has a name (e.g. apple pie), servings (e.g. 4), time (e.g. 30 minutes), author (e.g. Hairy Bikers)
 Recipes can include multiple spices and the same spice can included in many recipes (ManyToMany) (bidirectional)
+
+
+Random Links:
+https://start.spring.io/
+https://www.devglan.com/spring-boot/spring-boot-file-upload-download
+https://spring.io/guides/gs/securing-web/

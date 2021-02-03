@@ -33,7 +33,7 @@ Template:
 </html>
 
 Relationships:
-A Finance has spiceSales (e.g.£15.00), revenue, costs, profit, premium account members, account payable
+A Finance has spiceSales (e.g.£15.00), revenue (e.g. £100), costs (e.g. £50), profitMargin (e.g. 30%), premiumAccountIncome (e.g. £30), accountPayable (e.g.£30), cashFlow(e.g.£50), equity (e.g. £200), liabilities (e.g. £800), assets (e.g. £1000)
 
 A spice has a name (e.g. Cinnamon), description (e.g. tasty spice), quantitySold (e.g. 5), price (e.g. £3.00)
 Spices can be included in multiple recipes and many recipes can include the same spice (ManyToMany) (bidirectional)

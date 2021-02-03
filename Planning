@@ -43,6 +43,6 @@ Recipes can include multiple spices and the same spice can included in many reci
 
 
 Random Links:
-https://start.spring.io/
-https://www.devglan.com/spring-boot/spring-boot-file-upload-download
-https://spring.io/guides/gs/securing-web/
+https://start.spring.io/ (online tool)
+https://www.devglan.com/spring-boot/spring-boot-file-upload-download (downloading files)
+https://spring.io/guides/gs/securing-web/ (login)

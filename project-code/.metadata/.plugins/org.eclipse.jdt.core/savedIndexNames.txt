@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+/Users/adamjbarnes/scrum-15/project-code/.metadata/.plugins/org.eclipse.jdt.core

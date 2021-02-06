@@ -14,4 +14,10 @@ General tasks
 
 Tasks for User Story 5 - “As a client I can change the quantity of ingredients so that I can cook the right amount of food for any situation” 
 
-7. Create function to change the quantity of spices 
+7. Create function to change the quantity of spices
+
+Tasks for User Story 6 - “As a client I can find recipes with full details and a summary so that I can follow the recipe whatever my current skill level” 
+
+8. Create recipes for users to download 
+
+9. Create Search bar to find recipes and spices 

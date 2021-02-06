@@ -25,3 +25,8 @@ Tasks for User Story 6 - “As a client I can find recipes with full details and
 Tasks for User Story 4 - “As a client accessing a recipe, I can change the units shown so that I can view the recipe with my preferred units” 
 
 10. Create function to change the units within recipes
+
+Tasks for User Story 3 - “As a client, I can download some of the free recipes available so that I can cook with the spices that I have” 
+
+11. Create function to download receipe
+

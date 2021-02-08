@@ -6,7 +6,11 @@
 <body>
 <h2>Recipes</h2>
 <p>
-	List Recipes
+	<c:forEach items="${recipe}" var="r">
+		<h2>${r.title}</h2>
+		<p>${r.}</p> 
+	</c:forEach>
+	<p><a href="/">[Homepage and all recipes]</a></p>
 </p>
 </body>
 </html>

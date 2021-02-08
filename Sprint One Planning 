@@ -1,0 +1,46 @@
+General tasks 
+
+1. Create ERD diagram for spice database 
+
+2. Develop database to hold spice information
+
+3. Create HTML page that displays the spices 
+
+4. Create HTML page for each spice 
+
+5. Create CSS file to style the HTML page 
+
+6. Create Request Mapping for the HTML pages 
+
+Tasks for User Story 5 - “As a client I can change the quantity of ingredients so that I can cook the right amount of food for any situation” 
+
+7. Create function to change the quantity of spices
+
+Tasks for User Story 6 - “As a client I can find recipes with full details and a summary so that I can follow the recipe whatever my current skill level” 
+
+8. Create recipes for users to download 
+
+9. Create Search bar to find recipes and spices 
+
+Tasks for User Story 4 - “As a client accessing a recipe, I can change the units shown so that I can view the recipe with my preferred units” 
+
+10. Create function to change the units within recipes
+
+Tasks for User Story 3 - “As a client, I can download some of the free recipes available so that I can cook with the spices that I have” 
+
+11. Create function to download receipe
+
+Assignment of tasks 
+
+Anjana – 1 and 5 
+
+Matthew – 2 
+
+Callum – 3 and 4 
+
+Adam – 6 and 7 
+
+Hamzah – 8 and 11 
+
+Elisei – 9 and 10 
+

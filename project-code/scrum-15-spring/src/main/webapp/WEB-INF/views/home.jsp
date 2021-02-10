@@ -1,148 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <style>
-        * {margin: 0;padding: 0;font-family: monospace;box-sizing: border-box;}
-        .third{float:left; width:28%;height:100%;object-fit:cover;padding: 10px;}
-        .recipes-title{text-align: center;align-content: center;}
-        .nav {position: fixed;width: 60px;height: 100%;background: #fff;transition: 0.5s;opacity: 0.8}
-        .nav:hover {width: 300px;opacity: 1;background: lightgrey;}
-        .nav ul {position: absolute;top: 0;left: 0;width: 100%;}
-        .nav ul li {position: relative;width: 100%;list-style: none;}
-        .nav ul li:hover{background: grey;}
-        .nav ul li a {position: relative;display: none;width: 100%;display: flex;text-decoration: none;color: black;}
-        .nav ul li a .icon {position: relative;display: block;min-width: 60px; height: 60px;line-height: 60px; text-align: center;}
-        .nav ul li a .icon .fa {font-size: 24px;}
-        .nav ul li a .title{position: relative;display: padding:0 10px; height: 60px;line-height: 60px;text-align: start;white-space: nowrap;}
-    </style>
-    <script>
-    function open() {
-        document.getElementById("navbar").style.display = "block";
-    }
-    
-    function close() {
-        document.getElementById("navbar").style.display = "none";
-    }
-    </script>
-    
-    <title>Spice Up Your Life</title>
+<html>
+
+
+
+    <head>
+        
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #090181;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: rgb(252, 252, 252);
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+
+
+
+.btn {
+              background-color: rgb(255, 255, 255);
+              border: none;
+              color: rgb(192, 87, 17);
+              padding: 12px 16px;
+              font-size: 16px;
+              cursor: pointer;
+            }
+            
+            /* Darker background on mouse-over */
+            .btn:hover {
+              background-color: rgb(202, 205, 214);
+            }
+
+
+
+
+
+
+
+
+</style>
 </head>
 <body>
-    <div class="nav" style="left:0px;">
-        <ul>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
-                    <span class="title">About</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-fire" aria-hidden="true"></i></span>
-                    <span class="title">Spices</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-cutlery" aria-hidden="true"></i></span>
-                    <span class="title">Recipes</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
-                    <span class="title">Sign in/Register</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                    <span class="title">Contact</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+
+<div class="navbar">
+
+  
+  <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
+  <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+ <a href="/shopping-cart/form.jsp" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+
+
+
+
+</div>
+
+
+       
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
-    <div class="top-menu" style="align-content: center;text-align: center;">
-        <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;">Recipes</a></div>
-        <div class="login" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><a href="/shopping-cart/form.jsp" style="text-decoration-line: none;color: black;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+        <style>
+            .btn {
+              background-color: rgb(255, 255, 255);
+              border: none;
+              color: rgb(192, 87, 17);
+              padding: 12px 16px;
+              font-size: 16px;
+              cursor: pointer;
+            }
+            
+            /* Darker background on mouse-over */
+            .btn:hover {
+              background-color: rgb(195, 199, 211);
+            }
+            <style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+        <style>
+            * {margin: 0;padding: 0;font-family: monospace;box-sizing: border-box;}
+        </style>
+        
+        <title>Spice Up Your Life</title>
+    </head>
+    <div id="main">
+    <body>
+       
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/about">About</a>
+            <a href="/">Home</a>
+            <a href="/spices">Spices</a>
+            <a href="#">Recipes</a>
+            <a href="#">My account</a>
+            <a href="/contact">Contact</a>
+           
+          </div>
+    
+          <div class="top-menu" style="align-content: center;text-align: center;">
+            <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;">Welcome</a></div>
+        </div>
+          
+
+    
+    </body>
+
+
+
+<!--SIDENAV---->
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: "Lato", monospace;
+          transition: background-color .5s;
+        }
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>
+        </head>
+
+
+
+
+
+
+
+<title>SpicesHomePage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "monospace", monospace, monospace;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="https://cdn-amalp.nitrocdn.com/EPIsoGEOwNoGliAJSLDihKcNNOdQGKoK/assets/static/source/rev-9b4e53f/wp-content/uploads/2019/04/Different-types-of-spices-of-the-table-apr18.jpg" alt="Spices in pots" width="1600" height="400">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Spice up your life</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="https://www.goodfood.com.au/content/dam/images/h/1/m/3/l/d/image.related.portrait.620x733.h1m8qp.png/1583215086466.jpg" alt="Table Setting" width="500" height="600">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About our spices</h1><br>
+      <h5 class="w3-center">Tradition since 1527</h5>
+      <p class="w3-large">Hot, savory, peppery, fiery, sweet, tangy, zesty, you name it we have the spice for it! Our aromatic spices are <span class="w3-tag w3-light-grey">organic</span>and are filled with flavour!</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">We have a vast variety of spices, herbs and blends you could need, in various weights and all available for next day delivery.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Recipes</h1><br>
+      <h4>Vegetable Biryani</h4>
+      <p class="w3-text-grey">Taste of South Asia, an aromatic rice dish made by cooking basmati rice with mix veggies, herbs & biryani spices. Traditionally Biryani was made by dum cooking marinated meat with basmati rice & spices. Making a vegetarian version becomes much simpler as the veggies need no marination</p><br>
+    
+      <h4>Chilli-con-carne</h4>
+      <p class="w3-text-grey">Die-hard Texan Chili fanatics will tell you it's illegal to add beans into Chili. They'll also tell you there's no canned tomato in it, it's made with cubes of beef not mince/ground beef, and that it MUST be made using whole dried chilis, rehydrated then pureed.</p><br>
+    
+      <h4>Vegan Tofu Katsu Curry</h4>
+      <p class="w3-text-grey">Fiery curry, 5 star flavour - Traditionally hailing from Japan, this dish compromises of panko breadcrumb coated chicken in a thick curry sauce and rice.</p><br>
+    
+      <h4>Chilli Bean Stir Fry</h4>
+      <p class="w3-text-grey">vegetarian saucy spicy, a chinese recipe</p><br>
+    
+      <h4>And Many More </h4>
+         
     </div>
     
-	<div class="main content" style="width: 100%;padding-left: 13%;">
-		<div class="first row">
-		<!-- first row of recipes!-->
-			<div class="third">
-				<a href="recipes/chilli-con-carne.html"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/healthy_chilli_con_carne_64911_16x9.jpg" style="width:100%"></a>
-				<h3 class="recipes-titles" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="recipes/chilli-con-carne.html" style="text-decoration: none;color: black;">Chilli Con Carne</a></h3>
-			</div>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&resize=620%2C563" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
 
-			<div class="third">
-                <a href="recipes/mackerel-recheado.html"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/mackerel_recheado_35296_16x9.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="/recipes/mackerel-recheado.html" style="font-family:monospace;font-size: 22px;padding: 10pxl;align-content: center;text-align: center;"><a href="/recipes/mackerel-recheado.html" style="text-decoration: none;color: black;">Mackerel Recheado</a></h3>
-			</div>
+  <hr>
 
-			<div class="third">
-                <a href="/recipes/vegetable-biryani.html"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/vegetable_biryani_50072_16x9.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="/recipes/vegetable-biryani.html" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/recipes/vegan-tofu-katsu-curry.html" style="text-decoration: none;color: black;">Vegetable Biryani</a></h3>
-			</div>
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will fulfill your orders to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Spice up your life, 10 Downing Street, London, LDN</b></p>
+    <p>You can also contact us by phone 0198334-1111 or email SpiceUp@spices.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>______<a href="https://www.google.com" title="homepage" target="_blank" class="w3-hover-text-green">------</a></p>
+</footer>
 
 
-		</div>
-
-		<div class="second row" style="width: 100%";>
-		<!-- second row of recipes!-->
-			<div class="third">
-                <a href="/recipes/morrocan-style-soup.html"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/moroccan-style_soup_33454_16x9.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="/recipes/morrocan-style-soup.html" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/recipes/morrocan-style-soup.html" style="text-decoration: none;color: black;">Moroccan-Style soup</a></h3>
-			</div>
-
-			<div class="third">
-                <a href="/recipes/saffron-chicken-korma-with-wholemeal-paratha.html"><img src="https://reciperian.com/admin/Recepie/1582275663creamychickenkormawi_.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="/recipes/saffron-chicken-korma-with-wholemeal-paratha.html" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/recipes/saffron-chicken-korma-with-wholemeal-paratha.html" style="text-decoration: none;color: black;">Saffron Chicken Korma with Wholemeal Paratha</a></h3>
-			</div>
-
-			<div class="third">
-                <a href="/recipes/chilli-bean-stir-fry.html"><img src="https://food-images.files.bbci.co.uk/food/recipes/chilli_bean_stir-fry_19412_16x9.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="/recipes/chilli-bean-stir-fry.html" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/recipes/chilli-bean-stir-fry.html" style="text-decoration: none;color: black;">Chilli Bean Stir-Fry</a></h3>
-			</div>
-		</div>
-
-		<div class="third row" style="width: 100%;">
-		<!-- third row of recipes!-->
-			<div class="third">
-                <a href="/recipes/vegan-gingerbread.html"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/vegan_gingerbread_34867_16x9.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="/recipes/vegan-gingerbread.html" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/recipes/vegan-gingerbread.html" style="text-decoration: none;color: black;">Vegan Gingerbread</a></h3>
-			</div>
-
-			<div class="third">
-                <a href="/recipes/green-peppercorn-and-lemongrass-coconut-broth.html"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/peppercorn_coconut_broth_84709_16x9.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="/recipes/green-peppercorn-and-lemongrass-coconut-broth" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/recipes/green-peppercorn-and-lemongrass-coconut-broth.html" style="text-decoration: none;color: black;">Green Peppercorn and Lemongrass Coconut Broth</a></h3>
-			</div>
-
-			<div class="third">
-                <a href="/recipes/vegan-tofu-katsu-curry.html"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/vegan_tofu_katsu_52859_16x9.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="/recipes/vegan-tofu-katsu-curry.html" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/recipes/vegan-tofu-katsu-curry.html" style="text-decoration: none;color: black;">Vegan Tofu Katsu Curry</a></h3>
-			</div>
-		</div>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "white";
+    }
         
-        <div class="fourth row" style="width: 100%;height: auto;padding-left: 20%">
-		<!-- third row of recipes!-->
-			<div class="third" style="min-width: 310px;">
-                <a href="/recipes/apple-pie.html"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/perfect_apple_pie_73735_16x9.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="/recipes/apple-pie.html" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/recipes/apple-pie.html" style="text-decoration: none;color: black;">Apple Pie</a></h3>
-			</div>
-
-			<div class="third" style="min-width: 310px;">
-                <a href="/recipes/potato-rosti-quiche.html"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/potato_rosti_quiche_87900_16x9.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="/recipes/potato-rosti-quiche.html" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/recipes/potato-rosti-quiche.html" style="text-decoration: none;color: black;">Potato Rosti Quiche</a></h3>
-            </div>
-
-		</div>
-        <hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
-	</div>
-
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+    }
+</script>
 
 </body>
 </html>

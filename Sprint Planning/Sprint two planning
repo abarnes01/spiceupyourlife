@@ -33,12 +33,15 @@ Tasks for User Story 2 - "As a client I can create an account so that I can buy 
 9. Create a login button on all pages
 
 10. Create a login form
+
     - Add login functionality
+
     - Add third party login authorisation
 
 11. Style login form
 
 12. Create a register form
+
     - Add register functionality
 
 13. Style register form

@@ -16,46 +16,48 @@ General tasks
 
 4. Shrink pictures displayed on recipe pages
 
+5. Update ERD with new tables and columns
+
 Tasks for User Story 4 - "As a client accessing a recipe I can change the units shown so that I can view the recipe with my preferred units"
 
-5. Create function to change the units within recipes
+6. Create function to change the units within recipes
 
 Tasks for User Story 1 - "As a user I can purchase spices without an account if I want to, so that I can benefit from the products sold by the company even if I don't have an account"
 
-6. Create checkout with the option to continue as guest
+7. Create checkout with the option to continue as guest
 
-7. Create guest table in the database
+8. Create guest table in the database
 
 Tasks for User Story 2 - "As a client I can create an account so that I can buy spices at a reduced amount and access all recipes"
 
-8. Create a login button on all pages
+9. Create a login button on all pages
 
-9. Create a login form
+10. Create a login form
     - Add login functionality
     - Add third party login authorisation
 
-10. Style login form
+11. Style login form
 
-11. Create a register form
+12. Create a register form
     - Add register functionality
 
-12. Style register form
+13. Style register form
 
-13. Add password field into customer table
+14. Add password field into customer table
 
 Assignment of tasks
 
-Matthew - 1, 7 and 13
+Matthew - 1, 8 and 14
 
 Adam - 2
 
-Anjana - 3, 4, 10 and 12
+Anjana - 3, 4, 5, 11 and 13
 
-Elisei - 5
+Elisei - 6
 
-Hamzah - 8, 9 and 11
+Hamzah - 9, 10 and 12
 
-Callum - 6
+Callum - 7
 
 
 

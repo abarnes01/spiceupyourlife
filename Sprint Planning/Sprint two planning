@@ -7,3 +7,6 @@ General tasks
     - Create methods in controller that link to this JSP
 3. Split overall time into prep and cook time
 4. Shrink pictures displayed on recipe pages
+Tasks for User Story 4 - "As a client accessing a recipe I can change the units shown so that I can view the recipe with my preferred units"
+5. Create function to change the units within recipes
+

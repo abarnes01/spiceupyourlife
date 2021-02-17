@@ -1,0 +1,7 @@
+General tasks
+1. Add extra columns in join table
+    - Measurements in Spice_Recipe
+    - Quantity and Discount in Order_Details
+2. Create universial recipe JSP
+    - Create universial JSP
+    - Create methods in controller that link to this JSP

@@ -11,4 +11,5 @@ Tasks for User Story 4 - "As a client accessing a recipe I can change the units 
 5. Create function to change the units within recipes
 Tasks for User Story 1 - "As a user I can purchase spices without an account if I want to, so that I can benefit from the products sold by the company even if I don't have an account"
 6. Create checkout with the option to continue as guest
+7. Create guest table in the database
 

@@ -1,18 +1,45 @@
 General tasks
+
 1. Add extra columns in join table
+
     - Measurements in Spice_Recipe
+
     - Quantity and Discount in Order_Details
+
 2. Create universial recipe JSP
+
     - Create universial JSP
+
     - Create methods in controller that link to this JSP
+
 3. Split overall time into prep and cook time
+
 4. Shrink pictures displayed on recipe pages
+
 Tasks for User Story 4 - "As a client accessing a recipe I can change the units shown so that I can view the recipe with my preferred units"
+
 5. Create function to change the units within recipes
+
 Tasks for User Story 1 - "As a user I can purchase spices without an account if I want to, so that I can benefit from the products sold by the company even if I don't have an account"
+
 6. Create checkout with the option to continue as guest
+
 7. Create guest table in the database
+
 Tasks for User Story 2 - "As a client I can create an account so that I can buy spices at a reduced amount and access all recipes"
+
 8. Create a login button on all pages
-9. Create a login page
-10. Add password field into customer table
+
+9. Create a login form
+    - Add login functionality
+    - Add third party login authorisation
+
+10. Create a register form
+    - Add register functionality
+
+11. Add password field into customer table
+
+
+
+
+

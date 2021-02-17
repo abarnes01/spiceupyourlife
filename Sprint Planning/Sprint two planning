@@ -34,22 +34,26 @@ Tasks for User Story 2 - "As a client I can create an account so that I can buy 
     - Add login functionality
     - Add third party login authorisation
 
-10. Create a register form
+10. Style login form
+
+11. Create a register form
     - Add register functionality
 
-11. Add password field into customer table
+12. Style register form
+
+13. Add password field into customer table
 
 Assignment of tasks
 
-Matthew - 1, 7 and 11
+Matthew - 1, 7 and 13
 
-Adam - 2 and 10
+Adam - 2
 
-Anjana - 3 and 4
+Anjana - 3, 4, 10 and 12
 
 Elisei - 5
 
-Hamzah - 8, 9 and 10
+Hamzah - 8, 9 and 11
 
 Callum - 6
 

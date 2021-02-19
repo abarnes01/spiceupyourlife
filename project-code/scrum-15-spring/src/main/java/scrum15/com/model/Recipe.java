@@ -25,6 +25,9 @@ public class Recipe {
 	@ManyToMany(mappedBy = "recipe")
 	private List<Spice> spice;
 	
+	// made to be shown on jsp
+
+	
 	public int getId() {
 		return id;
 	}
@@ -61,4 +64,6 @@ public class Recipe {
 	public void setSpice(List<Spice> spice) {
 		this.spice = spice;
 	}
+
+	
 }

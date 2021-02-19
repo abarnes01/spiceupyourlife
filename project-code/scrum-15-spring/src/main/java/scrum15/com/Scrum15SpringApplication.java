@@ -50,6 +50,7 @@ public class Scrum15SpringApplication implements ApplicationRunner{
 		//Recipe instances
 		Recipe r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11;
 		r1 = new Recipe();
+		r1.setId(1);
 		r1.setName("Chilli con carne");
 		r1.setServings(4);
 		r1.setTime("00:15:00");

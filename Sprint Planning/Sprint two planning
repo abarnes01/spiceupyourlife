@@ -30,7 +30,7 @@ Tasks for User Story 1 - "As a user I can purchase spices without an account if 
 
 7. Create checkout with the option to continue as guest
 
-8. Add guest field into customer table
+8. Add guest column in Customer table
 
 Tasks for User Story 2 - "As a client I can create an account so that I can buy spices at a reduced amount and access all recipes"
 

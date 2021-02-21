@@ -1,10 +1,14 @@
 General tasks
 
-1. Add extra columns in join table
+1. Add extra columns in tables
 
-    - Measurements in Spice_Recipe
+    - measurement in Spice_Recipe
 
-    - Quantity and Discount in Order_Details
+    - quantity and discount in Order_Details
+
+    - country in Customer
+
+    - shipment_country in Orders
 
 2. Create universial recipe JSP
 

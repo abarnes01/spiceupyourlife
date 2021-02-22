@@ -55,6 +55,12 @@
             <li>
                 <a href="#">
                     <span class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                    <span class="title">Sign in</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
                     <span class="title">Register</span>
                 </a>
             </li>

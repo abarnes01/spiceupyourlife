@@ -73,7 +73,6 @@ body {margin:0;}
   <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
   <a href="#home">Home</a>
   <a href="#news">News</a>
-  <a href="#signin">Sign in/Register</a>
   <a href="#contact">Contact</a>
  <a href="/shopping-cart/form.jsp" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 
@@ -146,6 +145,7 @@ body {margin:0;}
             <a href="/recipe_list.html">Recipes</a>
             <a href="#">My account</a>
             <a href="#">Contact</a>
+           
           </div>
     
           <div class="top-menu" style="align-content: center;text-align: center;">
@@ -231,30 +231,41 @@ body {margin:0;}
 
 
 
-
-    
-    <div class="main content" style="width: 100%;padding-center: 0%;float: center">
-        
-
         <head>
-            <style>
-        
-            #OrangeBorder {
-            
-              padding: 15px;
-              background: rgb(255, 255, 255);
-              background-clip: border-box;  
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+          * {
+            box-sizing: border-box;
+          }
+          
+          /* Create two equal columns that floats next to each other */
+          .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 1000px; /* Should be removed. Only for demonstration */
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          </style>
+          </head>
+          <body>
+          
+          
+          
+          <div class="row">
+            <div class="column" style="background-color:rgb(255, 255, 255);">
              
-            }
-            
-            </style>
-            </head>
-            <body>
-            
-            
-            
-            
-            <div id="OrangeBorder" style="width: 100%;align-content: center; font-size: 16px;" >
+                  
+          
+                      
+                      
+              <div id="OrangeBorder" style="width: 100%;align-content: center; font-size: 16px;" >
                 <p>SAFFRON CHICKEN KORMA WITH WHOLEMEAL PARATHA</p>
               <p>5 Star Recipe</p>
               <p>By Mary Berry </p>
@@ -268,47 +279,49 @@ body {margin:0;}
       
 
         <div style="width: 100%; text-align:center">
-            <img src="https://reciperian.com/admin/Recepie/1582275663creamychickenkormawi_.jpg" style="width:50%; margin: 60px -10px;">
+            <img src="https://reciperian.com/admin/Recepie/1582275663creamychickenkormawi_.jpg" style="width:80%; margin: 60px -10px;">
         </div>
-
-
-
-<!----HOURGLASS-->
-        <style>
-            #div1 {
-              font-size:20px;
-            }
-            </style>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <body>
-            
-            <div id="div1" class="fa"></div>
-            
-            <script>
-            function hourglass() {
-              var a;
-              a = document.getElementById("div1");
-              a.innerHTML = "&#xf251;";
-              setTimeout(function () {
-                  a.innerHTML = "&#xf252;";
-                }, 1000);
-              setTimeout(function () {
-                  a.innerHTML = "&#xf253;";
-                }, 2000);
-            }
-            hourglass();
-            setInterval(hourglass, 3000);
-            </script>
-            <p>
-                Time: 45 Minutes 
-            </p>
-            
-            </body>
-
-        
-
-
-
+          
+          
+          
+          <!----HOURGLASS-->
+                  <style>
+                      #div1 {
+                        font-size:20px;
+                      }
+                      </style>
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                      <body>
+                      
+                      <div id="div1" class="fa"></div>
+                      
+                      <script>
+                      function hourglass() {
+                        var a;
+                        a = document.getElementById("div1");
+                        a.innerHTML = "&#xf251;";
+                        setTimeout(function () {
+                            a.innerHTML = "&#xf252;";
+                          }, 1000);
+                        setTimeout(function () {
+                            a.innerHTML = "&#xf253;";
+                          }, 2000);
+                      }
+                      hourglass();
+                      setInterval(hourglass, 3000);
+                      </script>
+                      <p>
+                        
+                        Preparation Time: 15 Minutes 
+                    </p>
+                    <p>
+                      Cook Time: 35 Minutes
+                    </p>
+                      
+                      </body>
+            </div>
+            <div class="column" style="background-color:rgb(255, 255, 255);">
+              <!---<h2>Column 2</h2>--->
 
 
 
@@ -316,58 +329,91 @@ body {margin:0;}
 <!----MAINRECIPE----->
 
 
-        <div class="a">
-          <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
-          <br><p style="font-size: 18px;font-weight: 600;">For the Saffron Chicken Korma:</p>
-          <ul style="font-size: 16px;">
-              <li>500g/1lb 2oz Turkish or Greek-style yoghurt</li>
-              <li>1 tbsp garlic paste</li>
-              <li>2 tbsp ginger paste</li>
-              <li>8 chicken thighs (approximately 1kg/2lb 4oz), skin removed and bone in</li>
-              <li>2 tbsp full-fat milk</li>
-              <li>large pinch saffron</li>
-              <li>6 tbsp vegetable oil</li>
-              <li>3 white onions, sliced into thin rings</li>
-              <li>2 Indian bay leaves</li>
-              <li>2.5cm/1in piece cassia bark</li>
-              <li>3 green cardamom pods</li>
-              <li>1 clove</li>
-              <li>1 tbsp ground coriander</li>
-              <li>¼ tsp chilli powder</li>
-              <li>1 tsp salt</li>
-              <li>2 tbsp ground almonds</li>
-              <li>1 tbsp sugar</li>
-              <li>salt and freshly ground black pepper</li>
-              <li>small handful flaked almonds, to garnish</li>
-          </ul>
-          <br><p style="font-size: 18px;font-weight: 600;">For the Wholemeal Paratha:</p>
-          <ul style="font-size: 16px;">
-              <li>450g/1lb wholemeal or chapati flour, plus extra for dusting</li>
-              <li>1 tsp salt</li>
-              <li>4 tbsp butter or ghee, melted (or use oil)</li>
-              <li>vegetable oil, for frying</li>
-          </ul>
-          <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
-          <ol style="font-size: 16px;">
-              <li>To make the saffron chicken korma, combine the yoghurt with the garlic and ginger pastes in a small bowl. Place the chicken thighs in a non-reactive container and spoon over the yoghurt marinade, making sure the whole surface of the chicken is covered. Cover the container and marinate in the fridge for 30 minutes.</li>
-              <li>Gently warm the milk in a small saucepan. Do not let the milk boil; it should only be tepid as you do not want to scald the saffron. Add the saffron strands and leave to infuse.</li>
-              <li>In a deep frying pan or wok with a lid, heat the vegetable oil over a medium–high heat. Add the onions to the pan and fry gently, stirring occasionally, until golden brown and caramelised. Using a slotted spoon, remove the onions from the pan, leaving as much of the oil in the pan as possible, and transfer to kitchen paper to drain. Spread the onion rings out so they crisp as they cool.</li>
-              <li>Heat the oil in the same pan again over a medium–high heat and add the bay, cassia, cardamom and clove. After a few seconds, add the ground coriander and continue to cook, stirring. After 1 minute, add the marinated chicken to the pan along with the marinade. Keeping the heat on medium–high, continue to stir gently. After 5 minutes, or when the oil separates from the yoghurt and comes to the surface, add the chilli powder and salt. Lower the heat, cover the pan with the lid and simmer gently for 35 minutes. The chicken is cooked through when the juices run clear with no trace of pink when the thickest part of the meat is pierced with a skewer.</li>
-              <li>Remove the pan from the heat. Add the saffron-infused milk, ground almonds and sugar. Stir gently to avoid breaking up the chicken.</li>
-              <li>Meanwhile, to make the paratha, place the flour and salt into the bowl of a food processor. Using the paddle attachment, very gradually add 300ml/10fl oz water to the bowl. To make the dough by hand, place the flour and salt into a large bowl. Gradually add the water, working the dough until it is smooth, elastic and no longer sticky.</li>
-              <li>On a lightly floured work surface, knead the dough for at least 5 minutes. Place in a lightly floured bowl, cover and leave to rest for 30 minutes.</li>
-              <li>Once rested, divide the dough into eight equal pieces. Roll out each piece of dough to a 30cm/12in circle. To shape the paratha, fold the top third of a circle down into the centre. Brush the dough with the melted butter, then lightly dust with flour. Fold the bottom third of the circle up into the centre. Again, brush with melted butter, then dust with flour. Turn the folded paratha 90 degrees clockwise and fold the top third down into the centre. Brush with more melted butter and dust with flour. Fold the bottom third up into the centre to make a square. Repeat with all pieces of dough. Keep each square separate so they do not stick to each other, cover with a clean teatowel and set aside until you are ready to cook.</li>
-              <li>When ready to cook, roll out each paratha to a 3mm thick square. Place a tawa or non-stick frying pan over a medium heat. Add one paratha at a time and drizzle oil around the edges of the pan. Using a spatula, carefully press the paratha down in the pan to ensure it cooks evenly. Turn the paratha over and cook the other side in the same way. The bread is cooked when it is freckled with small brown patches on both sides.</li>
-              <li>Check the seasoning of the korma and season with salt and pepper if needed. Garnish the curry with the flaked almonds and fried onions and serve with the paratha on the side.</li>
-          </ol>
-            <br>
-            <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/saffron-chicken-korma-with-wholemeal-paratha.html" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
-            <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/saffron-chicken-korma-with-wholemeal-paratha.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
-        </div>
-        <hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
-    </div>
+<div class="a">
+  <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
+  <br><p style="font-size: 18px;font-weight: 600;">For the Saffron Chicken Korma:</p>
+  <ul style="font-size: 16px;">
+      <li>500g/1lb 2oz Turkish or Greek-style yoghurt</li>
+      <li>1 tbsp garlic paste</li>
+      <li>2 tbsp ginger paste</li>
+      <li>8 chicken thighs (approximately 1kg/2lb 4oz), skin removed and bone in</li>
+      <li>2 tbsp full-fat milk</li>
+      <li>large pinch saffron</li>
+      <li>6 tbsp vegetable oil</li>
+      <li>3 white onions, sliced into thin rings</li>
+      <li>2 Indian bay leaves</li>
+      <li>2.5cm/1in piece cassia bark</li>
+      <li>3 green cardamom pods</li>
+      <li>1 clove</li>
+      <li>1 tbsp ground coriander</li>
+      <li>¼ tsp chilli powder</li>
+      <li>1 tsp salt</li>
+      <li>2 tbsp ground almonds</li>
+      <li>1 tbsp sugar</li>
+      <li>salt and freshly ground black pepper</li>
+      <li>small handful flaked almonds, to garnish</li>
+  </ul>
+  <br><p style="font-size: 18px;font-weight: 600;">For the Wholemeal Paratha:</p>
+  <ul style="font-size: 16px;">
+      <li>450g/1lb wholemeal or chapati flour, plus extra for dusting</li>
+      <li>1 tsp salt</li>
+      <li>4 tbsp butter or ghee, melted (or use oil)</li>
+      <li>vegetable oil, for frying</li>
+  </ul>
+  <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
+  <ol style="font-size: 16px;">
+      <li>To make the saffron chicken korma, combine the yoghurt with the garlic and ginger pastes in a small bowl. Place the chicken thighs in a non-reactive container and spoon over the yoghurt marinade, making sure the whole surface of the chicken is covered. Cover the container and marinate in the fridge for 30 minutes.</li>
+      <li>Gently warm the milk in a small saucepan. Do not let the milk boil; it should only be tepid as you do not want to scald the saffron. Add the saffron strands and leave to infuse.</li>
+      <li>In a deep frying pan or wok with a lid, heat the vegetable oil over a medium–high heat. Add the onions to the pan and fry gently, stirring occasionally, until golden brown and caramelised. Using a slotted spoon, remove the onions from the pan, leaving as much of the oil in the pan as possible, and transfer to kitchen paper to drain. Spread the onion rings out so they crisp as they cool.</li>
+      <li>Heat the oil in the same pan again over a medium–high heat and add the bay, cassia, cardamom and clove. After a few seconds, add the ground coriander and continue to cook, stirring. After 1 minute, add the marinated chicken to the pan along with the marinade. Keeping the heat on medium–high, continue to stir gently. After 5 minutes, or when the oil separates from the yoghurt and comes to the surface, add the chilli powder and salt. Lower the heat, cover the pan with the lid and simmer gently for 35 minutes. The chicken is cooked through when the juices run clear with no trace of pink when the thickest part of the meat is pierced with a skewer.</li>
+      <li>Remove the pan from the heat. Add the saffron-infused milk, ground almonds and sugar. Stir gently to avoid breaking up the chicken.</li>
+      <li>Meanwhile, to make the paratha, place the flour and salt into the bowl of a food processor. Using the paddle attachment, very gradually add 300ml/10fl oz water to the bowl. To make the dough by hand, place the flour and salt into a large bowl. Gradually add the water, working the dough until it is smooth, elastic and no longer sticky.</li>
+      <li>On a lightly floured work surface, knead the dough for at least 5 minutes. Place in a lightly floured bowl, cover and leave to rest for 30 minutes.</li>
+      <li>Once rested, divide the dough into eight equal pieces. Roll out each piece of dough to a 30cm/12in circle. To shape the paratha, fold the top third of a circle down into the centre. Brush the dough with the melted butter, then lightly dust with flour. Fold the bottom third of the circle up into the centre. Again, brush with melted butter, then dust with flour. Turn the folded paratha 90 degrees clockwise and fold the top third down into the centre. Brush with more melted butter and dust with flour. Fold the bottom third up into the centre to make a square. Repeat with all pieces of dough. Keep each square separate so they do not stick to each other, cover with a clean teatowel and set aside until you are ready to cook.</li>
+      <li>When ready to cook, roll out each paratha to a 3mm thick square. Place a tawa or non-stick frying pan over a medium heat. Add one paratha at a time and drizzle oil around the edges of the pan. Using a spatula, carefully press the paratha down in the pan to ensure it cooks evenly. Turn the paratha over and cook the other side in the same way. The bread is cooked when it is freckled with small brown patches on both sides.</li>
+      <li>Check the seasoning of the korma and season with salt and pepper if needed. Garnish the curry with the flaked almonds and fried onions and serve with the paratha on the side.</li>
+  </ol>
+    <br>
+    <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/saffron-chicken-korma-with-wholemeal-paratha.html" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
+    <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/saffron-chicken-korma-with-wholemeal-paratha.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
+</div>
+<hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
+</div>   
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+          
+
 
 
 
@@ -390,3 +436,4 @@ body {margin:0;}
 </script>
 </body>
 </html>
+

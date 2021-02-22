@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import scrum15.com.model.Customer;
 
-public interface CustomerRepository extends CrudRepository<Customer, Integer>{
+public interface CustomerRepo extends CrudRepository<Customer, Integer>{
 
 }

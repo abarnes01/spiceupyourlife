@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import scrum15.com.model.Payment;
 
-public interface PaymentRepository extends CrudRepository<Payment, Integer>{
+public interface PaymentRepo extends CrudRepository<Payment, Integer>{
 
 }

@@ -60,6 +60,12 @@
             </li>
             <li>
                 <a href="#">
+                    <span class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+                    <span class="title">Sign in/</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
                     <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
                     <span class="title">Contact</span>
                 </a>
@@ -68,7 +74,7 @@
     </div>
         
     <div class="top-menu" style="align-content: center;text-align: center;">
-        <div class="title" style="font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;">Sign in/Register</a></div>
+        <div class="title" style="font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;">Sign in</a></div>
         <div class="login" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><a href="/shopping-cart/form.jsp" style="text-decoration-line: none;color: black;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
     </div>
     <div style="float:left; width: 100%;text-align:center;padding-right:10%;">
@@ -80,6 +86,9 @@
             <input type="password" id="password" name="password">
         </form>
     </div>
+
+    <div><br></div>
+    
     <div style="width: 100%; align-content: center;text-align: center;">
         <br><br><a href="/sign-up/form.jsp"><button style="width: 100px; height:30px;font-size: 14px;font-weight:500;">Sign in</button></a><br><br><br><br>
     </div>

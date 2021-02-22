@@ -55,7 +55,7 @@
             <li>
                 <a href="#">
                     <span class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
-                    <span class="title">Sign in/Register</span>
+                    <span class="title">Register</span>
                 </a>
             </li>
             <li>
@@ -68,29 +68,31 @@
     </div>
         
     <div class="top-menu" style="align-content: center;text-align: center;">
-        <div class="title" style="font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;">Sign in/Register</a></div>
+        <div class="title" style="font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;">Register</a></div>
         <div class="login" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><a href="/shopping-cart/form.jsp" style="text-decoration-line: none;color: black;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
     </div>
     <div style="float: left;width: 100%;text-align: center;padding-right: 10%;">
         <form class="register-form" style="display: inline">
-            <label for="rEmail" style="padding-right: 2%;">Email:</label>
+            <label for="rEmail" style="padding-right: 9.6%;">Email:</label>
             <input type="text" id="first_name" name="first_name"><br>
-            <label for="first_name" style="padding-right: 2%;">First name:</label>
+            <label for="first_name" style="padding-right: 3.5%;">First name:</label>
             <input type="text" id="first_name" name="first_name"><br>
-            <label for="last_name" style="padding-right: 2%;">Last name:</label>
+            <label for="last_name" style="padding-right: 4.8%;">Last name:</label>
             <input type="text" id="last_name" name="last_name"><br>
-            <label for="phone_number" style="padding-right: 2%;">Phone Number:</label>
+            <label for="phone_number" style="padding-right: 1%;">Phone Number:</label>
             <input type="text" id="phone_number" name="phone_number"><br>
-            <label for="country" style="padding-right: 2%;">Country:</label>
+            <label for="country" style="padding-right: 7.2%;">Country:</label>
             <input type="text" id="country" name="country"><br>
             <label for="street_name" style="padding-right: 2%;">Street name:</label>
             <input type="text" id="street_name" name="street_name"><br>
-            <label for="post_code" style="padding-right: 2%;">Post Code:</label>
+            <label for="post_code" style="padding-right: 4.7%;">Post Code:</label>
             <input type="text" id="post_code" name="post_code"><br>
-            <label for="rPassword" style="padding-right: 0.2%;">Password:</label>
+            <label for="rPassword" style="padding-right: 6.1%;">Password:</label>
             <input type="password" id="rPassword" name="rPassword">
         </form>
+        <div><br></div>
     </div>
+    
     <div style="width: 100%;text-align: center;align-content: center;">
         <button style="height: 30px;width: 100px;font-size: 14px;font-weight: 500;">Register</button>
     </div>

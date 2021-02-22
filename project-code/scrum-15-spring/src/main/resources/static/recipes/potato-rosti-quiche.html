@@ -73,7 +73,6 @@ body {margin:0;}
   <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
   <a href="#home">Home</a>
   <a href="#news">News</a>
-  <a href="#signin">Sign in/Register</a>
   <a href="#contact">Contact</a>
  <a href="/shopping-cart/form.jsp" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 
@@ -232,30 +231,41 @@ body {margin:0;}
 
 
 
-
-    
-    <div class="main content" style="width: 100%;padding-center: 0%;float: center">
-        
-
         <head>
-            <style>
-        
-            #OrangeBorder {
-            
-              padding: 15px;
-              background: rgb(255, 255, 255);
-              background-clip: border-box;  
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+          * {
+            box-sizing: border-box;
+          }
+          
+          /* Create two equal columns that floats next to each other */
+          .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 1000px; /* Should be removed. Only for demonstration */
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          </style>
+          </head>
+          <body>
+          
+          
+          
+          <div class="row">
+            <div class="column" style="background-color:rgb(255, 255, 255);">
              
-            }
-            
-            </style>
-            </head>
-            <body>
-            
-            
-            
-            
-            <div id="OrangeBorder" style="width: 100%;align-content: center; font-size: 16px;" >
+                  
+          
+                      
+                      
+              <div id="OrangeBorder" style="width: 100%;align-content: center; font-size: 16px;" >
                 <p>POTATO-ROSTI-QUICHE</p>
               <p>5 Star Recipe</p>
               <p>By Mary Berry </p>
@@ -269,47 +279,49 @@ body {margin:0;}
       
 
         <div style="width: 100%; text-align:center">
-            <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/potato_rosti_quiche_87900_16x9.jpg" style="width:50%; margin: 60px -10px;">
+            <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/potato_rosti_quiche_87900_16x9.jpg" style="width:80%; margin: 60px -10px;">
         </div>
-
-
-
-<!----HOURGLASS-->
-        <style>
-            #div1 {
-              font-size:20px;
-            }
-            </style>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <body>
-            
-            <div id="div1" class="fa"></div>
-            
-            <script>
-            function hourglass() {
-              var a;
-              a = document.getElementById("div1");
-              a.innerHTML = "&#xf251;";
-              setTimeout(function () {
-                  a.innerHTML = "&#xf252;";
-                }, 1000);
-              setTimeout(function () {
-                  a.innerHTML = "&#xf253;";
-                }, 2000);
-            }
-            hourglass();
-            setInterval(hourglass, 3000);
-            </script>
-            <p>
-                Time: 45 Minutes 
-            </p>
-            
-            </body>
-
-        
-
-
-
+          
+          
+          
+          <!----HOURGLASS-->
+                  <style>
+                      #div1 {
+                        font-size:20px;
+                      }
+                      </style>
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                      <body>
+                      
+                      <div id="div1" class="fa"></div>
+                      
+                      <script>
+                      function hourglass() {
+                        var a;
+                        a = document.getElementById("div1");
+                        a.innerHTML = "&#xf251;";
+                        setTimeout(function () {
+                            a.innerHTML = "&#xf252;";
+                          }, 1000);
+                        setTimeout(function () {
+                            a.innerHTML = "&#xf253;";
+                          }, 2000);
+                      }
+                      hourglass();
+                      setInterval(hourglass, 3000);
+                      </script>
+                      <p>
+                        
+                        Preparation Time: 15 Minutes 
+                    </p>
+                    <p>
+                      Cook Time: 35 Minutes
+                    </p>
+                      
+                      </body>
+            </div>
+            <div class="column" style="background-color:rgb(255, 255, 255);">
+              <!---<h2>Column 2</h2>--->
 
 
 
@@ -317,39 +329,97 @@ body {margin:0;}
 <!----MAINRECIPE----->
 
 
-        <div class="a">
-            <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
-            <br><p style="font-size: 18px;font-weight: 600;">For the Base:</p>
-            <ul style="font-size: 16px;">
-                <li>butter or oil, for greasing</li>
-                <li>1 large potato (about 325g/11½oz), unpeeled and scrubbed</li>
-                <li>1 large sweet potato (about 325g/11½oz), unpeeled and scrubbed</li>
-                <li>1 tsp salt</li>
-                <li>1 tsp paprika</li>
-                <li>1 tsp garlic granules</li>
-                <li>1 tbsp onion granules</li>
-                <li>40g/1½oz plain flour</li>
-                <li>1 free-range egg, plus 1 free-range egg, beaten, for brushing</li>
-            </ul>
-            <br><p style="font-size: 18px;font-weight: 600;">For the Filling:</p>
-            <ul style="font-size: 16px;">
-                <li>3 free-range eggs</li>
-                <li>150ml/5fl oz full-fat milk</li>
-                <li>150g/5½oz mature cheddar, grated</li>
-                <li>small handful fresh chives, snipped</li>
-                <li>salt and freshly ground black pepper</li>
-            </ul>
-            <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
-            <ol style="font-size: 16px;">
-                <li>Preheat the oven to 180C/160C Fan/Gas 4. Generously grease a 24cm/9½in round tart tin or pie dish, preferably not loose-bottomed to prevent any leaks.</li>
-                <li>To make the base, grate the potatoes and squeeze out any excess moisture. Pop the potato into a bowl along with the salt, paprika, garlic, onion and flour and mix really well, making sure it is all evenly distributed. Add the egg and mix through well − you should have a mixture that is well coated and clumps together.</li>
-                <li>Tip the mixture out into the tart tin and, using the back of a spoon, press tightly into the base and sides. Bake for 25−30 minutes. Using the back of a spoon, press the mixture into the base and sides again. Brush the base and sides with the beaten egg, generously filling in any gaps that might be there and all over. More is more! Pop back into the oven for 5 minutes.</li>
-                <li>Meanwhile, to make the filling, place the eggs and milk in a jug and whisk until well blended. Take the tart shell out of the oven and scatter the cheese into the shell. Pour the egg and milk mixture straight in, sprinkle over the chives and add a sprinkling of salt and a generous sprinkling of pepper. Bake for 20 minutes until the centre is just wobbly.</li>
-                <li>Leave to cool for about 30 minutes to allow the eggy custard filling to set. Slice and serve immediately.</li>
-            </ol>
-            <br>
-            <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/potato-rosti-quiche.html" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
-            <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/potato-rosti-quiche.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
-        </div>
-        <hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
-    </div>
+<div class="a">
+  <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
+  <br><p style="font-size: 18px;font-weight: 600;">For the Base:</p>
+  <ul style="font-size: 16px;">
+      <li>butter or oil, for greasing</li>
+      <li>1 large potato (about 325g/11½oz), unpeeled and scrubbed</li>
+      <li>1 large sweet potato (about 325g/11½oz), unpeeled and scrubbed</li>
+      <li>1 tsp salt</li>
+      <li>1 tsp paprika</li>
+      <li>1 tsp garlic granules</li>
+      <li>1 tbsp onion granules</li>
+      <li>40g/1½oz plain flour</li>
+      <li>1 free-range egg, plus 1 free-range egg, beaten, for brushing</li>
+  </ul>
+  <br><p style="font-size: 18px;font-weight: 600;">For the Filling:</p>
+  <ul style="font-size: 16px;">
+      <li>3 free-range eggs</li>
+      <li>150ml/5fl oz full-fat milk</li>
+      <li>150g/5½oz mature cheddar, grated</li>
+      <li>small handful fresh chives, snipped</li>
+      <li>salt and freshly ground black pepper</li>
+  </ul>
+  <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
+  <ol style="font-size: 16px;">
+      <li>Preheat the oven to 180C/160C Fan/Gas 4. Generously grease a 24cm/9½in round tart tin or pie dish, preferably not loose-bottomed to prevent any leaks.</li>
+      <li>To make the base, grate the potatoes and squeeze out any excess moisture. Pop the potato into a bowl along with the salt, paprika, garlic, onion and flour and mix really well, making sure it is all evenly distributed. Add the egg and mix through well − you should have a mixture that is well coated and clumps together.</li>
+      <li>Tip the mixture out into the tart tin and, using the back of a spoon, press tightly into the base and sides. Bake for 25−30 minutes. Using the back of a spoon, press the mixture into the base and sides again. Brush the base and sides with the beaten egg, generously filling in any gaps that might be there and all over. More is more! Pop back into the oven for 5 minutes.</li>
+      <li>Meanwhile, to make the filling, place the eggs and milk in a jug and whisk until well blended. Take the tart shell out of the oven and scatter the cheese into the shell. Pour the egg and milk mixture straight in, sprinkle over the chives and add a sprinkling of salt and a generous sprinkling of pepper. Bake for 20 minutes until the centre is just wobbly.</li>
+      <li>Leave to cool for about 30 minutes to allow the eggy custard filling to set. Slice and serve immediately.</li>
+  </ol>
+  <br>
+  <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/potato-rosti-quiche.html" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
+  <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/potato-rosti-quiche.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
+</div>
+<hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
+</div>
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+          
+
+
+
+
+
+
+
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "white";
+    }
+        
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "white";
+    }
+</script>
+</body>
+</html>

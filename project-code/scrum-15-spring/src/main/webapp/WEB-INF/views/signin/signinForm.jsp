@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,22 +71,25 @@
         <div class="title" style="font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;">Sign in/Register</a></div>
         <div class="login" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><a href="/shopping-cart/form.jsp" style="text-decoration-line: none;color: black;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
     </div>
-    <div style="float:left; width: 100%;text-align:center;padding-right:10%;">
-        <br><br><h2 style="font-weight: 100;display: inline;">Sign in</h2><br>
-        <form class="sign-in-form" style="display: inline;">
-            <label for="email" style="padding-right: 2%">Email:</label>
-            <input type="text" id="email" name="email"><br>
-            <label for="password" style="padding-right: 0.2%">Password:</label>
-            <input type="password" id="password" name="password">
-        </form>
-    </div>
     <div style="width: 100%; align-content: center;text-align: center;">
         <br><br><a href="/sign-up/form.jsp"><button style="width: 100px; height:30px;font-size: 14px;font-weight:500;">Sign in</button></a><br><br><br><br>
     </div>
     <div style="float: left;width: 100%;text-align: center;padding-right: 10%;">
         <form class="register-form" style="display: inline">
             <label for="rEmail" style="padding-right: 2%;">Email:</label>
-            <input type="text" id="rEmail" name="rEmail"><br>
+            <input type="text" id="first_name" name="first_name"><br>
+            <label for="first_name" style="padding-right: 2%;">First name:</label>
+            <input type="text" id="first_name" name="first_name"><br>
+            <label for="last_name" style="padding-right: 2%;">Last name:</label>
+            <input type="text" id="last_name" name="last_name"><br>
+            <label for="phone_number" style="padding-right: 2%;">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number"><br>
+            <label for="country" style="padding-right: 2%;">Country:</label>
+            <input type="text" id="country" name="country"><br>
+            <label for="street_name" style="padding-right: 2%;">Street name:</label>
+            <input type="text" id="street_name" name="street_name"><br>
+            <label for="post_code" style="padding-right: 2%;">Post Code:</label>
+            <input type="text" id="post_code" name="post_code"><br>
             <label for="rPassword" style="padding-right: 0.2%;">Password:</label>
             <input type="password" id="rPassword" name="rPassword">
         </form>

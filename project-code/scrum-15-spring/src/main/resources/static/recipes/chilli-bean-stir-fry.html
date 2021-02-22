@@ -73,7 +73,6 @@ body {margin:0;}
   <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
   <a href="#home">Home</a>
   <a href="#news">News</a>
-  <a href="#signin">Sign in/Register</a>
   <a href="#contact">Contact</a>
  <a href="/shopping-cart/form.jsp" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 
@@ -232,30 +231,40 @@ body {margin:0;}
 
 
 
-
-    
-    <div class="main content" style="width: 100%;padding-center: 0%;float: center">
-        
-
         <head>
-            <style>
-        
-            #OrangeBorder {
-            
-              padding: 15px;
-              background: rgb(255, 255, 255);
-              background-clip: border-box;  
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+          * {
+            box-sizing: border-box;
+          }
+          
+          /* Create two equal columns that floats next to each other */
+          .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 1000px; /* Should be removed. Only for demonstration */
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          </style>
+          </head>
+          <body>
+          
+          
+          
+          <div class="row">
+            <div class="column" style="background-color:rgb(255, 255, 255);">
              
-            }
-            
-            </style>
-            </head>
-            <body>
-            
-            
-            
-            
-            <div id="OrangeBorder" style="width: 100%;align-content: center; font-size: 16px;" >
+                  
+          
+                      
+              <div id="OrangeBorder" style="width: 100%;align-content: center; font-size: 16px;" >
                 <p>CHILLI BEAN STIR FRY</p>
               <p>5 Star Recipe</p>
               <p>By Mary Berry </p>
@@ -271,44 +280,47 @@ body {margin:0;}
         <div style="width: 100%; text-align:center">
             <img src="https://food-images.files.bbci.co.uk/food/recipes/chilli_bean_stir-fry_19412_16x9.jpg" style="width:50%; margin: 60px -10px;">
         </div>
-
-
-
-<!----HOURGLASS-->
-        <style>
-            #div1 {
-              font-size:20px;
-            }
-            </style>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <body>
-            
-            <div id="div1" class="fa"></div>
-            
-            <script>
-            function hourglass() {
-              var a;
-              a = document.getElementById("div1");
-              a.innerHTML = "&#xf251;";
-              setTimeout(function () {
-                  a.innerHTML = "&#xf252;";
-                }, 1000);
-              setTimeout(function () {
-                  a.innerHTML = "&#xf253;";
-                }, 2000);
-            }
-            hourglass();
-            setInterval(hourglass, 3000);
-            </script>
-            <p>
-                Time: 45 Minutes 
-            </p>
-            
-            </body>
-
-        
-
-
+          
+          
+          
+          <!----HOURGLASS-->
+                  <style>
+                      #div1 {
+                        font-size:20px;
+                      }
+                      </style>
+                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                      <body>
+                      
+                      <div id="div1" class="fa"></div>
+                      
+                      <script>
+                      function hourglass() {
+                        var a;
+                        a = document.getElementById("div1");
+                        a.innerHTML = "&#xf251;";
+                        setTimeout(function () {
+                            a.innerHTML = "&#xf252;";
+                          }, 1000);
+                        setTimeout(function () {
+                            a.innerHTML = "&#xf253;";
+                          }, 2000);
+                      }
+                      hourglass();
+                      setInterval(hourglass, 3000);
+                      </script>
+                      <p>
+                        
+                          Cook Time: 45 Minutes 
+                      </p>
+                      <p>
+                        Prep Time: 15 Minutes
+                      </p>
+                      
+                      </body>
+            </div>
+            <div class="column" style="background-color:rgb(255, 255, 255);">
+              <!---<h2>Column 2</h2>--->
 
 
 
@@ -317,37 +329,69 @@ body {margin:0;}
 <!----MAINRECIPE----->
 
 
-        <div class="a">
-          <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
-          <ul style="font-size: 16px;">
-              <li>1 nest/60g wholewheat noodles</li>
-              <li>1 red chilli, roughly chopped</li>
-              <li>20g piece root ginger, roughly chopped</li>
-              <li>2 garlic cloves</li>
-              <li>2tbsp white vinegar</li>
-              <li>2tsp brown sugar</li>
-              <li>1tsp sesame oil</li>
-              <li>1tbsp olive oil</li>
-              <li>200g green beans, trimmed and halved</li>
-              <li>150g broccoli, broken into small florets, thinly sliced stalks</li>
-              <li>1 red onion, thinly sliced</li>
-              <li>400g tin black beans, drained</li>
-          </ul>
-          <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
-          <ol style="font-size: 16px;">
-              <li>Bring a saucepan of water to the boil, add the noodles and cook for 4 minutes or until cooked. Drain, rinse under cold water and set aside.</li>
-              <li>Put the chilli, ginger and garlic into a jug with the soy sauce, vinegar, sugar and sesame oil. Blend until smooth with a stick blender, then set aside. If you don’t have a stick blender, you can pound the ingredients together with a pestle and mortar.</li>
-              <li>Heat the olive oil in a wok or large frying pan over a high heat, then add the green beans, broccoli and onion. Stir-fry for 2–3 minutes, until the beans and onions are lightly charred.</li>
-              <li>Add the cooked noodles, black beans and the sauce and fry together for a further minute. Divide between 2 warmed bowls and serve.</li>
-          </ol>
-            <br>
-            <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/chilli-bean-stir-fry.html" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
-            <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/chilli-bean-stir-fry.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
-        </div>
-        <hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
-    </div>
+<div class="a">
+  <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
+  <ul style="font-size: 16px;">
+      <li>1 nest/60g wholewheat noodles</li>
+      <li>1 red chilli, roughly chopped</li>
+      <li>20g piece root ginger, roughly chopped</li>
+      <li>2 garlic cloves</li>
+      <li>2tbsp white vinegar</li>
+      <li>2tsp brown sugar</li>
+      <li>1tsp sesame oil</li>
+      <li>1tbsp olive oil</li>
+      <li>200g green beans, trimmed and halved</li>
+      <li>150g broccoli, broken into small florets, thinly sliced stalks</li>
+      <li>1 red onion, thinly sliced</li>
+      <li>400g tin black beans, drained</li>
+  </ul>
+  <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
+  <ol style="font-size: 16px;">
+      <li>Bring a saucepan of water to the boil, add the noodles and cook for 4 minutes or until cooked. Drain, rinse under cold water and set aside.</li>
+      <li>Put the chilli, ginger and garlic into a jug with the soy sauce, vinegar, sugar and sesame oil. Blend until smooth with a stick blender, then set aside. If you don’t have a stick blender, you can pound the ingredients together with a pestle and mortar.</li>
+      <li>Heat the olive oil in a wok or large frying pan over a high heat, then add the green beans, broccoli and onion. Stir-fry for 2–3 minutes, until the beans and onions are lightly charred.</li>
+      <li>Add the cooked noodles, black beans and the sauce and fry together for a further minute. Divide between 2 warmed bowls and serve.</li>
+  </ol>
+    <br>
+    <a href="/recipes/apple-pie.html" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
+    <a href="/recipes/apple-pie.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
+</div>
+<hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
+</div>
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+          
+
 
 
 

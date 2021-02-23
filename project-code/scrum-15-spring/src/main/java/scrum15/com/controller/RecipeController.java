@@ -276,7 +276,7 @@ public class RecipeController {
 	}
 	
 	@RequestMapping("/mackerel-recheado")
-	public String broth(@RequestParam int servings, @RequestParam int units, Model model) {
+	public String fish(@RequestParam int servings, @RequestParam int units, Model model) {
 
 		model.addAttribute("choice1", servings);
 		
@@ -319,7 +319,7 @@ public class RecipeController {
 	}
 
 	@RequestMapping("/moroccan-style-soup")
-	public String broth(@RequestParam int servings, @RequestParam int units, Model model) {
+	public String soup(@RequestParam int servings, @RequestParam int units, Model model) {
 
 		model.addAttribute("choice1", servings);
 		
@@ -362,7 +362,7 @@ public class RecipeController {
 	}
 
 	@RequestMapping("/potato-rosti-quiche")
-	public String broth(@RequestParam int servings, @RequestParam int units, Model model) {
+	public String quiche(@RequestParam int servings, @RequestParam int units, Model model) {
 
 		model.addAttribute("choice1", servings);
 		
@@ -402,6 +402,55 @@ public class RecipeController {
 		}
 		
 		return "potato-rosti-quiche";
+	}
+
+	@RequestMapping("/saffron-chicken-korma-with-wholemeal-paratha")
+	public String korma(@RequestParam int servings, @RequestParam int units, Model model) {
+
+		model.addAttribute("choice1", servings);
+		
+		if (units == 1)	{
+			model.addAttribute("choice2", "Metric");
+			String unit = "g";
+			int[] quantities = {63,56};
+			for(int i=0; i<quantities.length; i++) {
+				 quantities[i] = ((quantities[i] * servings) / 10) * 10;
+		         model.addAttribute("ing_"+String.valueOf(i+1), quantities[i] + unit);
+		    }
+		}	else if (units == 2) {
+			model.addAttribute("choice2", "Imperial");
+			double[] quantities = {63,56};
+			for(int i=0; i<quantities.length; i++) {
+				quantities[i] = quantities[i] * servings;
+		    }
+			for(int i=0; i<quantities.length; i++) {
+				BigDecimal bd = BigDecimal.valueOf(quantities[i] * 0.0352733686);
+		        model.addAttribute("ing_"+String.valueOf(i+1), makeOz(bd));
+		    }
+		}
+		if (servings == 4) {
+			model.addAttribute("a", 1);
+			model.addAttribute("b", 4);
+			model.addAttribute("c", 2);
+			model.addAttribute("d", 3);
+			model.addAttribute("e", 200);
+
+		} else if (servings == 6) {
+			model.addAttribute("a", 2);
+			model.addAttribute("b", 5);
+			model.addAttribute("c", 3);
+			model.addAttribute("d", 3);
+			model.addAttribute("e", 250);
+
+		} else {
+			model.addAttribute("a", 2);
+			model.addAttribute("b", 6);
+			model.addAttribute("c", 3);
+			model.addAttribute("d", 4);
+			model.addAttribute("e", 300);
+		}
+		
+		return "saffron-chicken-korma-with-wholemeal-paratha";
 	}
 
 }

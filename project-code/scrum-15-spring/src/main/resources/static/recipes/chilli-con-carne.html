@@ -332,6 +332,46 @@ body {margin:0;}
 
 
 <div class="a">
+  <br><br><p style="text-align: left;"><form action="chilli-con-carne.html" method="get"><h3>Serves: ${choice1}</h3>
+  <br>Change to: 
+  <select name="servings" id="servings">
+      <option value="${param.servings}"></option>
+  		<option value="4">4</option>
+  		<option value="6">6</option>
+  		<option value="8">8</option>
+	</select></p>
+	<br>
+	<br><p style="text-align: left;"><h3>Units: ${choice2}</h3>
+	<br>Change to:
+	<select name="units" id="units">
+	  	<option value="${param.units}"></option>
+  		<option value="1">Metric</option>
+  		<option value="2">Imperial</option>
+	</select>
+	<br>
+	<br>
+	<button type="submit"><i class="fa fa-check"></i></button></form></p>	
+  <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
+    <ul style="font-size: 16px;">
+        <li>Oil Spray</li>
+        <li>${ing_1} lean minced beef</li>
+        <li>${a}, finely chopped</li>
+        <li>${b} tsp finely grated garlic</li>
+        <li>1 courgette, cut into 1cm or &#189;in pieces</li>
+        <li>1 aubergine, cut into 1cm or &#189;in pieces</li>
+        <li>${c}, deseeded and chopped into 1cm or &#189;in pieces</li>
+        <li>${d} tsp ground cumin</li>
+        <li>${e} tsp sweet smoked paprika</li>
+        <li>&#189; tsp gound cinnamon</li>
+        <li>${f} tsp hot chilli powder</li>
+        <li>${ing_2} tinned red kidney beans in chilli sauce</li>
+        <li>${ing_3} chopped tomato</li>
+        <li>${param.servings} tbsp tomato pur&eacute;e</li>
+        <li>${g} ml beef stock</li>
+        <li>${ing_4} brown basmati rice</li>
+        <li>freshly ground salt and pepper</li>
+        <li>${param.servings} tbsp natural yoghurt and chopped coriander</li>
+    </ul>
   <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
     <ul style="font-size: 16px;">
         <li>Oil Spray</li>

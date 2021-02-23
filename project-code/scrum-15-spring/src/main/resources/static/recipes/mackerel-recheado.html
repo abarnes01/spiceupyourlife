@@ -2,7 +2,10 @@
 <html lang="en">
 
     <head>
-        
+        		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -332,26 +335,45 @@ body {margin:0;}
 
 
 <div class="a">
+  <br><br><p style="text-align: left;"><form action="mackerel-recheado.html" method="get"><h3>Serves: ${choice1}</h3>
+  <br>Change to: 
+  <select name="servings" id="servings">
+      <option value="${param.servings}"></option>
+      <option value="4">4</option>
+      <option value="6">6</option>
+      <option value="8">8</option>
+	</select></p>
+	<br>
+	<br><p style="text-align: left;"><h3>Units: ${choice2}</h3>
+	<br>Change to:
+	<select name="units" id="units">
+	  	<option value="${param.units}"></option>
+  		<option value="1">Metric</option>
+  		<option value="2">Imperial</option>
+	</select>
+	<br>
+	<br>
+	<button type="submit"><i class="fa fa-check"></i></button></form></p>
   <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
   <ul style="font-size: 16px;">
       <li>6 small mackerel, filleted (preferably with the fillets joined by a piece of skin)
 sunflower oil, for cooking</li>
-      <li>1 tsp cumin seeds</li>
-      <li>2 tsp coriander seeds</li>
-      <li>2 tsp black peppercorns</li>
-      <li>1 tsp whole cloves</li>
-      <li>1 tsp turmeric</li>
-      <li>2 tsp crushed dried chillies</li>
-      <li>1 tsp sea salt flakes</li>
-      <li>20g/¾oz garlic, chopped roughly</li>
-      <li>20g/¾oz fresh root ginger, peeled and chopped roughly</li>
-      <li>3 tbsp red wine vinegar</li>
+      <li>${a} tsp cumin seeds</li>
+      <li>${b} tsp coriander seeds</li>
+      <li>${b} tsp black peppercorns</li>
+      <li>${a} tsp whole cloves</li>
+      <li>${a} tsp turmeric</li>
+      <li>${b} tsp crushed dried chillies</li>
+      <li>${a} tsp sea salt flakes</li>
+      <li>${ing_1} garlic, chopped roughly</li>
+      <li>${ing_1} fresh root ginger, peeled and chopped roughly</li>
+      <li>${c} tbsp red wine vinegar</li>
       <li>1 very large beef tomato (or 2 large tomatoes), sliced very thinly</li>
       <li>1 shallot, sliced very thinly</li>
-      <li>2 tbsp chopped coriander</li>
+      <li>${b} tbsp chopped coriander</li>
       <li>¼ tsp ground cumin</li>
       <li>pinch cayenne pepper</li>
-      <li>1 tbsp white wine vinegar</li>
+      <li>${a} tbsp white wine vinegar</li>
       <li>Salt</li>
   </ul>
   <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>

@@ -2,7 +2,11 @@
 <html lang="en">
 
     <head>
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -333,29 +337,48 @@ body {margin:0;}
 
 
 <div class="a">
+  <br><br><p style="text-align: left;"><form action="vegan-tofu-katsu-curry.html" method="get"><h3>Serves: ${choice1}</h3>
+  <br>Change to: 
+  <select name="servings" id="servings">
+      <option value="${param.servings}"></option>
+  		<option value="4">4</option>
+  		<option value="6">6</option>
+  		<option value="8">8</option>
+	</select></p>
+	<br>
+	<br><p style="text-align: left;"><h3>Units: ${choice2}</h3>
+	<br>Change to:
+	<select name="units" id="units">
+	  	<option value="${param.units}"></option>
+  		<option value="1">Metric</option>
+  		<option value="2">Imperial</option>
+	</select>
+	<br>
+	<br>
+	<button type="submit"><i class="fa fa-check"></i></button></form></p>
   <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
     <br><p style="font-size: 18px;font-weight: 600;">For the Sauce:</p>
     <ul style="font-size: 16px;">
-        <li>2 tbsp sunflower oil</li>
-        <li>1 onion, finely chopped</li>
-        <li>2 garlic cloves, sliced</li>
-        <li>15g/½oz fresh root ginger, peeled and finely chopped</li>
-        <li>1 tsp medium curry powder</li>
+        <li>${c} tbsp sunflower oil</li>
+        <li>${b}, finely chopped</li>
+        <li>${c} garlic cloves, sliced</li>
+        <li>${ing_1} fresh root ginger, peeled and finely chopped</li>
+        <li>${a} tsp medium curry powder</li>
         <li>½ tsp ground turmeric</li>
-        <li>½ tsp ground star anise or Chinese five-spice</li>
-        <li>15g/½oz plain flour</li>
-        <li>275ml/9½fl oz vegetable stock (made with ½ cube)</li>
-        <li>2 tsp tomato purée</li>
-        <li>1 tsp soft light brown sugar</li>
+        <li>${a} tsp Chinese five-spice</li>
+        <li>${ing_2} plain flour</li>
+        <li>${d}ml vegetable stock</li>
+        <li>${c} tsp tomato purée</li>
+        <li>${a} tsp soft light brown sugar</li>
         <li>flaked sea salt and freshly ground black pepper</li>
     </ul>
     <br><p style="font-size: 18px;font-weight: 600;">For the Tofu:</p>
     <ul style="font-size: 16px;">
-        <li>280g/10oz extra-firm tofu, well drained</li>
-        <li>2 tbsp cornflour</li>
-        <li>40g/1½oz panko breadcrumbs or dry white breadcrumbs</li>
-        <li>25g/1oz coconut yoghurt</li>
-        <li>6 tbsp sunflower or groundnut oil</li>
+        <li>${ing_3} extra-firm tofu, well drained</li>
+        <li>${c} tbsp cornflour</li>
+        <li>${ing_4} panko breadcrumbs or dry white breadcrumbs</li>
+        <li>${ing_5} coconut yoghurt</li>
+        <li>${param.servings} tbsp sunflower or groundnut oil</li>
     </ul>
     <br><p style="font-size: 18px;font-weight: 600;">To Serve:</p>
     <ul style="font-size: 16px;">

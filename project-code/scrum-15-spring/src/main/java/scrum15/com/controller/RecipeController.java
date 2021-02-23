@@ -318,4 +318,90 @@ public class RecipeController {
 		return "mackerel-recheado";
 	}
 
+	@RequestMapping("/moroccan-style-soup")
+	public String broth(@RequestParam int servings, @RequestParam int units, Model model) {
+
+		model.addAttribute("choice1", servings);
+		
+		if (units == 1)	{
+			model.addAttribute("choice2", "Metric");
+			String unit = "g";
+			int[] quantities = {100};
+			for(int i=0; i<quantities.length; i++) {
+				 quantities[i] = ((quantities[i] * servings) / 10) * 10;
+		         model.addAttribute("ing_"+String.valueOf(i+1), quantities[i] + unit);
+		    }
+		}	else if (units == 2) {
+			model.addAttribute("choice2", "Imperial");
+			double[] quantities = {100};
+			for(int i=0; i<quantities.length; i++) {
+				quantities[i] = quantities[i] * servings;
+		    }
+			for(int i=0; i<quantities.length; i++) {
+				BigDecimal bd = BigDecimal.valueOf(quantities[i] * 0.0352733686);
+		        model.addAttribute("ing_"+String.valueOf(i+1), makeOz(bd));
+		    }
+		}
+		if (servings == 4) {
+			model.addAttribute("a", 1);
+			model.addAttribute("b", 2);
+			model.addAttribute("c", 600);
+
+		} else if (servings == 6) {
+			model.addAttribute("a", 2);
+			model.addAttribute("b", 3);
+			model.addAttribute("c", 800);
+
+		} else {
+			model.addAttribute("a", 2);
+			model.addAttribute("b", 4);
+			model.addAttribute("c", 1000);
+		}
+		
+		return "moroccan-style-soup";
+	}
+
+	@RequestMapping("/potato-rosti-quiche")
+	public String broth(@RequestParam int servings, @RequestParam int units, Model model) {
+
+		model.addAttribute("choice1", servings);
+		
+		if (units == 1)	{
+			model.addAttribute("choice2", "Metric");
+			String unit = "g";
+			int[] quantities = {54,7,25};
+			for(int i=0; i<quantities.length; i++) {
+				 quantities[i] = ((quantities[i] * servings) / 10) * 10;
+		         model.addAttribute("ing_"+String.valueOf(i+1), quantities[i] + unit);
+		    }
+		}	else if (units == 2) {
+			model.addAttribute("choice2", "Imperial");
+			double[] quantities = {54,7,25};
+			for(int i=0; i<quantities.length; i++) {
+				quantities[i] = quantities[i] * servings;
+		    }
+			for(int i=0; i<quantities.length; i++) {
+				BigDecimal bd = BigDecimal.valueOf(quantities[i] * 0.0352733686);
+		        model.addAttribute("ing_"+String.valueOf(i+1), makeOz(bd));
+		    }
+		}
+		if (servings == 4) {
+			model.addAttribute("a", " ");
+			model.addAttribute("b", 1);
+			model.addAttribute("c", 100);
+
+		} else if (servings == 6) {
+			model.addAttribute("a", " large ");
+			model.addAttribute("b", 1);
+			model.addAttribute("c", 150);
+
+		} else {
+			model.addAttribute("a", " large ");
+			model.addAttribute("b", 2);
+			model.addAttribute("c", 200);
+		}
+		
+		return "potato-rosti-quiche";
+	}
+
 }

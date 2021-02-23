@@ -2,8 +2,10 @@
 <html lang="en">
 
     <head>
-        
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -332,30 +334,49 @@ body {margin:0;}
 
 
 <div class="a">
+  <br><br><p style="text-align: left;"><form action="potato-rosti-quiche.html" method="get"><h3>Serves: ${choice1}</h3>
+      <br>Change to: 
+      <select name="servings" id="servings">
+          	<option value="${param.servings}"></option>
+  		  	  <option value="4">4</option>
+  		  	  <option value="6">6</option>
+  		  	  <option value="8">8</option>
+		  </select></p>
+		  <br>
+		  <br><p style="text-align: left;"><h3>Units: ${choice2}</h3>
+	  	<br>Change to:
+	  	<select name="units" id="units">
+	  	    	<option value="${param.units}"></option>
+  		    	<option value="1">Metric</option>
+  		  	  <option value="2">Imperial</option>
+		  </select>
+		  <br>
+		  <br>
+		  <button type="submit"><i class="fa fa-check"></i></button></form></p>
   <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
   <br><p style="font-size: 18px;font-weight: 600;">For the Base:</p>
   <ul style="font-size: 16px;">
       <li>butter or oil, for greasing</li>
-      <li>1 large potato (about 325g/11½oz), unpeeled and scrubbed</li>
-      <li>1 large sweet potato (about 325g/11½oz), unpeeled and scrubbed</li>
-      <li>1 tsp salt</li>
-      <li>1 tsp paprika</li>
-      <li>1 tsp garlic granules</li>
-      <li>1 tbsp onion granules</li>
-      <li>40g/1½oz plain flour</li>
+      <li>1${a}potato (about ${ing_1}), unpeeled and scrubbed</li>
+      <li>1${a}sweet potato (about ${ing_1}), unpeeled and scrubbed</li>
+      <li>${b} tsp salt</li>
+      <li>${b} tsp paprika</li>
+      <li>${b} tsp garlic granules</li>
+      <li>${b} tbsp onion granules</li>
+      <li>${ing_2} plain flour</li>
       <li>1 free-range egg, plus 1 free-range egg, beaten, for brushing</li>
   </ul>
   <br><p style="font-size: 18px;font-weight: 600;">For the Filling:</p>
   <ul style="font-size: 16px;">
       <li>3 free-range eggs</li>
-      <li>150ml/5fl oz full-fat milk</li>
-      <li>150g/5½oz mature cheddar, grated</li>
+      <li>${c}ml full-fat milk</li>
+      <li>${ing_3} mature cheddar, grated</li>
       <li>small handful fresh chives, snipped</li>
       <li>salt and freshly ground black pepper</li>
   </ul>
   <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
   <ol style="font-size: 16px;">
-      <li>Preheat the oven to 180C/160C Fan/Gas 4. Generously grease a 24cm/9½in round tart tin or pie dish, preferably not loose-bottomed to prevent any leaks.</li>
+      <li>Preheat the oven to 160/180&#8451; Fan/Gas 4. Generously grease a 24cm or 9½in round tart tin or pie dish, preferably not loose-bottomed to prevent any leaks.</li>
       <li>To make the base, grate the potatoes and squeeze out any excess moisture. Pop the potato into a bowl along with the salt, paprika, garlic, onion and flour and mix really well, making sure it is all evenly distributed. Add the egg and mix through well − you should have a mixture that is well coated and clumps together.</li>
       <li>Tip the mixture out into the tart tin and, using the back of a spoon, press tightly into the base and sides. Bake for 25−30 minutes. Using the back of a spoon, press the mixture into the base and sides again. Brush the base and sides with the beaten egg, generously filling in any gaps that might be there and all over. More is more! Pop back into the oven for 5 minutes.</li>
       <li>Meanwhile, to make the filling, place the eggs and milk in a jug and whisk until well blended. Take the tart shell out of the oven and scatter the cheese into the shell. Pour the egg and milk mixture straight in, sprinkle over the chives and add a sprinkling of salt and a generous sprinkling of pepper. Bake for 20 minutes until the centre is just wobbly.</li>

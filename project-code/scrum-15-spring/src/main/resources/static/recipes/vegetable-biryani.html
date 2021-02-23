@@ -2,8 +2,10 @@
 <html lang="en">
 
     <head>
-        
-
+        		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -332,47 +334,66 @@ body {margin:0;}
 
 
 <div class="a">
-  <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
-  <br><p style="font-size: 18px;font-weight: 600;">For the Saffron Chicken Korma:</p>
-  <ul style="font-size: 16px;">
-      <li>400g/14oz basmati rice</li>
-      <li>2 tbsp grated fresh root ginger</li>
-      <li>2 tbsp grated garlic</li>
-      <li>2 green chillies, thinly sliced</li>
-      <li>2 tsp garam masala</li>
-      <li>2 tsp ground cumin</li>
-      <li>1 tsp ground turmeric</li>
-      <li>1 tsp Kashmiri chilli powder</li>
-      <li>200g/7oz Greek-style yoghurt</li>
-      <li>2 tbsp lemon juice</li>
-      <li>50g/1¾oz fresh coriander, finely chopped, plus extra to garnish</li>
-      <li>20g/¾oz fresh mint leaves, finely chopped, plus extra to garnish</li>
-      <li>300g/10½oz sweet potatoes, peeled and cut into 15mm cubes</li>
-      <li>200g/7oz cooked beetroot, cut into 15mm cubes</li>
-      <li>200g/7oz green beans, cut into 2cm/¾in lengths</li>
-      <li>200g/7oz peas, thawed if frozen</li>
-      <li>1 tsp crushed cardamom seeds</li>
-      <li>2 tsp cumin seeds</li>
-      <li>1 bay leaf</li>
-      <li>200g tin chickpeas, drained and rinsed</li>
-      <li>3 tbsp butter, melted</li>
-      <li>2 tbsp double cream, warmed</li>
-      <li>large pinch saffron</li>
-      <li>salt and freshly ground black pepper</li>
-  </ul>
-  <br><p style="font-size: 18px;font-weight: 600;">To Serve:</p>
-  <ul style="font-size: 16px;">
-      <li>2 onions, thinly sliced and dried on kitchen paper</li>
-      <li>vegetable oil, for frying</li>
-      <li>4 tbsp butter or ghee, melted (or use oil)</li>
-      <li>dried rose petals</li>
-  </ul>
+  <br><br><p style="text-align: left;"><form action="vegetable-biryani.html" method="get"><h3>Serves: ${choice1}</h3>
+          <br>Change to: 
+          <select name="servings" id="servings">
+          	<option value="${param.servings}"></option>
+  		  	<option value="4">4</option>
+  		  	<option value="6">6</option>
+  		  	<option value="8">8</option>
+		  </select></p>
+		  <br>
+		  <br><p style="text-align: left;"><h3>Units: ${choice2}</h3>
+	  	  <br>Change to:
+	  	  <select name="units" id="units">
+	  	  	<option value="${param.units}"></option>
+  		  	<option value="1">Metric</option>
+  		  	<option value="2">Imperial</option>
+		  </select>
+		  <br>
+		  <br>
+		  <button type="submit"><i class="fa fa-check"></i></button></form></p>
+          <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
+          <br><p style="font-size: 18px;font-weight: 600;">For the Saffron Chicken Korma:</p>
+          <ul style="font-size: 16px;">
+              <li>${ing_1} basmati rice</li>
+              <li>${a} tbsp grated fresh root ginger</li>
+              <li>${a} tbsp grated garlic</li>
+              <li>${a} green chillies, thinly sliced</li>
+              <li>${a} tsp garam masala</li>
+              <li>${a} tsp ground cumin</li>
+              <li>${b} tsp ground turmeric</li>
+              <li>${b} tsp Kashmiri chilli powder</li>
+              <li>${ing_2} Greek-style yoghurt</li>
+              <li>${a} tbsp lemon juice</li>
+              <li>${ing_3} fresh coriander, finely chopped, plus extra to garnish</li>
+              <li>${ing_4} fresh mint leaves, finely chopped, plus extra to garnish</li>
+              <li>${ing_5} sweet potatoes, peeled and cut into 15mm cubes</li>
+              <li>${ing_6} cooked beetroot, cut into 15mm cubes</li>
+              <li>${ing_7} green beans, cut into 2cm or &#190;in lengths</li>
+              <li>${ing_8} peas, thawed if frozen</li>
+              <li>${b} tsp crushed cardamom seeds</li>
+              <li>${a} tsp cumin seeds</li>
+              <li>1 bay leaf</li>
+              <li>${ing_9} tin chickpeas, drained and rinsed</li>
+              <li>${c} tbsp butter, melted</li>
+              <li>${a} tbsp double cream, warmed</li>
+              <li>large pinch saffron</li>
+              <li>salt and freshly ground black pepper</li>
+          </ul>
+          <br><p style="font-size: 18px;font-weight: 600;">To Serve:</p>
+          <ul style="font-size: 16px;">
+              <li>${a} onions, thinly sliced and dried on kitchen paper</li>
+              <li>vegetable oil, for frying</li>
+              <li>${d} tbsp butter or ghee, melted (or use oil)</li>
+              <li>dried rose petals</li>
+          </ul>
   <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
     <ol style="font-size: 16px;">
         <li>Rinse the rice in cold water until it runs clear, then soak in water for 25–30 minutes.</li>
         <li>Meanwhile, mix the ginger, garlic, chillies and dry spices with the yoghurt, lemon juice, coriander and mint and season well. Blend in a food processor until fairly smooth, then mix with the vegetables and leave to marinate.</li>
         <li>Drain the rice and cook in a saucepan of boiling salted water with the cardamom, cumin and bay leaf for 6–8 minutes, or until al dente. Drain well and mix with the chickpeas.</li>
-        <li>Preheat the oven to 200C /180C Fan/Gas 6.</li>
+        <li>Preheat the oven to 180/200&#8451 (Fan)/Gas 6.</li>
         <li>Mix together the melted butter, cream and saffron in a small bowl.</li>
         <li>Put a lidded flameproof casserole dish over a medium–low heat. Tip in the vegetables and their marinade (if the yoghurt is very thick, add a splash of water) and cook for 6–8 minutes, or until starting to soften. Season well. Spoon the rice evenly over the top and pour over the saffron mixture. Cover tightly and bake for 30 minutes.</li>
         <li>Meanwhile, fill a deep pan a third full of oil and heat until bubbles form around a chopstick dipped into it. (CAUTION: hot oil can be dangerous. Do not leave unattended.) Fry the onions in batches until golden and crisp. Drain on kitchen paper.</li>

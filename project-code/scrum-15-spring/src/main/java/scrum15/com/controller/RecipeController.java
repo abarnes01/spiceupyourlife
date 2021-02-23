@@ -86,7 +86,7 @@ public class RecipeController {
 		return "apple-pie";
 	}
 	
-	@RequestMapping("/stirfry")
+	@RequestMapping("/chilli-bean-stir-fry")
 	public String stir(@RequestParam int servings, @RequestParam int units, Model model) {
 
 		model.addAttribute("choice1", servings);
@@ -126,10 +126,10 @@ public class RecipeController {
 			model.addAttribute("f", "1 red onion");
 		}
 		
-		return "stirfry";
+		return "chilli-bean-stir-fry";
 	}
 	
-	@RequestMapping("/chilli")
+	@RequestMapping("/chilli-con-carne")
 	public String chilli(@RequestParam int servings, @RequestParam int units, Model model) {
 
 		model.addAttribute("choice1", servings);
@@ -180,10 +180,10 @@ public class RecipeController {
 			model.addAttribute("g", 400);
 		}
 		
-		return "chilli";
+		return "chilli-con-carne";
 	}
 	
-	@RequestMapping("/biryani")
+	@RequestMapping("/vegetable-biryani")
 	public String biryani(@RequestParam int servings, @RequestParam int units, Model model) {
 
 		model.addAttribute("choice1", servings);
@@ -226,10 +226,10 @@ public class RecipeController {
 			model.addAttribute("d", 8);
 		}
 		
-		return "biryani";
+		return "vegetable-biryani";
 	}
 	
-	@RequestMapping("/broth")
+	@RequestMapping("/green-peppercorn-and-lemongrass-coconut-broth")
 	public String broth(@RequestParam int servings, @RequestParam int units, Model model) {
 
 		model.addAttribute("choice1", servings);
@@ -272,7 +272,50 @@ public class RecipeController {
 			model.addAttribute("d", 8);
 		}
 		
-		return "broth";
+		return "green-peppercorn-and-lemongrass-coconut-broth";
 	}
 	
+	@RequestMapping("/mackerel-recheado")
+	public String broth(@RequestParam int servings, @RequestParam int units, Model model) {
+
+		model.addAttribute("choice1", servings);
+		
+		if (units == 1)	{
+			model.addAttribute("choice2", "Metric");
+			String unit = "g";
+			int[] quantities = {3};
+			for(int i=0; i<quantities.length; i++) {
+				 quantities[i] = ((quantities[i] * servings) / 10) * 10;
+		         model.addAttribute("ing_"+String.valueOf(i+1), quantities[i] + unit);
+		    }
+		}	else if (units == 2) {
+			model.addAttribute("choice2", "Imperial");
+			double[] quantities = {3};
+			for(int i=0; i<quantities.length; i++) {
+				quantities[i] = quantities[i] * servings;
+		    }
+			for(int i=0; i<quantities.length; i++) {
+				BigDecimal bd = BigDecimal.valueOf(quantities[i] * 0.0352733686);
+		        model.addAttribute("ing_"+String.valueOf(i+1), makeOz(bd));
+		    }
+		}
+		if (servings == 4) {
+			model.addAttribute("a", 1);
+			model.addAttribute("b", 2);
+			model.addAttribute("c", 1);
+
+		} else if (servings == 6) {
+			model.addAttribute("a", 1);
+			model.addAttribute("b", 2);
+			model.addAttribute("c", 2);
+
+		} else {
+			model.addAttribute("a", 2);
+			model.addAttribute("b", 3);
+			model.addAttribute("c", 3);
+		}
+		
+		return "mackerel-recheado";
+	}
+
 }

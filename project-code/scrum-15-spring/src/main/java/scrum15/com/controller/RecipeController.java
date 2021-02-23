@@ -302,17 +302,17 @@ public class RecipeController {
 		if (servings == 4) {
 			model.addAttribute("a", 1);
 			model.addAttribute("b", 2);
-			model.addAttribute("c", 1);
+			model.addAttribute("c", 2);
 
 		} else if (servings == 6) {
 			model.addAttribute("a", 1);
 			model.addAttribute("b", 2);
-			model.addAttribute("c", 2);
+			model.addAttribute("c", 3);
 
 		} else {
 			model.addAttribute("a", 2);
 			model.addAttribute("b", 3);
-			model.addAttribute("c", 3);
+			model.addAttribute("c", 4);
 		}
 		
 		return "mackerel-recheado";

@@ -2,7 +2,11 @@
 <html lang="en">
 
     <head>
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -332,34 +336,53 @@ body {margin:0;}
 
 
 <div class="a">
+  <br><br><p style="text-align: left;"><form action="saffron-chicken-korma-with-wholemeal-paratha" method="get"><h3>Serves: ${choice1}</h3>
+      <br>Change to: 
+      <select name="servings" id="servings">
+          <option value="${param.servings}"></option>
+  		  	<option value="4">4</option>
+  		  	<option value="6">6</option>
+  		  	<option value="8">8</option>
+		  </select></p>
+		  <br>
+		  <br><p style="text-align: left;"><h3>Units: ${choice2}</h3>
+	  	<br>Change to:
+	  	<select name="units" id="units">
+	  	  	<option value="${param.units}"></option>
+  		  	<option value="1">Metric</option>
+  		  	<option value="2">Imperial</option>
+		  </select>
+		  <br>
+		  <br>
+		  <button type="submit"><i class="fa fa-check"></i></button></form></p>
   <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Ingredients</h3>
   <br><p style="font-size: 18px;font-weight: 600;">For the Saffron Chicken Korma:</p>
   <ul style="font-size: 16px;">
-      <li>500g/1lb 2oz Turkish or Greek-style yoghurt</li>
+      <li>${ing_1} Turkish or Greek-style yoghurt</li>
       <li>1 tbsp garlic paste</li>
-      <li>2 tbsp ginger paste</li>
-      <li>8 chicken thighs (approximately 1kg/2lb 4oz), skin removed and bone in</li>
-      <li>2 tbsp full-fat milk</li>
+      <li>${a} tbsp ginger paste</li>
+      <li>${param.servings} chicken thighs (approximately 1kg/2lb 4oz), skin removed and bone in</li>
+      <li>${a} tbsp full-fat milk</li>
       <li>large pinch saffron</li>
-      <li>6 tbsp vegetable oil</li>
-      <li>3 white onions, sliced into thin rings</li>
+      <li>${b} tbsp vegetable oil</li>
+      <li>${c} white onions, sliced into thin rings</li>
       <li>2 Indian bay leaves</li>
-      <li>2.5cm/1in piece cassia bark</li>
-      <li>3 green cardamom pods</li>
+      <li>2.5cm or 1in piece cassia bark</li>
+      <li>${c} green cardamom pods</li>
       <li>1 clove</li>
       <li>1 tbsp ground coriander</li>
       <li>¼ tsp chilli powder</li>
       <li>1 tsp salt</li>
-      <li>2 tbsp ground almonds</li>
+      <li>${a} tbsp ground almonds</li>
       <li>1 tbsp sugar</li>
       <li>salt and freshly ground black pepper</li>
       <li>small handful flaked almonds, to garnish</li>
   </ul>
   <br><p style="font-size: 18px;font-weight: 600;">For the Wholemeal Paratha:</p>
   <ul style="font-size: 16px;">
-      <li>450g/1lb wholemeal or chapati flour, plus extra for dusting</li>
+      <li>${ing_2} wholemeal or chapati flour, plus extra for dusting</li>
       <li>1 tsp salt</li>
-      <li>4 tbsp butter or ghee, melted (or use oil)</li>
+      <li>${d} tbsp butter or ghee, melted (or use oil)</li>
       <li>vegetable oil, for frying</li>
   </ul>
   <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
@@ -369,9 +392,9 @@ body {margin:0;}
       <li>In a deep frying pan or wok with a lid, heat the vegetable oil over a medium–high heat. Add the onions to the pan and fry gently, stirring occasionally, until golden brown and caramelised. Using a slotted spoon, remove the onions from the pan, leaving as much of the oil in the pan as possible, and transfer to kitchen paper to drain. Spread the onion rings out so they crisp as they cool.</li>
       <li>Heat the oil in the same pan again over a medium–high heat and add the bay, cassia, cardamom and clove. After a few seconds, add the ground coriander and continue to cook, stirring. After 1 minute, add the marinated chicken to the pan along with the marinade. Keeping the heat on medium–high, continue to stir gently. After 5 minutes, or when the oil separates from the yoghurt and comes to the surface, add the chilli powder and salt. Lower the heat, cover the pan with the lid and simmer gently for 35 minutes. The chicken is cooked through when the juices run clear with no trace of pink when the thickest part of the meat is pierced with a skewer.</li>
       <li>Remove the pan from the heat. Add the saffron-infused milk, ground almonds and sugar. Stir gently to avoid breaking up the chicken.</li>
-      <li>Meanwhile, to make the paratha, place the flour and salt into the bowl of a food processor. Using the paddle attachment, very gradually add 300ml/10fl oz water to the bowl. To make the dough by hand, place the flour and salt into a large bowl. Gradually add the water, working the dough until it is smooth, elastic and no longer sticky.</li>
+      <li>Meanwhile, to make the paratha, place the flour and salt into the bowl of a food processor. Using the paddle attachment, very gradually add ${e}ml water to the bowl. To make the dough by hand, place the flour and salt into a large bowl. Gradually add the water, working the dough until it is smooth, elastic and no longer sticky.</li>
       <li>On a lightly floured work surface, knead the dough for at least 5 minutes. Place in a lightly floured bowl, cover and leave to rest for 30 minutes.</li>
-      <li>Once rested, divide the dough into eight equal pieces. Roll out each piece of dough to a 30cm/12in circle. To shape the paratha, fold the top third of a circle down into the centre. Brush the dough with the melted butter, then lightly dust with flour. Fold the bottom third of the circle up into the centre. Again, brush with melted butter, then dust with flour. Turn the folded paratha 90 degrees clockwise and fold the top third down into the centre. Brush with more melted butter and dust with flour. Fold the bottom third up into the centre to make a square. Repeat with all pieces of dough. Keep each square separate so they do not stick to each other, cover with a clean teatowel and set aside until you are ready to cook.</li>
+      <li>Once rested, divide the dough into eight equal pieces. Roll out each piece of dough to a 30cm or 12in circle. To shape the paratha, fold the top third of a circle down into the centre. Brush the dough with the melted butter, then lightly dust with flour. Fold the bottom third of the circle up into the centre. Again, brush with melted butter, then dust with flour. Turn the folded paratha 90 degrees clockwise and fold the top third down into the centre. Brush with more melted butter and dust with flour. Fold the bottom third up into the centre to make a square. Repeat with all pieces of dough. Keep each square separate so they do not stick to each other, cover with a clean teatowel and set aside until you are ready to cook.</li>
       <li>When ready to cook, roll out each paratha to a 3mm thick square. Place a tawa or non-stick frying pan over a medium heat. Add one paratha at a time and drizzle oil around the edges of the pan. Using a spatula, carefully press the paratha down in the pan to ensure it cooks evenly. Turn the paratha over and cook the other side in the same way. The bread is cooked when it is freckled with small brown patches on both sides.</li>
       <li>Check the seasoning of the korma and season with salt and pepper if needed. Garnish the curry with the flaked almonds and fried onions and serve with the paratha on the side.</li>
   </ol>

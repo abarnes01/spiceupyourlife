@@ -453,4 +453,47 @@ public class RecipeController {
 		return "saffron-chicken-korma-with-wholemeal-paratha";
 	}
 
+	@RequestMapping("/vegan-gingerbread")
+	public String korma(@RequestParam int servings, @RequestParam int units, Model model) {
+
+		model.addAttribute("choice1", servings);
+		
+		if (units == 1)	{
+			model.addAttribute("choice2", "Metric");
+			String unit = "g";
+			int[] quantities = {33,21,12,5,50};
+			for(int i=0; i<quantities.length; i++) {
+				 quantities[i] = ((quantities[i] * servings) / 10) * 10;
+		         model.addAttribute("ing_"+String.valueOf(i+1), quantities[i] + unit);
+		    }
+		}	else if (units == 2) {
+			model.addAttribute("choice2", "Imperial");
+			double[] quantities = {33,21,12,5,50};
+			for(int i=0; i<quantities.length; i++) {
+				quantities[i] = quantities[i] * servings;
+		    }
+			for(int i=0; i<quantities.length; i++) {
+				BigDecimal bd = BigDecimal.valueOf(quantities[i] * 0.0352733686);
+		        model.addAttribute("ing_"+String.valueOf(i+1), makeOz(bd));
+		    }
+		}
+		if (servings == 4) {
+			model.addAttribute("a", 100);
+			model.addAttribute("b", 165);
+			model.addAttribute("c", 2);
+
+		} else if (servings == 6) {
+			model.addAttribute("a", 150);
+			model.addAttribute("b", 250);
+			model.addAttribute("c", 2);
+
+		} else {
+			model.addAttribute("a", 200);
+			model.addAttribute("b", 335);
+			model.addAttribute("c", 3);
+		}
+		
+		return "vegan-gingerbread";
+	}
+
 }

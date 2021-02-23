@@ -454,7 +454,7 @@ public class RecipeController {
 	}
 
 	@RequestMapping("/vegan-gingerbread")
-	public String korma(@RequestParam int servings, @RequestParam int units, Model model) {
+	public String gingerbread(@RequestParam int servings, @RequestParam int units, Model model) {
 
 		model.addAttribute("choice1", servings);
 		
@@ -497,7 +497,7 @@ public class RecipeController {
 	}
 
 	@RequestMapping("/vegan-tofu-katsu-curry")
-	public String korma(@RequestParam int servings, @RequestParam int units, Model model) {
+	public String curry(@RequestParam int servings, @RequestParam int units, Model model) {
 
 		model.addAttribute("choice1", servings);
 		

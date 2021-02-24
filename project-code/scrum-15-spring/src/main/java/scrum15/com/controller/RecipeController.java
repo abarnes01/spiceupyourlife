@@ -1,4 +1,4 @@
-package com.example.controller;
+package scrum15.com.controller;
 
 import java.math.*;
 
@@ -45,7 +45,7 @@ public class RecipeController {
         }
 	}
 	
-	@RequestMapping("/apple-pie")
+	@RequestMapping("apple-pie")
 	public String pie(@RequestParam int servings, @RequestParam int units, Model model) {
 
 		model.addAttribute("choice1", servings);

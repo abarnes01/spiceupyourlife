@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,24 +80,36 @@
         <div class="login" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><a href="/shopping-cart/form.jsp" style="text-decoration-line: none;color: black;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
     </div>
     <div style="float: left;width: 100%;text-align: center;padding-right: 10%;">
-        <form class="register-form" style="display: inline">
-            <label for="rEmail" style="padding-right: 9.6%;">Email:</label>
-            <input type="text" id="first_name" name="first_name"><br>
-            <label for="first_name" style="padding-right: 3.5%;">First name:</label>
-            <input type="text" id="first_name" name="first_name"><br>
-            <label for="last_name" style="padding-right: 4.8%;">Last name:</label>
-            <input type="text" id="last_name" name="last_name"><br>
-            <label for="phone_number" style="padding-right: 1%;">Phone Number:</label>
-            <input type="text" id="phone_number" name="phone_number"><br>
-            <label for="country" style="padding-right: 7.2%;">Country:</label>
-            <input type="text" id="country" name="country"><br>
-            <label for="street_name" style="padding-right: 2%;">Street name:</label>
-            <input type="text" id="street_name" name="street_name"><br>
-            <label for="post_code" style="padding-right: 4.7%;">Post Code:</label>
-            <input type="text" id="post_code" name="post_code"><br>
-            <label for="rPassword" style="padding-right: 6.1%;">Password:</label>
-            <input type="password" id="rPassword" name="rPassword">
-        </form>
+        <form:form action="/addCustomer" modelAttribute="newAcc" method="POST" class="register-form" style="display: inline">
+            <form:label path="first_name">First name:</form:label>
+            <form:input path="first_name"/><br>
+            <form:errors path="first_name"/><br/>
+            <form:label path="last_name">Last name:</form:label>
+            <form:input path="last_name"/><br>
+            <form:errors path="last_name"/><br/>
+            <form:label path="email">Email:</form:label>
+            <form:input path="email"/><br>
+            <form:errors path="email"/><br/>
+            <form:label path="phone_number">Phone Number:</form:label>
+            <form:input path="phone_number"/><br>
+            <form:errors path="phone_number"/><br/>
+            <form:label path="country">Country:</form:label>
+            <form:input path="country"/><br>
+            <form:errors path="country"/><br/>
+            <form:label path="street_name">Street name:</form:label>
+            <form:input path="street_name"/><br>
+            <form:errors path="street_name"/><br/>
+            <form:label path="postcode">Post Code:</form:label>
+            <form:input path="postcode"/><br>
+            <form:errors path="postcode"/><br/>
+            <form:label path="city">City:</form:label>
+            <form:input path="city"/>
+            <form:errors path="city"/><br/>
+            <form:label path="password">Password:</form:label>
+            <form:input path="password"/>
+            <form:errors path="password"/><br/>
+            <input type="submit"/><form:errors/>
+        </form:form>
         <div><br></div>
     </div>
     

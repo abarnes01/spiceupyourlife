@@ -83,7 +83,7 @@ public class RecipeController {
 			model.addAttribute("e", 1);
 		}
 		
-		return "apple-pie";
+		return "recipes/apple-pie";
 	}
 	
 	@RequestMapping("/chilli-bean-stir-fry")

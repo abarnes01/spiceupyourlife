@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <style>
-        * {margin: 0;padding: 0;font-serif: monospace;box-sizing: border-box;}
+        * {margin: 0;padding: 0;font-family: monospace;box-sizing: border-box;}
         .third{float:left; width:28%;height:100%;object-fit:cover;padding: 10px;}
         .recipes-title{text-align: center;align-content: center;}
         .nav {position: fixed;width: 60px;height: 100%;background: #fff;transition: 0.5s;opacity: 0.8}
@@ -34,7 +34,7 @@
         .nav ul li a {position: relative;display: none;width: 100%;display: flex;text-decoration: none;color: black;}
         .nav ul li a .icon {position: relative;display: block;min-width: 60px; height: 60px;line-height: 60px; text-align: center;}
         .nav ul li a .icon .fa {font-size: 24px;}
-        .nav ul li a .title{position: relative;display: padding:0 10px; height: 60px;line-height: 60px;text-align: start;white-space: nowrap;}
+        .nav ul li a .title{position: relative;padding:10px; height: 60px;line-height: 60px;text-align: start;white-space: nowrap;}
     </style>
     <script>
     function open() {
@@ -128,7 +128,6 @@
     height: 65px;
     line-height: 65px;
     width: 68px;
-    padding: ;
     border: 0;
     }
 
@@ -283,8 +282,8 @@ body {
         <div class="fourth row" style="width: 100%;height: auto;padding-left: 20%">
 		<!-- third row of recipes!-->
 			<div class="third" style="min-width: 310px;">
-                <a href="/recipes/apple-pie.html/?servings=8&units=1"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/perfect_apple_pie_73735_16x9.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="/recipes/apple-pie.html" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/recipes/apple-pie.html" style="text-decoration: none;color: black;">Apple Pie</a></h3>
+                <a href="recipes/apple-pie/?servings=8&units=1"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/perfect_apple_pie_73735_16x9.jpg" style="width:100%"></a>
+                <h3 class="recipes-titles" href="recipes/apple-pie" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="recipes/apple-pie.jsp" style="text-decoration: none;color: black;">Apple Pie</a></h3>
 			</div>
 
 			<div class="third" style="min-width: 310px;">

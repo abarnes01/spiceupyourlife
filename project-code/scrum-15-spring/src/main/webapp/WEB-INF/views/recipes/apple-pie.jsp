@@ -334,7 +334,7 @@ body {margin:0;}
 
 
         <div class="a">
-          <br><br><p style="text-align: left;"><form action="apple-pie.html" method="get"><h3>Serves: ${choice1}</h3>
+          <br><br><p style="text-align: left;"><form action="apple-pie" method="get"><h3>Serves: ${choice1}</h3>
           <br>Change to: 
           <select name="servings" id="servings">
           	<option value="${param.servings}"></option>
@@ -381,7 +381,7 @@ body {margin:0;}
                 <li>Lightly knead the pastry trimmings and re-roll. Cut into the leaf shapes place all around the edge of the pie, slightly overlapping each others, and glaze with more egg. Sprinkle the pie with sugar and bake in the centre of the oven for 45-55 minutes or golden-brown all over and the apples are tender.</li>
             </ol>
             <br>
-            <a href="apple-pie.html" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
+            <a href="apple-pie" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
             <a href="downloads/apple-pie.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
         </div>
         <hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">

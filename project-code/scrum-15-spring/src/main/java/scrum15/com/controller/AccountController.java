@@ -33,15 +33,17 @@ public class AccountController {
 		return "signin/registerForm";
 	}
 	
+	
 	@PostMapping("/addCustomer")
 	public String addCustomer( Model model, @Valid @ModelAttribute Customer customer, BindingResult result) {
-		if (result.hasErrors()) {
-			model.addAttribute("newAcc", new Customer());
-			return "signin/registerForm";
-		}
-		cRepo.save(customer);
-		return "redirect:/";
-	}
+		customer.setGuest(false);
+			if (result.hasErrors()) {
+				model.addAttribute("newAcc", new Customer());
+				return "signin/registerForm";
+			}
+			cRepo.save(customer);
+			return "redirect:/";
+		}	
 	
 	@RequestMapping("/login")
 	public String loginCustomer() {

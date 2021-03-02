@@ -126,7 +126,7 @@ public class RecipeController {
 			model.addAttribute("f", "1 red onion");
 		}
 		
-		return "chilli-bean-stir-fry";
+		return "recipes/chilli-bean-stir-fry";
 	}
 	
 	@RequestMapping("/chilli-con-carne")
@@ -180,7 +180,7 @@ public class RecipeController {
 			model.addAttribute("g", 400);
 		}
 		
-		return "chilli-con-carne";
+		return "recipes/chilli-con-carne";
 	}
 	
 	@RequestMapping("/vegetable-biryani")
@@ -226,7 +226,7 @@ public class RecipeController {
 			model.addAttribute("d", 8);
 		}
 		
-		return "vegetable-biryani";
+		return "recipes/vegetable-biryani";
 	}
 	
 	@RequestMapping("/green-peppercorn-and-lemongrass-coconut-broth")
@@ -272,7 +272,7 @@ public class RecipeController {
 			model.addAttribute("d", 8);
 		}
 		
-		return "green-peppercorn-and-lemongrass-coconut-broth";
+		return "recipes/green-peppercorn-and-lemongrass-coconut-broth";
 	}
 	
 	@RequestMapping("/mackerel-recheado")
@@ -315,7 +315,7 @@ public class RecipeController {
 			model.addAttribute("c", 4);
 		}
 		
-		return "mackerel-recheado";
+		return "recipes/mackerel-recheado";
 	}
 
 	@RequestMapping("/moroccan-style-soup")
@@ -358,7 +358,7 @@ public class RecipeController {
 			model.addAttribute("c", 1000);
 		}
 		
-		return "moroccan-style-soup";
+		return "recipes/moroccan-style-soup";
 	}
 
 	@RequestMapping("/potato-rosti-quiche")
@@ -401,7 +401,7 @@ public class RecipeController {
 			model.addAttribute("c", 200);
 		}
 		
-		return "potato-rosti-quiche";
+		return "recipes/potato-rosti-quiche";
 	}
 
 	@RequestMapping("/saffron-chicken-korma-with-wholemeal-paratha")
@@ -450,7 +450,7 @@ public class RecipeController {
 			model.addAttribute("e", 300);
 		}
 		
-		return "saffron-chicken-korma-with-wholemeal-paratha";
+		return "recipes/saffron-chicken-korma-with-wholemeal-paratha";
 	}
 
 	@RequestMapping("/vegan-gingerbread")
@@ -493,7 +493,7 @@ public class RecipeController {
 			model.addAttribute("c", 3);
 		}
 		
-		return "vegan-gingerbread";
+		return "recipes/vegan-gingerbread";
 	}
 
 	@RequestMapping("/vegan-tofu-katsu-curry")
@@ -539,7 +539,7 @@ public class RecipeController {
 			model.addAttribute("d", 375);
 		}
 		
-		return "vegan-tofu-katsu-curry";
+		return "recipes/vegan-tofu-katsu-curry";
 	}
 
 }

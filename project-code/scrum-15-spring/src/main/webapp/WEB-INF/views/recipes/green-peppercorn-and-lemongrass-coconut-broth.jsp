@@ -339,7 +339,7 @@ body {margin:0;}
 
 
 <div class="a">
-  <br><br><p style="text-align: left;"><form action="green-peppercorn-and-lemongrass-coconut-broth.html" method="get"><h3>Serves: ${choice1}</h3>
+  <br><br><p style="text-align: left;"><form action="/green-peppercorn-and-lemongrass-coconut-broth" method="get"><h3>Serves: ${choice1}</h3>
   <br>Change to: 
   <select name="servings" id="servings">
       <option value="${param.servings}"></option>
@@ -390,8 +390,8 @@ body {margin:0;}
       <li>Drain the noodles and divide between four deep soup bowls. Ladle over the soup and vegetables, adding a generous squeeze of lime juice. Garnish with the remaining coriander and mint leaves, if you like.</li>
   </ol>
     <br>
-    <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/green-peppercorn-and-lemongrass-coconut-broth.html" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
-    <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/green-peppercorn-and-lemongrass-coconut-broth.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
+    <a href="/green-peppercorn-and-lemongrass-coconut-broth?servings=${param.servings}&units=${param.units}" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
+    <a href="/downloads/green-peppercorn-and-lemongrass-coconut-broth.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
 </div>
 <hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
 </div>

@@ -382,7 +382,7 @@ body {margin:0;}
             </ol>
             <br>
             <a href="/apple-pie?servings=${param.servings}&units=${param.units}" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
-            <a href="downloads/apple-pie.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
+            <a href="/downloads/apple-pie.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
         </div>
         <hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
     </div>

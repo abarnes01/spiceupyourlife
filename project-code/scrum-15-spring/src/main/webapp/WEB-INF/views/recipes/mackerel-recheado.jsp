@@ -335,7 +335,7 @@ body {margin:0;}
 
 
 <div class="a">
-  <br><br><p style="text-align: left;"><form action="mackerel-recheado.html" method="get"><h3>Serves: ${choice1}</h3>
+  <br><br><p style="text-align: left;"><form action="/mackerel-recheado" method="get"><h3>Serves: ${choice1}</h3>
   <br>Change to: 
   <select name="servings" id="servings">
       <option value="${param.servings}"></option>
@@ -385,8 +385,8 @@ sunflower oil, for cooking</li>
       <li>Mix the salad to combine the ingredients and serve alongside the mackerel.</li>
   </ol>
     <br>
-    <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/mackerel-recheado.html" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
-    <a href="/project-code/scrum-15-spring/src/main/webapp/WEB-INF/views/recipes/mackerel-recheado.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
+    <a href="/mackerel-recheado?servings=${param.servings}&units=${param.units}" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
+    <a href="/downloads/mackerel-recheado.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
 </div>
 <hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
 </div>

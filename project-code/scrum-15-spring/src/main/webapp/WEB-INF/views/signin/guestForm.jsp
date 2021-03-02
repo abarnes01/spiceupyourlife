@@ -1,79 +1,150 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
+
+<style>
+    .banner {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url('http://static8.depositphotos.com/1177973/811/i/450/depositphotos_8119912-Notebook-for-recipes-and-spices-on-wooden-table.jpg');
+      background-size: cover;
+      height: 700px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+      text-align: center;
+      color: white;
+    }
+
+  
+    .banner > p {
+      color: white;
+      padding: 20px;
+    }
+
+    .banner h1 {
+    /* Text styles */
+    font-size: em;
+    font-colour: rgb(12, 1, 1);
+    }
+
+    .banner .search {
+   position: relative;
+   vertical-align: middle;
+   z-index: 2;
+   }
+   .banner .search input {
+   width: 100%;
+   height: 76px;
+   line-height: 76px;
+   border: transparent;
+   background: rgba(0, 0, 0, 0.2);
+   font-size: 27px;
+   padding: 5px 5px 5px 47px;
+   color: #fff;
+   position: relative;
+   border-radius: 0;
+   }
+   .banner .search button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: #fff;
+    background: transparent;
+    font-size: 27px;
+    height: 65px;
+    line-height: 65px;
+    width: 68px;
+    padding: ;
+    border: 0;
+    }
+
+
+
+  </style>
+  <body>
+
+    
+  <section class="banner">
+   
+
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <style>
-        * {margin: 0;padding: 0;font-family: monospace;box-sizing: border-box;}
-        .third{float:left; width:28%;height:100%;object-fit:cover;padding: 10px;}
-        .recipes-title{text-align: center;align-content: center;}
-        .nav {position: fixed;width: 60px;height: 100%;background: #fff;transition: 0.5s;opacity: 0.8}
-        .nav:hover {width: 300px;opacity: 1;background: lightgrey;}
-        .nav ul {position: absolute;top: 0;left: 0;width: 100%;}
-        .nav ul li {position: relative;width: 100%;list-style: none;}
-        .nav ul li:hover{background: grey;}
-        .nav ul li a {position: relative;display: none;width: 100%;display: flex;text-decoration: none;color: black;}
-        .nav ul li a .icon {position: relative;display: block;min-width: 60px; height: 60px;line-height: 60px; text-align: center;}
-        .nav ul li a .icon .fa {font-size: 24px;}
-        .nav ul li a .title{position: relative;display: padding:0 10px; height: 60px;line-height: 60px;text-align: start;white-space: nowrap;}
-    </style>
-    <script>
-    function open() {
-        document.getElementById("navbar").style.display = "block";
-    }
-    
-    function close() {
-        document.getElementById("navbar").style.display = "none";
-    }
-    </script>
-    
-    <title>Spice Up Your Life</title>
+    <head>
+        
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #090181;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: rgb(252, 252, 252);
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+
+
+
+.btn {
+              background-color: rgb(255, 255, 255);
+              border: none;
+              color: rgb(192, 87, 17);
+              padding: 12px 16px;
+              font-size: 16px;
+              cursor: pointer;
+            }
+            
+            /* Darker background on mouse-over */
+            .btn:hover {
+              background-color: rgb(202, 205, 214);
+            }
+
+
+</style>
 </head>
-    
 <body>
-    <div class="nav" style="left:0px;">
-        <ul>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-info" aria-hidden="true"></i></span>
-                    <span class="title">About</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-fire" aria-hidden="true"></i></span>
-                    <span class="title">Spices</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-cutlery" aria-hidden="true"></i></span>
-                    <span class="title">Recipes</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
-                    <span class="title">Sign in</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
-                    <span class="title">Register</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                    <span class="title">Contact</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+
+<div class="navbar">
+
+  
+  <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
+  <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+ <a href="/shopping-cart/form.jsp" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+
+</div>
+
+       
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
     <div class="top-menu" style="align-content: center;text-align: center;">
         <div class="title" style="font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;">Guest</a></div>
@@ -113,7 +184,4 @@
     <div style="width: 100%;text-align: center;align-content: center;">
         <button style="height: 30px;width: 100px;font-size: 14px;font-weight: 500;">Continue as guest</button>
     </div>
-    
-        <hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
-</body>
 </html>

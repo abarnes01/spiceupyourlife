@@ -28,43 +28,48 @@ Tasks for User Story 4 - "As a client accessing a recipe I can change the units 
 
 Tasks for User Story 1 - "As a user I can purchase spices without an account if I want to, so that I can benefit from the products sold by the company even if I don't have an account"
 
-7. Create checkout with the option to continue as guest
+7. Create a continue as guest button on the home page
 
-8. Add guest column in Customer table
+8. Create a guest form
+    - Add functionality to form
+
+9. Style guest form
+
+10. Add guest column in Customer table
 
 Tasks for User Story 2 - "As a client I can create an account so that I can buy spices at a reduced amount and access all recipes"
 
-9. Create a login button on all pages
+11. Create a login button on all pages
 
-10. Create a login form
+12. Create a login form
 
     - Add login functionality
 
     - Add third party login authorisation
 
-11. Style login form
+13. Style login form
 
-12. Create a register form
+14. Create a register form
 
     - Add register functionality
 
-13. Style register form
+15. Style register form
 
-14. Add password column in Customer table
+16. Add password column in Customer table
 
 Assignment of tasks
 
-Matthew - 1, 8 and 14
+Matthew - 1, 8, 10 and 16
 
-Adam - 2
+Adam - 2 and 14
 
-Anjana - 3, 4, 5, 11 and 13
+Anjana - 3, 4, 5, 9, 13 and 15
 
 Elisei - 6
 
-Hamzah - 9, 10 and 12
+Hamzah - 7, 11 and 12
 
-Callum - 7
+Callum - x
 
 
 

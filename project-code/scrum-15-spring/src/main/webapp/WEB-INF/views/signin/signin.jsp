@@ -1,8 +1,11 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Spice Up Your Life</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
 * {margin: 0;padding: 0;font-family: monospace;box-sizing: border-box;}
 body {margin:0;}
@@ -66,14 +69,17 @@ body {margin:0;}
 <body>
     <div id="main">
        
-        <div id="mySidenav" class="sidenav">
+            <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">About</a>
-            <a href="/index.html">Home</a>
-            <a href="/spices_list.html">Spices</a>
-            <a href="/recipe_list.html">Recipes</a>
+            <a href="index.html">Home</a>
+            <a href="spices_list.html">Spices</a>
+            <a href="recipe_list.html">Recipes</a>
+            <a href="/login">Sign in</a>
+            <a href="/register">Register</a>
             <a href="#">My account</a>
             <a href="#">Contact</a>
+               
           </div>
   	</div>
     

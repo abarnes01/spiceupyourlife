@@ -2,11 +2,7 @@
 <html lang="en">
 
     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+        
 
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -75,9 +71,8 @@ body {margin:0;}
   
   <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
   <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
+  <a href="http://localhost:8080/index.html">Home</a>
+  <a href="http://localhost:8080/index.html#contact">Contact</a>
  <a href="/shopping-cart/form.jsp" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 
 
@@ -129,33 +124,31 @@ body {margin:0;}
             .btn:hover {
               background-color: rgb(202, 205, 214);
             }
-            <style>
+            </style>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
         <style>
             * {margin: 0;padding: 0;font-family: monospace;box-sizing: border-box;}
         </style>
         
-        <title>Spice Up Your Life</title>
+    <title>Spice Up Your Life</title>
     </head>
     <div id="main">
     <body>
        
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Home</a>
-            <a href="#">Spices</a>
-            <a href="#">Recipes</a>
-            <a href="#">Sign in</a>
-            <a href="#">Register</a>
-            <a href="#">My account</a>
-            <a href="#">Contact</a>
+            <a href="/index.html">Home</a>
+            <a href="/spices_list.html">Spices</a>
+            <a href="/recipe_list.html">Recipes</a>
+            <a href="/login">Sign in</a>
+            <a href="/register">Register</a>
+            <a href="/index.html#contact">Contact</a>
            
           </div>
     
           <div class="top-menu" style="align-content: center;text-align: center;">
-            <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;">Recipe</a></div>
+            <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/vegan-gingerbread?servings=${param.servings}&units=${param.units}" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;">Vegan gingerbread</a></div>
         </div>
           
 
@@ -261,9 +254,9 @@ body {margin:0;}
             
             
             <div id="OrangeBorder" style="width: 100%;align-content: center; font-size: 16px;" >
-                <p>CHILLI BEAN STIR FRY</p>
+                <p>VEGAN GINGERBREAD</p>
               <p>5 Star Recipe</p>
-              <p>By Mary Berry </p>
+              <p>By Nigella Lawson </p>
             </div>
             
             
@@ -274,7 +267,7 @@ body {margin:0;}
       
 
         <div style="width: 100%; text-align:center">
-            <img src="https://food-images.files.bbci.co.uk/food/recipes/chilli_bean_stir-fry_19412_16x9.jpg" style="width:50%; margin: 60px -10px;">
+            <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/vegan_gingerbread_34867_16x9.jpg" style="width:50%; margin: 60px -10px;">
         </div>
 
 
@@ -306,9 +299,11 @@ body {margin:0;}
             setInterval(hourglass, 3000);
             </script>
             <p>
-                Time: 45 Minutes 
+            Preparation Time: less than 30 mins 
             </p>
-            
+            <p>
+            Cook Time: 1 to 2 hours
+            </p>
             </body>
 
         

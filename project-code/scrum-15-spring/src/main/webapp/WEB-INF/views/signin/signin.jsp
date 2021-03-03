@@ -59,9 +59,9 @@ body {margin:0;}
 <div class="navbar">
   <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
   <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="/register">Register</a>
+  <a href="index.html#contact">Contact</a>
  <a href="/shopping-cart/form.jsp" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 </div>
         
@@ -71,14 +71,11 @@ body {margin:0;}
        
             <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
             <a href="index.html">Home</a>
             <a href="spices_list.html">Spices</a>
             <a href="recipe_list.html">Recipes</a>
-            <a href="/login">Sign in</a>
             <a href="/register">Register</a>
-            <a href="#">My account</a>
-            <a href="#">Contact</a>
+            <a href="index.html#contact">Contact</a>
                
           </div>
   	</div>
@@ -724,20 +721,10 @@ body {margin:0;}
 							Sign in
 						</button>
 					</div>
-					
-					<div class="w-full text-center p-t-27 p-b-239">
-						<span class="txt1">
-							Forgot
-						</span>
-
-						<a href="#" class="txt2">
-							User name / password?
-						</a>
-					</div>
 
 					<div class="w-full text-center">
-						<a href="#" class="txt3">
-							 Or Register
+						<a href="/register" class="txt2">
+							Register
 						</a>
 					</div>
 				</form>

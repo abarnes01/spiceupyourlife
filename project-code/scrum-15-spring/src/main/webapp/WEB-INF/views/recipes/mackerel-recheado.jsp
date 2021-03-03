@@ -73,7 +73,7 @@ body {margin:0;}
   <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
   <a href="http://localhost:8080/index.html">Home</a>
   <a href="http://localhost:8080/index.html#contact">Contact</a>
- <a href="/shopping-cart/form.jsp" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+ <a href="/checkout" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 
 
 

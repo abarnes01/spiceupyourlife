@@ -42,6 +42,6 @@ public class GuestController {
 			return "signin/guestForm";
 		}
 		cRepo.save(customer);
-		return "redirect:/";
+		return "shopping-cart/checkout";
 	}
 }

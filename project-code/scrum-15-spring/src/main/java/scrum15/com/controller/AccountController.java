@@ -27,6 +27,11 @@ public class AccountController {
 		binder.addValidators(new CustomerValidator(cRepo));
 	}
 	
+	@RequestMapping("/checkout")
+	public String checkout() {
+		return "shopping-cart/checkout";
+	}
+	
 	@RequestMapping(value = "/register")
 	public String newCustomer(Model model) {
 		model.addAttribute("newAcc", new Customer());

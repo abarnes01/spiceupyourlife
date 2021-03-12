@@ -397,6 +397,7 @@ body {margin:0;}
     <br>
     <a href="/vegatable-biryani?servings=${param.servings}&units=${param.units}" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.html)</button></a>
     <a href="/downloads/vegatable-biryani.txt" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.txt)</button></a>
+    <a href="/downloads/vegatable-biryani.pdf" download><button class="btn" style="width: 150px;"><i class="fa fa-download"></i> Download Recipe (.pdf)</button></a>
 </div>
 <hr style="width: 100%; border:0;border-top:1px solid #eee;margin:20px 0">
 </div>

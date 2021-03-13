@@ -1,0 +1,25 @@
+General tasks
+
+1. Add hover text-boxes over buttons
+
+2. Change naming conventions for primary keys in the database
+
+3. Make the css work with functionality on the checkout page
+
+4. Add about information for the website
+
+    - Add about button on the home page
+
+    - Add functionality to about button that navigates them to the about information on the home page
+
+5. Fix validation
+
+    - On the login page
+
+    - On the register page
+
+    - On the guest page
+
+6. Correct text written on the recipe pages
+
+7. Add prices to each spice

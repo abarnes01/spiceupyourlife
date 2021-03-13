@@ -31,3 +31,23 @@ Tasks for User Story 7 - "As a client I can download a PDF file of a recipe page
     - Add download as PDF button
 
     - Add functionality that downloads the recipe page as a PDF
+
+Tasks for User Story 8 - "As a client I can purchase a premium account so that I have unlimited access to all recipes; ability to download all recipes; and discounts on spices when buying in bulk"
+
+9. Add ability to choose an account
+
+    - Make register button navigate to a choose an acount page
+
+    - Add information about the benefits of registering for a standard account and a premium account
+
+    - Add button that navigates to the standard acccount form
+
+    - Add button that navigates to the premium account form 
+
+10. Create a premium account form
+
+    - Add functionality to the page
+
+    - Add css styling to the page
+
+    - Add premium column in the Customer table

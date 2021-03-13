@@ -51,3 +51,37 @@ Tasks for User Story 8 - "As a client I can purchase a premium account so that I
     - Add css styling to the page
 
     - Add premium column in the Customer table
+
+Tasks for User Story 9 - "As a client I can filter spices and recipes in various ways so that I can increase the speed of finding a desired spice or recipe"
+
+11. Add filtering for the spice pages
+
+    - Sort by price - low to high
+
+    - Sort by price - high to low
+
+    - Sort alphabetically - a to z
+
+    - Sort alphabetically - z to a
+
+    - Display by prices
+
+    - Display by recipe it is used in
+
+    - Display by special offers
+
+    - Disply by country of origin
+
+12. Add filtering for the recipe pages
+
+    - Sort by star rating - low to high
+
+    - Sort by star rating - high to low
+
+    - Sort alphabetically - a to z
+
+    - Sort alphabetically - z to a 
+
+    - Display by country of origin 
+
+    - Display by the spice they use 

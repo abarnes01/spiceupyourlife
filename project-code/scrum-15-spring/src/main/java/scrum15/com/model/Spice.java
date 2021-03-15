@@ -11,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
 public class Spice {
 	private int id;
@@ -41,17 +43,6 @@ public class Spice {
 	public void addOrders (SpiceOrders orders) {
 		this.spiceOrders.add(orders);
 	}
-	
-//	@ManyToMany
-//	@JoinTable(name = "spice_recipe",
-//	   joinColumns = @JoinColumn(name = "spice_id"),
-//	   inverseJoinColumns = @JoinColumn(name = "recipe_id"))
-//	private List<Recipe> recipe;
-//	@ManyToMany
-//	@JoinTable(name = "orders_details",
-//	   joinColumns = @JoinColumn(name = "spice_id"),
-//	   inverseJoinColumns = @JoinColumn(name = "orders_id"))
-//	private List<Orders> orders;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

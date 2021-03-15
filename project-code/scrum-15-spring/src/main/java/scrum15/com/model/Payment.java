@@ -8,6 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
 public class Payment {
 	private int id;
@@ -24,10 +26,10 @@ public class Payment {
 	public int getId() {
 		return id;
 	}
-	@Column(columnDefinition = "VARCHAR(50) NOT NULL")
 	public void setId(int id) {
 		this.id = id;
 	}
+	@Column(columnDefinition = "VARCHAR(50) NOT NULL")
 	public String getCard_name() {
 		return card_name;
 	}

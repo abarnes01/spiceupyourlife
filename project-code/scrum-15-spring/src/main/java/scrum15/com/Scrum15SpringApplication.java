@@ -176,6 +176,7 @@ public class Scrum15SpringApplication implements ApplicationRunner{
 		c1.setPostcode("LI94 0DJ");
 		c1.setCountry("England");
 		c1.setGuest(false);
+		c1.setPremium(false);
 		c1 = cRepo.save(c1);
 		
 		c2 = new Customer();
@@ -188,7 +189,22 @@ public class Scrum15SpringApplication implements ApplicationRunner{
 		c2.setPostcode("LE2 4AD");
 		c2.setCountry("England");
 		c2.setGuest(true);
+		c2.setPremium(false);
 		c2 = cRepo.save(c2);
+		
+		c3 = new Customer();
+		c3.setFirst_name("Harvey");
+		c3.setLast_name("Morrison");
+		c3.setPassword("Secure");
+		c3.setPhone_number("07294820193");
+		c3.setEmail("harvey.morrison@outlook.co.uk");
+		c3.setStreet_name("5 Speed St");
+		c3.setCity("Newcastle");
+		c3.setPostcode("NE95 4RD");
+		c3.setCountry("England");
+		c3.setGuest(false);
+		c3.setPremium(true);
+		c3 = cRepo.save(c3);
 		
 		//one to many relationship - Customer to Orders
 		c1.setOrders(new ArrayList<>());

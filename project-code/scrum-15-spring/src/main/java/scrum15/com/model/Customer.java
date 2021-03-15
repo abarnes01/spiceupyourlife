@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import org.hibernate.annotations.GenericGenerator;
+
 
 @Entity
 
@@ -26,6 +28,7 @@ public class Customer {
 	private String country;
 	private List<Orders> orders;
 	private boolean guest;
+	private boolean premium;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -114,5 +117,13 @@ public class Customer {
 	public void setGuest(boolean guest) {
 		this.guest = guest;
 	}
+	@Column(columnDefinition = "BOOLEAN NOT NULL")
+	public boolean isPremium() {
+		return premium;
+	}
+	public void setPremium(boolean premium) {
+		this.premium = premium;
+	}
+	
 	
 }

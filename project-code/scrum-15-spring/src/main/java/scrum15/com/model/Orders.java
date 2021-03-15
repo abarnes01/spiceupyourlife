@@ -16,6 +16,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
 public class Orders {
 	private int id;
@@ -27,8 +29,6 @@ public class Orders {
 	private String shipment_country;
 	private Payment payment;
 	private Customer customer;
-//	@ManyToMany(mappedBy = "orders")
-//	private List<Spice> spice;
 	
 	private Set<SpiceOrders> spiceOrders = new HashSet<SpiceOrders>();
 	

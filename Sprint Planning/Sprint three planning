@@ -2,17 +2,15 @@ General tasks
 
 1. Add hover text-boxes over buttons
 
-2. Change naming conventions for primary keys in the database
+2. Make the css work with functionality on the checkout page
 
-3. Make the css work with functionality on the checkout page
-
-4. Add about information for the website
+3. Add about information for the website
 
     - Add about button on the home page
 
     - Add functionality to about button that navigates them to the about information on the home page
 
-5. Fix validation
+4. Fix validation
 
     - On the login page
 
@@ -20,13 +18,13 @@ General tasks
 
     - On the guest page
 
-6. Correct text written on the recipe pages
+5. Correct text written on the recipe pages
 
-7. Add prices to each spice
+6. Add prices to each spice
 
 Tasks for User Story 7 - "As a client I can download a PDF file of a recipe page so that I can view in an appealing format"
 
-8. Add ability to download as a PDF on the recipe pages
+7. Add ability to download as a PDF on the recipe pages
 
     - Add download as PDF button
 
@@ -34,7 +32,7 @@ Tasks for User Story 7 - "As a client I can download a PDF file of a recipe page
 
 Tasks for User Story 8 - "As a client I can purchase a premium account so that I have unlimited access to all recipes; ability to download all recipes; and discounts on spices when buying in bulk"
 
-9. Add ability to choose an account
+8. Add ability to choose an account
 
     - Make register button navigate to a choose an acount page
 
@@ -44,7 +42,7 @@ Tasks for User Story 8 - "As a client I can purchase a premium account so that I
 
     - Add button that navigates to the premium account form 
 
-10. Create a premium account form
+9. Create a premium account form
 
     - Add functionality to the page
 
@@ -54,7 +52,7 @@ Tasks for User Story 8 - "As a client I can purchase a premium account so that I
 
 Tasks for User Story 9 - "As a client I can filter spices and recipes in various ways so that I can increase the speed of finding a desired spice or recipe"
 
-11. Add filtering for the spice pages
+10. Add filtering for the spice pages
 
     - Sort by price - low to high
 
@@ -72,7 +70,7 @@ Tasks for User Story 9 - "As a client I can filter spices and recipes in various
 
     - Disply by country of origin
 
-12. Add filtering for the recipe pages
+11. Add filtering for the recipe pages
 
     - Sort by star rating - low to high
 
@@ -88,12 +86,12 @@ Tasks for User Story 9 - "As a client I can filter spices and recipes in various
 
 Assignment of tasks
 
-Anjana - 1, 9 
+Anjana - 1, 8 
 
-Matthew - 2, 5, 10
+Matthew - 4, 9
 
-Hamzah - 3, 11
+Hamzah - 2, 10
 
-Adam - 4, 8, 12
+Adam - 3, 7, 11
 
-Elisei - 6, 7
+Elisei - 5, 6

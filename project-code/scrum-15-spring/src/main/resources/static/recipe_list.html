@@ -265,80 +265,91 @@ section ul li.active {
     <section>
     	<ul>
 			<li class="list active" data-filter="All">All</li>
-			<li class="list" data-filter="Mains">Main Courses</li>
-			<li class="list" data-filter="Desserts">Desserts</li>
-			<li class="list" data-filter="Soups">Soups</li>
-			<li class="list" data-filter="Pastries">Pastries</li>
+			<li class="list" data-filter="Chilli">Chillies</li>
+			<li class="list" data-filter="Saffron">Saffron</li>
+			<li class="list" data-filter="Ginger">Ginger</li>
+			<li class="list" data-filter="Cinnamon">Cinnamon</li>
+    	</ul>
+    	<ul>
+			<li class="countrylst" data-country="England">English</li>
+			<li class="countrylst" data-country="India">Indian</li>
+			<li class="countrylst" data-country="Mexico">Mexican</li>
+			<li class="countrylst" data-country="Thailand">Thai</li>
+			<li class="countrylst" data-country="China">Chinese</li>
+			<li class="countrylst" data-country="Goa">Goan</li>
+			<li class="countrylst" data-country="Switzerland">Swiss</li>
+			<li class="countrylst" data-country="Morocco">Moroccan</li>
     	</ul>
     	<ul>
     		<li class="sort" data-sort="asc">Sort Rating Asc</li>
     		<li class="sort" data-sort="desc">Sort Rating Desc</li>
-    		<li class="sort" data-sort="abc">Sort Alphabetically</li>
-    		<li class="sort" data-sort="cntry">Sort By Country</li>
+    		<li class="sort" data-sort="alphaasc">Sort Alphabetically Asc</li>
+    		<li class="sort" data-sort="alphadesc">Sort Alphabetically Desc</li>
+    		<li class="sort" data-sort="cntry">Sort By Country Desc</li>
     	</ul>
     	
     	<div id="recipe">
-	    	<div class="itemBox Mains">
+	    	<div id="Mexico" class="itemBox Chilli">
 				<a href="/chilli-con-carne/?servings=8&units=1"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/healthy_chilli_con_carne_64911_16x9.jpg" style="width:100%"></a>
 				<h3 class="recipes-titles" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/chilli-con-carne" style="text-decoration: none;color: black;">Chilli Con Carne</a></h3>
 				<h4 class="country">Mexico</h4>
 				<span class="rating">4.5</span>
 			</div>
-    		<div class="itemBox Mains">
+    		<div id="Goa" class="itemBox Chilli">
                 <a href="/mackerel-recheado/?servings=8&units=1"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/mackerel_recheado_35296_16x9.jpg" style="width:100%"></a>
                 <h3 class="recipes-titles" href="/mackerel-recheado" style="font-serif:monospace;font-size: 22px;padding: 10pxl;align-content: center;text-align: center;"><a href="/mackerel-recheado" style="text-decoration: none;color: black;">Mackerel Recheado</a></h3>
 				<h4 class="country">Goa</h4>
 				<span class="rating">5</span>
 			</div>
-			<div class="itemBox Mains">
+			<div id="India" class="itemBox Chilli">
                 <a href="/vegetable-biryani/?servings=8&units=1"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/vegetable_biryani_50072_16x9.jpg" style="width:100%"></a>
                 <h3 class="recipes-titles" href="/vegetable-biryani" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/vegan-tofu-katsu-curry" style="text-decoration: none;color: black;">Vegetable Biryani</a></h3>
 				<h4 class="country">India</h4>
 				<span class="rating">4.5</span>
 			</div>
-			<div class="itemBox Soups">
+			<div id="Morocco" class="itemBox Chilli">
                 <a href="/moroccan-style-soup/?servings=8&units=1"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/moroccan-style_soup_33454_16x9.jpg" style="width:100%"></a>
                 <h3 class="recipes-titles" href="/moroccan-style-soup" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/moroccan-style-soup" style="text-decoration: none;color: black;">Moroccan-Style soup</a></h3>
 				<h4 class="country">Moroccan</h4>
 				<span class="rating">5</span>
 			</div>
-			<div class="itemBox Mains">
+			<div id="India" class="itemBox Saffron">
                 <a href="/saffron-chicken-korma-with-wholemeal-paratha/?servings=8&units=1"><img src="https://saturdaykitchenrecipes.com/wp-content/uploads/2020/01/Saffron-chicken-korma-with-wholemeal-paratha-saturdaykitchenrecipes.jpg" style="width:100%"></a>
                 <h3 class="recipes-titles" href="/saffron-chicken-korma-with-wholemeal-paratha" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/saffron-chicken-korma-with-wholemeal-paratha" style="text-decoration: none;color: black;">Saffron Chicken Korma with Wholemeal Paratha</a></h3>
 				<h4 class="country">India</h4>
 				<span class="rating">3.5</span>
 			</div>
-			<div class="itemBox Mains">
+			<div id="China" class="itemBox Chilli">
                 <a href="/chilli-bean-stir-fry/?servings=8&units=1"><img src="https://food-images.files.bbci.co.uk/food/recipes/chilli_bean_stir-fry_19412_16x9.jpg" style="width:100%"></a>
                 <h3 class="recipes-titles" href="/chilli-bean-stir-fry" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/chilli-bean-stir-fry" style="text-decoration: none;color: black;">Chilli Bean Stir-Fry</a></h3>
 				<h4 class="country">China</h4>
 				<span class="rating">4.5</span>
 			</div>
-			<div class="itemBox Desserts">
+			<div id="England" class="itemBox Ginger">
                 <a href="/vegan-gingerbread/?servings=8&units=1"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/vegan_gingerbread_34867_16x9.jpg" style="width:100%"></a>
                 <h3 class="recipes-titles" href="/vegan-gingerbread" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/vegan-gingerbread" style="text-decoration: none;color: black;">Vegan Gingerbread</a></h3>
 				<h4 class="country">England</h4>
 				<span class="rating">5</span>
 			</div>
-			<div class="itemBox Soups">
+			<div id="Thailand" class="itemBox Chilli">
                 <a href="/green-peppercorn-and-lemongrass-coconut-broth/?servings=8&units=1"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/peppercorn_coconut_broth_84709_16x9.jpg" style="width:100%"></a>
                 <h3 class="recipes-titles" href="/green-peppercorn-and-lemongrass-coconut-broth" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/green-peppercorn-and-lemongrass-coconut-broth" style="text-decoration: none;color: black;">Green Peppercorn and Lemongrass Coconut Broth</a></h3>
 				<h4 class="country">Thailand</h4>
 				<span class="rating">4.5</span>
 			</div>
-			<div class="itemBox Mains">
+			<div id="Japan" class="itemBox Chilli">
                 <a href="/vegan-tofu-katsu-curry/?servings=8&units=1"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/vegan_tofu_katsu_52859_16x9.jpg" style="width:100%"></a>
                 <h3 class="recipes-titles" href="/vegan-tofu-katsu-curry" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/vegan-tofu-katsu-curry" style="text-decoration: none;color: black;">Vegan Tofu Katsu Curry</a></h3>
 				<h4 class="country">Japan</h4>
 				<span class="rating">4</span>
 			</div>
-			<div class="itemBox Desserts">
+			<div id="England" class="itemBox Cinnamon">
                 <a href="/apple-pie/?servings=8&units=1"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/perfect_apple_pie_73735_16x9.jpg" style="width:100%"></a>
                 <h3 class="recipes-titles" href="/apple-pie" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/apple-pie" style="text-decoration: none;color: black;">Apple Pie</a></h3>
 				<h4 class="country">England</h4>
 				<span class="rating">4.5</span>
 			</div>
-			<div class="itemBox Pastries">
+			<div id="Switzerland" class="itemBox Chilli">
                 <a href="/potato-rosti-quiche/?servings=8&units=1"><img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/potato_rosti_quiche_87900_16x9.jpg" style="width:100%"></a>
                 <h3 class="recipes-titles" href="/potato-rosti-quiche" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/potato-rosti-quiche" style="text-decoration: none;color: black;">Potato Rosti Quiche</a></h3>
            		<h4 class="country">Switzerland</h4>
@@ -353,6 +364,7 @@ section ul li.active {
       
 <script>
 	$(document).ready(function(){
+		//type of dish
 		$('.list').click(function(){
 			const value = $(this).attr('data-filter');
 			if (value == 'All') {
@@ -366,8 +378,27 @@ section ul li.active {
 		// add active button
 		$('.list').click(function(){
 			$(this).addClass('active').siblings().removeClass('active');
+			$('.countrylst').siblings().removeClass('active');
 		});
 		
+		//countries
+		$('.countrylst').click(function(){
+			const value = $(this).attr('data-country');
+			if (value == 'All') {
+				$('.itemBox').show('1000');
+			}
+			else {
+				$('.itemBox').not("#"+value).hide('1000');
+				$('.itemBox').filter("#"+value).show('1000');
+			}
+		})
+		// add active button
+		$('.countrylst').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.list').siblings().removeClass('active');
+		});
+		
+		//sorting
 		$('.sort').click(function(){
 			const value = $(this).attr('data-sort');
 			if (value == "asc") {
@@ -390,12 +421,22 @@ section ul li.active {
 				$("#recipe").html(orderByRatings);
 			};
 			
-			if (value == "abc") {
+			if (value == "alphaasc") {
 				
 				var $divs = $("div.itemBox");
 				
 				var orderByRatings = $divs.sort(function (a, b) {
 					return $(a).find("h3").text() > $(b).find("h3").text();
+				});
+				$("#recipe").html(orderByRatings);
+			};
+			
+			if (value == "alphadesc") {
+				
+				var $divs = $("div.itemBox");
+				
+				var orderByRatings = $divs.sort(function (a, b) {
+					return $(a).find("h3").text() < $(b).find("h3").text();
 				});
 				$("#recipe").html(orderByRatings);
 			};

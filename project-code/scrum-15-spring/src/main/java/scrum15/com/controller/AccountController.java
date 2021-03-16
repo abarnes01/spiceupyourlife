@@ -31,6 +31,11 @@ public class AccountController {
 	public String checkout() {
 		return "shopping-cart/checkout";
 	}
+
+		@RequestMapping("/subchoice")
+	public String picksub() {
+		return "signin/registerchoice";
+	}
 	
 	@RequestMapping(value = "/standard")
 	public String newCustomer(Model model) {

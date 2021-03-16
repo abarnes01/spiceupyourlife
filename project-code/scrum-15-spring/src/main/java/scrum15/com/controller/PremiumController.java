@@ -9,39 +9,49 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import javax.validation.Valid;
 
 import scrum15.com.Scrum15SpringApplication;
 import scrum15.com.model.Customer;
+import scrum15.com.model.Payment;
 import scrum15.com.repo.CustomerRepo;
+import scrum15.com.repo.PaymentRepo;
 
 @Controller
-public class GuestController {
+public class PremiumController {
 
 	@Autowired
 	private CustomerRepo cRepo;
 	
+	@Autowired
+	private PaymentRepo pRepo;
+	
 	@InitBinder
 	protected void initBinder(WebDataBinder binder) {
-		binder.addValidators(new GuestValidator(cRepo));
+		binder.addValidators(new PremiumValidator(cRepo));
 	}
 	
-	@RequestMapping(value = "/guest")
+	@RequestMapping(value = "/premium")
 	public String newGuest(Model model) {
-		model.addAttribute("newGuest", new Customer());
-		return "signin/guestForm";
+		model.addAttribute("newPremium", new Customer());
+		return "signin/premiumForm";
 	}
 	
-	@PostMapping("/addGuest")
-	public String addGuest(@Valid @ModelAttribute("newGuest") Customer customer, BindingResult result) {
-		customer.setGuest(true);
-		customer.setPremium(false);
-		customer.setPassword(null);
+	@PostMapping("/addPremium")
+	public String addGuest(@Valid @ModelAttribute("newPremium") Customer customer, BindingResult result) {
+		customer.setGuest(false);
+		customer.setPremium(true);
 		if (result.hasErrors()) {
-			return "signin/guestForm";
+			return "signin/premiumForm";
 		}
 		cRepo.save(customer);
-		return "shopping-cart/checkout";
-	}
+		Payment premium = new Payment();
+		premium.setCard_name(customer.getCard_name());
+		premium.setCard_number(customer.getCard_number());
+		premium.setExpiry_date(customer.getExpiry_date());
+		premium.setSecurity_code(customer.getSecurity_code());
+		premium.setAmount(5.00);
+		premium = pRepo.save(premium);
+		return "redirect:/";
+	} 
 }

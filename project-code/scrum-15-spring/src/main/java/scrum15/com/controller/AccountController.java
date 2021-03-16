@@ -32,22 +32,26 @@ public class AccountController {
 		return "shopping-cart/checkout";
 	}
 	
-	@RequestMapping(value = "/register")
+	@RequestMapping(value = "/standard")
 	public String newCustomer(Model model) {
-		model.addAttribute("newAcc", new Customer());
-		return "signin/registerForm";
+		model.addAttribute("newStandard", new Customer());
+		return "signin/standardForm";
 	}
 	
-	
-	@PostMapping("/addCustomer")
-	public String addCustomer(@Valid @ModelAttribute("newAcc") Customer customer, BindingResult result) {
+	@PostMapping("/addStandard")
+	public String addCustomer(@Valid @ModelAttribute("newStandard") Customer customer, BindingResult result) {
 		customer.setGuest(false);
+		customer.setPremium(false);
+		customer.setCard_name(null);
+		customer.setCard_number(null);
+		customer.setExpiry_date(null);
+		customer.setSecurity_code(null);
 			if (result.hasErrors()) {
-				return "signin/registerForm";
+				return "signin/standardForm";
 			}
 			cRepo.save(customer);
 			return "redirect:/";
-		}	
+		}
 	
 	@RequestMapping("/login")
 	public String loginCustomer() {

@@ -141,8 +141,8 @@ body {margin:0;}
             <a href="/index.html">Home</a>
             <a href="/spices_list.html">Spices</a>
             <a href="/recipe_list.html">Recipes</a>
-            <a href="/login">Sign in</a>
-            <a href="/register">Register</a>
+            <a href="/login">Login</a>
+            <a href="/standard">Register</a>
             <a href="/index.html#contact">Contact</a>
            
           </div>

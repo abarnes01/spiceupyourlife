@@ -71,8 +71,8 @@
           <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
           <a href="/index.html">Home</a>
           <a href="/guest">Continue as guest</a>
-          <a href="/register">Register</a>
-          <a href="/login">Sign in</a>
+          <a href="/login">Login</a>
+          <a href="/standard">Register</a>
           <a href="/index.html#contact">Contact</a>
         
         
@@ -141,8 +141,8 @@
                     <a href="/index.html">Home</a>
                     <a href="/spices_list.html">Spices</a>
                     <a href="/recipe_list.html">Recipes</a>
-                    <a href="/register">Register</a>
-                    <a href="/login">Sign in</a>
+                    <a href="/login">Login</a>
+                    <a href="/standard">Register</a>
                     <a href="/index.html#contact">Contact</a>
                    
                   </div>

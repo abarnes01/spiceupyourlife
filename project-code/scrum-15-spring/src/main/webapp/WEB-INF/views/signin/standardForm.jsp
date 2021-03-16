@@ -137,7 +137,6 @@ body {margin:0;}
   <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
   <a href="index.html">Home</a>
   <a href="/login">Login</a>
-  <a href="/standard">Register</a>
   <a href="index.html#contact">Contact</a>
  <a href="/checkout" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 
@@ -179,13 +178,12 @@ body {margin:0;}
             <a href="spices_list.html">Spices</a>
             <a href="recipe_list.html">Recipes</a>
             <a href="/login">Login</a>
-            <a href="/standard">Register</a>
             <a href="index.html#contact">Contact</a>
            
           </div>
     
           <div class="top-menu" style="align-content: center;text-align: center;">
-            <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/guest" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;"><br>Guest</a></div>
+          <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/standard" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;"><br>Register</a></div>
         </div>
     </body>
 
@@ -247,49 +245,40 @@ body {margin:0;}
 
         <div class="top-menu" style="align-content: center;text-align: center; padding-top: 35%;">
 
-            <div class="title" style="font-size: 26px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/guest" style="text-decoration: none; color: black;opacity: 0.8;">Continue as guest! </a></div>
+            <div class="title" style="font-size: 26px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/standard" style="text-decoration: none; color: black;opacity: 0.8;">Join us to Spice Up Your life even more! </a></div>
 
         </div>
     <div style="float: left;width: 100%;text-align: center;padding-right: 10%; ">
-      <form:form action="/addGuest" modelAttribute="newGuest" method="POST" class="guest-form" style="display: inline; color: black ">
-            <form:label path="first_name">First name:</form:label>
-            <form:input path="first_name"/><br>
-            <form:errors path="first_name"/><br/>
-            <form:label path="last_name">Last name:</form:label>
-            <form:input path="last_name"/><br>
-            <form:errors path="last_name"/><br/>
-            <form:label path="email">Email:</form:label>
-            <form:input path="email"/><br>
-            <form:errors path="email"/><br/>
-            <form:label path="phone_number">Phone Number:</form:label>
-            <form:input path="phone_number"/><br>
-            <form:errors path="phone_number"/><br/>
-            <form:label path="country">Country:</form:label>
-            <form:input path="country"/><br>
-            <form:errors path="country"/><br/>
-            <form:label path="street_name">Street name:</form:label>
-            <form:input path="street_name"/><br>
-            <form:errors path="street_name"/><br/>
-            <form:label path="postcode">Post Code:</form:label>
-            <form:input path="postcode"/><br>
-            <form:errors path="postcode"/><br/>
-            <form:label path="city">City:</form:label>
-            <form:input path="city"/><br>
-            <form:errors path="city"/><br/>
-            <form:label path="card_name">Name on card:</form:label>
-          	<form:input path="card_name"/><br>
-          	<form:errors path="card_name"/><br/>
-          	<form:label path="card_number">Card number:</form:label>
-          	<form:input path="card_number"/><br>
-          	<form:errors path="card_number"/><br/>
-          	<form:label path="expiry_date">Expiry date:</form:label>
-          	<form:input path="expiry_date"/><br>
-          	<form:errors path="expiry_date"/><br/>
-          	<form:label path="security_code">Security code:</form:label>
-          	<form:input path="security_code"/><br>
-          	<form:errors path="security_code"/><br/>
-            <input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;"/><form:errors/>
-        </form:form>
+      <form:form action="/addStandard" modelAttribute="newStandard" method="POST" class="register-form" style="display: inline; color: black ">
+          <form:label path="first_name">First name:</form:label>
+          <form:input path="first_name"/><br>
+          <form:errors path="first_name"/><br/>
+          <form:label path="last_name">Last name:</form:label>
+          <form:input path="last_name"/><br>
+          <form:errors path="last_name"/><br/>
+          <form:label path="email">Email:</form:label>
+          <form:input path="email"/><br>
+          <form:errors path="email"/><br/>
+          <form:label path="phone_number">Phone Number:</form:label>
+          <form:input path="phone_number"/><br>
+          <form:errors path="phone_number"/><br/>
+          <form:label path="country">Country:</form:label>
+          <form:input path="country"/><br>
+          <form:errors path="country"/><br/>
+          <form:label path="street_name">Street name:</form:label>
+          <form:input path="street_name"/><br>
+          <form:errors path="street_name"/><br/>
+          <form:label path="postcode">Post Code:</form:label>
+          <form:input path="postcode"/><br>
+          <form:errors path="postcode"/><br/>
+          <form:label path="city">City:</form:label>
+          <form:input path="city"/><br>
+          <form:errors path="city"/><br/>
+          <form:label path="password">Password:</form:label>
+          <form:input path="password"/><br>
+          <form:errors path="password"/><br/><br>
+          <input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;"/><form:errors/>
+      </form:form>
       <div><br></div>
   </div>
 </body>

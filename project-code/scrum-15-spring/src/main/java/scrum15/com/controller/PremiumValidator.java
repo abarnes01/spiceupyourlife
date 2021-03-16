@@ -7,11 +7,11 @@ import org.springframework.validation.ValidationUtils;
 import scrum15.com.model.Customer;
 import scrum15.com.repo.CustomerRepo;
 
-public class GuestValidator implements Validator {
+public class PremiumValidator implements Validator {
 
 	private CustomerRepo repo;
 
-	public GuestValidator(CustomerRepo repo) {
+	public PremiumValidator(CustomerRepo repo) {
 		this.repo = repo;
 	}
 	
@@ -23,7 +23,7 @@ public class GuestValidator implements Validator {
 	@Override
 	public void validate(Object target, Errors errors) {
 		Customer c = (Customer) target;
-		
+
 		if (repo.existsCustomerByEmail(c.getEmail())) {
 			errors.rejectValue("email", "", "Email is already in use");
 		}
@@ -34,6 +34,10 @@ public class GuestValidator implements Validator {
 		
 		if (c.getLast_name().length() > 50) {
 			errors.rejectValue("last_name", "", "Last name cannot be longer than 50 characters");
+		}
+		
+		if (c.getPassword().length() > 128) {
+			errors.rejectValue("password", "", "Password cannot be longer than 128 characters");
 		}
 		
 		if (c.getPhone_number().length() != 11) {
@@ -75,7 +79,7 @@ public class GuestValidator implements Validator {
 		if (c.getSecurity_code().length() != 3) {
 			errors.rejectValue("security_code", "", "Security code must be 3 digits long");
 		}
-
+		
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "first_name", "", "Please enter first name.");
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "last_name", "", "Please enter last name.");
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "email", "", "Please enter an email.");
@@ -83,6 +87,7 @@ public class GuestValidator implements Validator {
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "street_name", "", "Please enter a street name.");
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "postcode", "", "Please enter a post code.");
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "city", "", "Please enter a city.");
+		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "password", "", "Please enter a password.");
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "card_name", "", "Please enter your card name.");
 	}
 

@@ -60,7 +60,7 @@ body {margin:0;}
   <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
   <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
   <a href="index.html">Home</a>
-  <a href="/register">Register</a>
+  <a href="/standard">Register</a>
   <a href="index.html#contact">Contact</a>
  <a href="/checkout" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 </div>
@@ -74,7 +74,7 @@ body {margin:0;}
             <a href="index.html">Home</a>
             <a href="spices_list.html">Spices</a>
             <a href="recipe_list.html">Recipes</a>
-            <a href="/register">Register</a>
+            <a href="/standard">Register</a>
             <a href="index.html#contact">Contact</a>
                
           </div>
@@ -728,7 +728,7 @@ body {margin:0;}
 						</button>
 					</div>
 
-					<a href="/register" class="txt1">
+					<a href="/standard" class="txt1">
 							Register
 					</a>
 				</form>

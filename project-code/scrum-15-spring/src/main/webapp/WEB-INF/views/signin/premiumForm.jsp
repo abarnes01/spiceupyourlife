@@ -136,7 +136,7 @@ body {margin:0;}
   <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
   <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
   <a href="index.html">Home</a>
-  <a href="/login">Sign in</a>
+  <a href="/login">Login</a>
   <a href="index.html#contact">Contact</a>
  <a href="/checkout" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
 
@@ -177,13 +177,13 @@ body {margin:0;}
             <a href="index.html">Home</a>
             <a href="spices_list.html">Spices</a>
             <a href="recipe_list.html">Recipes</a>
-            <a href="/login">Sign in</a>
+            <a href="/login">Login</a>
             <a href="index.html#contact">Contact</a>
            
           </div>
     
           <div class="top-menu" style="align-content: center;text-align: center;">
-          <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/register" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;">Register</a></div>
+          <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/premium" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;">Premium account</a></div>
         </div>
     </body>
 
@@ -245,11 +245,11 @@ body {margin:0;}
 
         <div class="top-menu" style="align-content: center;text-align: center; padding-top: 35%;">
 
-            <div class="title" style="font-size: 26px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/register" style="text-decoration: none; color: black;opacity: 0.8;">Join us to Spice Up Your life even more! </a></div>
+            <div class="title" style="font-size: 26px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/premium" style="text-decoration: none; color: black;opacity: 0.8;"> Create a premium account! </a></div>
 
         </div>
     <div style="float: left;width: 100%;text-align: center;padding-right: 10%; ">
-      <form:form action="/addCustomer" modelAttribute="newAcc" method="POST" class="register-form" style="display: inline; color: black ">
+      <form:form action="/addPremium" modelAttribute="newPremium" method="POST" class="register-form" style="display: inline; color: black ">
           <form:label path="first_name">First name:</form:label>
           <form:input path="first_name"/><br>
           <form:errors path="first_name"/><br/>
@@ -276,8 +276,20 @@ body {margin:0;}
           <form:errors path="city"/><br/>
           <form:label path="password">Password:</form:label>
           <form:input path="password"/><br>
-          <form:errors path="password"/><br/><br>
-          <input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;"/><form:errors/>
+          <form:errors path="password"/><br/>
+          <form:label path="card_name">Name on card:</form:label>
+          <form:input path="card_name"/><br>
+          <form:errors path="card_name"/><br/>
+          <form:label path="card_number">Card number:</form:label>
+          <form:input path="card_number"/><br>
+          <form:errors path="card_number"/><br/>
+          <form:label path="expiry_date">Expiry date:</form:label>
+          <form:input path="expiry_date"/><br>
+          <form:errors path="expiry_date"/><br/>
+          <form:label path="security_code">Security code:</form:label>
+          <form:input path="security_code"/><br>
+          <form:errors path="security_code"/><br/>
+          <input type="submit" value="Pay £5 per month" style="height:30px;font-size:14px;font-weight=500; color: blue;"/><form:errors/>
       </form:form>
       <div><br></div>
   </div>

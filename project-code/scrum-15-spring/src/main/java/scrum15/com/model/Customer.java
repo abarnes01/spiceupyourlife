@@ -29,6 +29,10 @@ public class Customer {
 	private List<Orders> orders;
 	private boolean guest;
 	private boolean premium;
+	private String card_name;
+	private String card_number;
+	private String expiry_date;
+	private String security_code;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -124,6 +128,33 @@ public class Customer {
 	public void setPremium(boolean premium) {
 		this.premium = premium;
 	}
-	
+	@Column(columnDefinition = "VARCHAR(50)")
+	public String getCard_name() {
+		return card_name;
+	}
+	public void setCard_name(String card_name) {
+		this.card_name = card_name;
+	}
+	@Column(columnDefinition = "VARCHAR(16)")
+	public String getCard_number() {
+		return card_number;
+	}
+	public void setCard_number(String card_number) {
+		this.card_number = card_number;
+	}
+	@Column(columnDefinition = "VARCHAR(5)")
+	public String getExpiry_date() {
+		return expiry_date;
+	}
+	public void setExpiry_date(String expiry_date) {
+		this.expiry_date = expiry_date;
+	}
+	@Column(columnDefinition = "VARCHAR(3)")
+	public String getSecurity_code() {
+		return security_code;
+	}
+	public void setSecurity_code(String security_code) {
+		this.security_code = security_code;
+	}
 	
 }

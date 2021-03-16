@@ -9,7 +9,7 @@
         .btn {
           background-color: rgb(255, 255, 255);
           border: none;
-          color: rgb(2, 0, 102);
+          color: rgb(192, 87, 17);
           padding: 12px 16px;
           font-size: 16px;
           cursor: pointer;
@@ -17,13 +17,14 @@
         
         /* Darker background on mouse-over */
         .btn:hover {
-          background-color: rgb(73, 78, 94);
+          background-color: rgb(202, 205, 214);
         }
         </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <style>
-        * {margin: 0;padding: 0;font-serif: monospace;box-sizing: border-box;}
+        * {margin: 0;padding: 0;font-family: monospace;box-sizing: border-box;}
+        .third{float:left; width:28%;height:100%;object-fit:cover;padding: 10px;}
         .recipes-title{text-align: center;align-content: center;}
         .nav {position: fixed;width: 60px;height: 100%;background: #fff;transition: 0.5s;opacity: 0.8}
         .nav:hover {width: 300px;opacity: 1;background: lightgrey;}
@@ -33,7 +34,7 @@
         .nav ul li a {position: relative;display: none;width: 100%;display: flex;text-decoration: none;color: black;}
         .nav ul li a .icon {position: relative;display: block;min-width: 60px; height: 60px;line-height: 60px; text-align: center;}
         .nav ul li a .icon .fa {font-size: 24px;}
-        .nav ul li a .title{position: relative;padding: 10px; height: 60px;line-height: 60px;text-align: start;white-space: nowrap;}
+        .nav ul li a .title{position: relative;padding:10px; height: 60px;line-height: 60px;text-align: start;white-space: nowrap;}
     </style>
     <script>
     function open() {
@@ -46,14 +47,103 @@
     </script>
     
     <title>Spice Up Your Life</title>
-	
-	
-<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<div id="main">
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="recipe_list.html">Recipes</a>
+        <a href="/login">Sign in</a>
+        <a href="/register">Register</a>
+        <a href="index.html#contact">Contact</a>
+       
+      </div>
+
+      <div class="top-menu" style="align-content: center;text-align: center;">
+        <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;">Spices</a></div>
+        <div class="login" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><a href="/checkout" style="text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+        <div class="Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span>
+    	</div>
+      </div>
+</body>
+</div>
+<div class="banner_container">
+     <img src="https://www.tandoorindianmurfreesboro.com/img/spices-banner.jpg" width="1778" height="812" alt=""/>
+</div>
+
+<style>
+    .banner_container {
+		width: 100%;
+		height: 700px;
+		overflow: hidden;
+		background: ed;
+		position: relative;
+		top: 0px;
+		left: 0px;
+	}	
+	.banner_container img {
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+</style>
+
+<body>
+  
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  font-serif: "Lato", serif;
+  font-family: "Lato", serif;
   transition: background-color .5s;
 }
+
+section 
+{
+	margin: 40px auto;
+	padding:20px;
+	width: 100%;
+	box-sizing: border-box;
+
+}
+
+section ul {
+	display: flex;
+	margin-bottom: 10px
+}
+
+section ul li {
+	list-style: none;
+	background: #eee;
+	padding: 8px 20px;
+	margin: 5px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+section ul li.active {
+	background: #03a9f4;
+	color: #fff;
+}
+
+#spice
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: centre;
+	align-content: centre;
+}
+#spice .itemBox {
+	position: relative;
+	width: 350px;
+	height: 350px;
+	margin: 5px;
+}
+
+
+
 
 .sidenav {
   height: 100%;
@@ -99,7 +189,196 @@ body {
   .sidenav a {font-size: 18px;}
 }
 </style>
-	<script>
+</head>
+
+<body>
+    
+    
+    <section>
+    	<ul>
+			<li class="list active" data-filter="All">All</li>
+			<li class="list" data-filter="Recipes">Recipes</li>
+			<li class="list" data-filter="Specials">Special Offers</li>
+    	</ul>
+    	<!--
+    	<ul>
+			<li class="countrylst" data-country="Mexico">Mexican</li>
+			<li class="countrylst" data-country="French Guiana">French Guianan</li>
+			<li class="countrylst" data-country="India">Indian</li>
+			<li class="countrylst" data-country="Maritime Southeast Asia">Maritime Southeast Asian</li>
+			<li class="countrylst" data-country="Sri Lanka">Sri Lankan</li>
+			<li class="countrylst" data-country="Tunisia">Tunisian</li>
+			<li class="countrylst" data-country="Iran">Iranian</li>
+			<li class="countrylst" data-country="Indonesia">Indonesian</li>
+    	</ul>
+    	-->
+    	<ul>
+    		<li class="sort" data-sort="asc">Sort Price Asc</li>
+    		<li class="sort" data-sort="desc">Sort Price Desc</li>
+    		<li class="sort" data-sort="abc">Sort Alphabetically Asc</li>
+    		<li class="sort" data-sort="cba">Sort Alphabetically Desc</li>
+    		<li class="sort" data-sort="cntry">Sort By Country</li>
+    	</ul>
+    	
+    	<div id="spice">
+	    	<div class="itemBox Specials">
+				<a href="chilli-powder?quantity=1&type=1"><img src="http://cdn.shopify.com/s/files/1/1337/0877/files/When_we_think_of_Indian_spices.jpg?v=1594117443" style="width:100%"></a>
+				<h3 class="recipes-titles" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/chilli-con-carne" style="text-decoration: none;color: black;">Chilli Powder</a></h3>
+				<h4 class="country">Mexico</h4>
+				<p><S>£3.29 per jar</S></p>
+				<span class="price" style="color: red">£2.69 per jar!</span>
+			</div>
+    		<div class="itemBox Specials">
+                <a href="cayenne-pepper?quantity=1&type=1"><img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1296x728_Can_Cayenne_Pepper_Help_You_Lose_Weight.jpg?w=1155&h=1528" style="width:100%"></a>
+                <h3 class="recipes-titles" style="font-family:monospace;font-size: 22px;padding: 10pxl;align-content: center;text-align: center;"><a href="cayenne-pepper" style="text-decoration: none;color: black;">Cayenne Pepper</a></h3>
+				<h4 class="country">French Guiana</h4>
+				<span>£2.35 per jar</span>
+				<p class="price" style="color: red">Buy 2 Get 1 Free</p>
+			</div>
+			<div class="itemBox Specials">
+                <a href="cardamom?quantity=1&type=1"><img src="https://www.spicemountain.co.uk/wp-content/uploads/2019/10/cardamom-ground-1.jpg" style="width:100%"></a>
+                <h3 class="recipes-titles" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="cardamom" style="text-decoration: none;color: black;">Cardamom</a></h3>
+				<h4 class="country">India</h4>
+				<p><S>£5.99 per jar</S></p>
+				<span class="price" style="color: red">£3.49 per jar!</span>
+			</div>
+			<div class="itemBox Recipes">
+                <a href="cinnamon?quantity=1&type=1"><img src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170807181545-herbs-and-spices-cinnamon.jpg" style="width:100%"></a>
+                <h3 class="recipes-titles" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="/moroccan-style-soup" style="text-decoration: none;color: black;">Cinnamon</a></h3>
+				<h4 class="country">Sri Lanka</h4>
+				<span class="price">£1.15 per jar</span>
+			</div>
+			<div class="itemBox Recipes">
+                <a href="/paprika?quantity=1&type=1"><img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/paprika-benefits-1296x728-feature.jpg?w=1155&h=1528" style="width:100%"></a>
+                <h3 class="recipes-titles" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="paprika" style="text-decoration: none;color: black;">Paprika</a></h3>
+				<h4 class="country">Mexico</h4>
+				<span class="price">£2.67 per jar</span>
+			</div>
+			<div class="itemBox Recipes">
+                <a href="harissa?quantity=1&type=1"><img src="https://cdn.shopify.com/s/files/1/0148/1945/9126/articles/Harissa_1215x.jpg?v=1606232603" style="width:100%"></a>
+                <h3 class="recipes-titles" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="harissa" style="text-decoration: none;color: black;">Harissa</a></h3>
+				<h4 class="country">Tunisia</h4>
+				<span class="price">£4.49 per jar</span>
+			</div>
+			<div class="itemBox Recipes">
+                <a href="saffron?quantity=1&type=1"><img src="https://post.healthline.com/wp-content/uploads/2020/08/766x415_THUMBNAIL_saffron-tea-5-benefits-and-how-to-make-it-732x415.jpg" style="width:100%"></a>
+                <h3 class="recipes-titles" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="saffron" style="text-decoration: none;color: black;">Saffron</a></h3>
+				<h4 class="country">Iran</h4>
+				<span class="price">£8.99 per jar</span>
+			</div>
+			<div class="itemBox Recipes">
+                <a href="ginger?quantity=1&type=1"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/766/ginger-main-1515515765.jpg?crop=1xw:0.786xh;center,top&resize=1200:*" style="width:100%"></a>
+                <h3 class="recipes-titles" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="ginger" style="text-decoration: none;color: black;">Ginger</a></h3>
+				<h4 class="country">Maritime Southeast Asia</h4>
+				<span class="price">£1.75 per jar</span>
+			</div>
+			<div class="itemBox Recipes">
+                <a href="cloves?quantity=1&type=1"><img src="https://post.healthline.com/wp-content/uploads/2020/01/cloves-on-wooden-spoon-1200x628.jpg" style="width:100%"></a>
+                <h3 class="recipes-titles" style="font-family:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="cloves" style="text-decoration: none;color: black;">Cloves</a></h3>
+				<h4 class="country">Indonesia</h4>
+				<span class="price">£2.29 per jar</span>
+			</div>
+    	</div>
+    </section>
+ 
+<script   
+	src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+      
+<script>
+	$(document).ready(function(){
+		$('.list').click(function(){
+			const value = $(this).attr('data-filter');
+			if (value == 'All') {
+				$('.itemBox').show('1000');
+			}
+			else {
+				$('.itemBox').not('.'+value).hide('1000');
+				$('.itemBox').filter('.'+value).show('1000');
+			}
+		})
+		// add active button
+		$('.list').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.countrylst').siblings().removeClass('active');
+		});
+		//countries
+		$('.countrylst').click(function(){
+			const value = $(this).attr('data-country');
+			if (value == 'All') {
+				$('.itemBox').show('1000');
+			}
+			else {
+				$('.itemBox').not("#"+value).hide('1000');
+				$('.itemBox').filter("#"+value).show('1000');
+			}
+		})
+		// add active button
+		$('.countrylst').click(function(){
+			$(this).addClass('active').siblings().removeClass('active');
+			$('.list').siblings().removeClass('active');
+		});
+		$('.sort').click(function(){
+			const value = $(this).attr('data-sort');
+			if (value == "asc") {
+				
+				var $divs = $("div.itemBox");
+				
+				var orderByPrice = $divs.sort(function (a, b) {
+					return $(a).find("span").text() > $(b).find("span").text();
+				});
+				$("#spice").html(orderByPrice);
+			};
+			
+			if (value == "desc") {
+				
+				var $divs = $("div.itemBox");
+				
+				var orderByPrice = $divs.sort(function (a, b) {
+					return $(a).find("span").text() < $(b).find("span").text();
+				});
+				$("#spice").html(orderByPrice);
+			};
+			
+			if (value == "abc") {
+				
+				var $divs = $("div.itemBox");
+				
+				var orderByAbc = $divs.sort(function (a, b) {
+					return $(a).find("h3").text() > $(b).find("h3").text();
+				});
+				$("#spice").html(orderByAbc);
+			};
+			
+			if (value == "cba") {
+				
+				var $divs = $("div.itemBox");
+				
+				var orderByCba = $divs.sort(function (a, b) {
+					return $(a).find("h3").text() < $(b).find("h3").text();
+				});
+				$("#spice").html(orderByCba);
+			};
+			
+			if (value == "cntry") {
+				
+				var $divs = $("div.itemBox");
+				
+				var orderByCountry = $divs.sort(function (a, b) {
+					return $(a).find("h4").text() > $(b).find("h4").text();
+				});
+				$("#spice").html(orderByCountry);
+			};
+		});
+		
+	});
+
+
+</script>
+ 
+
+<script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "300px";
   document.getElementById("main").style.marginLeft = "250px";
@@ -112,140 +391,8 @@ function closeNav() {
   document.body.style.backgroundColor = "white";
 }
 </script>
-</head>
-<div id="main">
-<body>
    
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="recipe_list.html">Recipes</a>
-        <a href="/login">Login</a>
-        <a href="/standard">Register</a>
-        <a href="index.html#contact">Contact</a>
-       
-</div>
-
-      <div class="top-menu" style="align-content: center;text-align: center;">
-<div class="login" style="font-serif: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><a href="/checkout" style="text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
-<div class="Menu" style="font-serif: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span>
-</div>
-
-		  
-		  
-		  
-
-
 </body>
-
-		  <div class="banner_container">
-<div class="banner_img">
-     	<img src="spice banner edit 2.jpg" width="1778" height="812" alt=""/>
-	</div>
-	 
-	<div class="banner_text">
-     <img src="banner top text 2.png" width="830" height="207" alt=""/></div>
-<style>
-	.banner_container {
-		width: 100%;
-		height: auto;
-		overflow: hidden;
-		background: ed;
-		position: relative;
-		top: 0px;
-		left: 0px;
-	}	
-	.banner_img {
-	padding-right: 10px;
-    top: 0px;
-	left: 0px;
-	position: relative;
-	}
-	
-	.banner_text {
-	position: absolute;
-    top: 30px;
-    left: 500px;
-    margin: auto;
-	opacity: 0.8;
-	text-align: center;
-		
-	
-	}
-	.banner_text h1 {
-		color: white;
-		font-size: 40px;
-		
-	}
-	.spice {
-		float:left; 
-		width:28%;
-		height:100%;
-		object-fit:cover;
-		padding: 10px;
-		margin-left: 75px;
-		margin-top: 40px;
-		
-	}
-	.promotions {
-		margin-top: 20px;
-	}
-
-</style>
-
-<div class="promotions">
-	<h1 style="color: red">Special Promotions</h1>
-</div>
-		  
-<div class="row">
-			<div class="spice">
-				<a href="chilli-powder?quantity=1&type=1"><img src="http://cdn.shopify.com/s/files/1/1337/0877/files/When_we_think_of_Indian_spices.jpg?v=1594117443" style="width:100%"></a>
-				<h3 class="recipes-titles" href="chilli-powder" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="chilli-powder" style="text-decoration: none;color: black;">Chilli powder</a></h3><strike><h4>£3.29 per jar</h4></strike><h3 style="color: red">Now £2.69 per jar!</h3>
-			</div>
-
-			<div class="spice">
-                <a href="cayenne-pepper?quantity=1&type=1"><img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1296x728_Can_Cayenne_Pepper_Help_You_Lose_Weight.jpg?w=1155&h=1528" style="width:100%"></a>
-                <h3 class="recipes-titles" href="cayenne-pepper" style="font-serif:monospace;font-size: 22px;padding: 10pxl;align-content: center;text-align: center;"><a href="cayenne-pepper" style="text-decoration: none;color: black;">Cayenne Pepper</a></h3><h4>£2.35 per jar</h4><h3 style="color: red">Buy 2 Get 1 Free</h3>
-			</div>
-
-			<div class="spice">
-                <a href="cardamom?quantity=1&type=1"><img src="https://www.spicemountain.co.uk/wp-content/uploads/2019/10/cardamom-ground-1.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="cardamom" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="cardamom" style="text-decoration: none;color: black;">Cardamom </a></h3><strike><h4>£5.99 per jar</h4></strike><h3 style="color: red">Now only £3.49 per jar!</h3>
-			</div>
+</html> 
 
 
-<div class="row">
-			<div class="spice">
-				<a href="cinnamon?quantity=1&type=1"><img src="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170807181545-herbs-and-spices-cinnamon.jpg" style="width:100%"></a>
-				<h3 class="recipes-titles "href="cinnamon" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="cinnamon" style="text-decoration: none;color: black;">Cinnamon</a></h3><h4>£1.15 per jar</h4>
-			</div>
-
-			<div class="spice">
-                <a href="paprika?quantity=1&type=1"><img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/paprika-benefits-1296x728-feature.jpg?w=1155&h=1528" style="width:100%"></a>
-                <h3 class="recipes-titles" href="paprika" style="font-serif:monospace;font-size: 22px;padding: 10pxl;align-content: center;text-align: center;"><a href="paprika" style="text-decoration: none;color: black;">Paprika</a></h3><h4>£2.67 per jar</h4>
-			</div>
-
-			<div class="spice">
-                <a href="harissa?quantity=1&type=1"><img src="https://cdn.shopify.com/s/files/1/0148/1945/9126/articles/Harissa_1215x.jpg?v=1606232603" style="width:100%"></a>
-                <h3 class="recipes-titles" href="harissa" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="harissa" style="text-decoration: none;color: black;">Harissa </a></h3><h4>£4.49 per jar</h4>
-			</div>
-
-<div class="row">
-			<div class="spice">
-				<a href="saffron?quantity=1&type=1"><img src="https://post.healthline.com/wp-content/uploads/2020/08/766x415_THUMBNAIL_saffron-tea-5-benefits-and-how-to-make-it-732x415.jpg" style="width:100%"></a>
-				<h3 class="recipes-titles" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="saffron" style="text-decoration: none;color: black;">Saffron</a></h3><h4>35.99 per jar</h4>
-			</div>
-
-			<div class="spice">
-                <a href="ginger?quantity=1&type=1"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/766/ginger-main-1515515765.jpg?crop=1xw:0.786xh;center,top&resize=1200:*" style="width:100%"></a>
-                <h3 class="recipes-titles" href="ginger" style="font-serif:monospace;font-size: 22px;padding: 10pxl;align-content: center;text-align: center;"><a href="ginger" style="text-decoration: none;color: black;">Ginger</a></h3><h4>£1.75 per jar</h4>
-			</div>
-
-			<div class="spice">
-                <a href="cloves?quantity=1&type=1"><img src="https://post.healthline.com/wp-content/uploads/2020/01/cloves-on-wooden-spoon-1200x628.jpg" style="width:100%"></a>
-                <h3 class="recipes-titles" href="cloves" style="font-serif:monospace;font-size: 22px;align-content: center;text-align: center;"><a href="cloves" style="text-decoration: none;color: black;">Cloves </a></h3><h4>£2.29 per jar</h4>
-			</div>
-		  
-
-	
-</html>

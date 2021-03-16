@@ -705,12 +705,13 @@ body {margin:0;}
       
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" action="/checkLogin" method="post">
-
-          <span class="login100-form-title p-b-34" style= "padding-top: 20%">
-
-            
-						Account Login
-					</span>
+				<div class= "txt3">
+					Incorrect email or password
+				</div>
+				
+         		<span class="login100-form-title p-b-34" style= "padding-top: 20%">
+					Account Login
+				</span>
   
 					
 					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type email">
@@ -727,9 +728,9 @@ body {margin:0;}
 							Sign in
 						</button>
 					</div>
-
+				
 					<a href="/register" class="txt1">
-							Register
+						Register
 					</a>
 				</form>
 

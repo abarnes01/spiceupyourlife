@@ -55,18 +55,18 @@ public class AccountController {
 	}
 	
 	@RequestMapping("/checkLogin")
-	public String checkLogin(@RequestParam String email, @RequestParam String password) {
+	public String checkLogin(@Valid @RequestParam String email, @RequestParam String password) {
 		Customer em = cRepo.findByEmail(email);
 		if (cRepo.existsCustomerByEmail(email)) {
 			if (em.getPassword().equals(password)) {
 				return "redirect:/";
 			}
 			else {
-				return "signin/signin";
+				return "signin/signin2";
 		}
 		}
 		else {
-			return "signin/signin";
+			return "signin/signin2";
 		}
 		
 	}

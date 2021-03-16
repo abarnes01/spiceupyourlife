@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 
     <style>
@@ -32,11 +34,7 @@
           margin-top: 30px;
           height: 1500px; /* Used in this example to enable scrolling */
         }
-        
-        
-        
-        
-       
+
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         .btn {
@@ -52,73 +50,29 @@
                     .btn:hover {
                       background-color: rgb(202, 205, 214);
                     }
-        
-        
-        
-        
-        
-        
-        
-        
+
         </style>
         </head>
         <body>
         
         <div class="navbar">
-        
-          
           <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
           <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
           <a href="/index.html">Home</a>
           <a href="/guest">Continue as guest</a>
-          <a href="/login">Login</a>
-          <a href="/standard">Register</a>
-          <a href="/index.html#contact">Contact</a>
-        
-        
-        
-        
+          <a href="/register">Register</a>
+          <a href="/login">Sign in</a>
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-               
-                <meta charset="UTF-8">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                
-                <style>
-                    .btn {
-                      background-color: rgb(255, 255, 255);
-                      border: none;
-                      color: rgb(192, 87, 17);
-                      padding: 12px 16px;
-                      font-size: 16px;
-                      cursor: pointer;
-                    }
+              
+<style>
+.btn {
+background-color: rgb(255, 255, 255);
+border: none;
+color: rgb(192, 87, 17);
+padding: 12px 16px;
+font-size: 16px;
+ursor: pointer;
+}
                     
                     /* Darker background on mouse-over */
                     .btn:hover {
@@ -141,22 +95,18 @@
                     <a href="/index.html">Home</a>
                     <a href="/spices_list.html">Spices</a>
                     <a href="/recipe_list.html">Recipes</a>
-                    <a href="/login">Login</a>
-                    <a href="/standard">Register</a>
+                    <a href="/register">Register</a>
+                    <a href="/login">Sign in</a>
                     <a href="/index.html#contact">Contact</a>
                    
                   </div>
             
                   <div class="top-menu" style="align-content: center;text-align: center;">
-                    <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;">Checkout</a></div>
+                    <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;">Checkout</a></div>
                 </div>
-                  
-        
-            
             </body>
-        
-        
-        
+        </div>
+
         <!--SIDENAV---->
             <head>
                 
@@ -336,7 +286,7 @@ span.price {
         <div class="row">
           <div class="col-50">
             <h3>Billing Address</h3>
-            <form:form action="/addGuest" modelAttribute="newGuest" method="POST" class="guest-form" style="display: inline">
+            <form:form action="/addGuest" modelAttribute="newGuest" method="POST" class="guest-form" style="display:inline">
             <form:label path="first_name">First name:</form:label>
             <input type="text" id="first_name" name="firstname" placeholder="Bob">
             <form:label path="last_name">Last name:</form:label>
@@ -349,7 +299,7 @@ span.price {
             <input type="text" id="street_name" name="street_name" placeholder="10 Downing Street">
             <form:label path="city">City:</form:label>
             <input type="text" id="city" name="city" placeholder="London">
-
+</form:form>
             <div class="row">
               <div class="col-50">
                 <form:label path="country">Country:</form:label>

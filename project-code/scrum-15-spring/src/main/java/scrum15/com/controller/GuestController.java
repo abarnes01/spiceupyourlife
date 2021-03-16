@@ -34,11 +34,10 @@ public class GuestController {
 	}
 	
 	@PostMapping("/addGuest")
-	public String addGuest(Model model, @Valid @ModelAttribute Customer customer, BindingResult result) {
+	public String addGuest(@Valid @ModelAttribute("newGuest") Customer customer, BindingResult result) {
 		customer.setGuest(true);
 		customer.setPassword(null);
 		if (result.hasErrors()) {
-			model.addAttribute("newGuest", new Customer());
 			return "signin/guestForm";
 		}
 		cRepo.save(customer);

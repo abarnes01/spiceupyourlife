@@ -88,7 +88,7 @@ public class Customer {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	@Column(columnDefinition = "VARCHAR(8) NOT NULL")
+	@Column(columnDefinition = "VARCHAR(10) NOT NULL")
 	public String getPostcode() {
 		return postcode;
 	}

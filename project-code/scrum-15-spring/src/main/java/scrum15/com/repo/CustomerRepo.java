@@ -7,4 +7,5 @@ import scrum15.com.model.Customer;
 public interface CustomerRepo extends CrudRepository<Customer, Integer>{
 	public Customer findByEmail(String email);
 	public Customer findByPassword(String password);
+	public boolean existsCustomerByEmail(String email);
 }

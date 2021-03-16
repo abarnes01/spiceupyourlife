@@ -40,10 +40,9 @@ public class AccountController {
 	
 	
 	@PostMapping("/addCustomer")
-	public String addCustomer( Model model, @Valid @ModelAttribute Customer customer, BindingResult result) {
+	public String addCustomer(@Valid @ModelAttribute("newAcc") Customer customer, BindingResult result) {
 		customer.setGuest(false);
 			if (result.hasErrors()) {
-				model.addAttribute("newAcc", new Customer());
 				return "signin/registerForm";
 			}
 			cRepo.save(customer);
@@ -56,14 +55,18 @@ public class AccountController {
 	}
 	
 	@RequestMapping("/checkLogin")
-	public String checkLogin(@RequestParam String email, @RequestParam String password) {	
+	public String checkLogin(@RequestParam String email, @RequestParam String password) {
 		Customer em = cRepo.findByEmail(email);
-		Customer pw = cRepo.findByPassword(password);
-		if (em == null || pw == null) {
-			return "signin/signin";
+		if (cRepo.existsCustomerByEmail(email)) {
+			if (em.getPassword().equals(password)) {
+				return "redirect:/";
+			}
+			else {
+				return "signin/signin";
+		}
 		}
 		else {
-			return "redirect:/";
+			return "signin/signin";
 		}
 		
 	}

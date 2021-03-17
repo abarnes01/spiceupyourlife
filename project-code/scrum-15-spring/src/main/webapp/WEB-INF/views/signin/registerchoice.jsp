@@ -734,11 +734,9 @@ body{background-color:#eee;}
                         <!--FEATURE LIST START-->
                         <div class="generic_feature_list">
                         	<ul>
-                            	<li><span>5</span> Recipe Downloads </li>
-                                <li><span>0</span> Discounts</li>
-                                <li><span>1</span> Accounts</li>
-
-                                <li><span>24/7</span> Support</li>
+                            	<li><span>Free</span> Taster kit </li>
+                                <li><span>5</span> Recipes</li>
+                                <li><span>Free</span> Trial access</li>
                             </ul>
                         </div>
                         <!--//FEATURE LIST END-->
@@ -779,8 +777,8 @@ body{background-color:#eee;}
                             <div class="generic_price_tag clearfix">	
                                 <span class="price">
                                     <span class="sign">£</span>
-                                    <span class="currency">7</span>
-                                    <span class="cent">.99</span>
+                                    <span class="currency">5</span>
+                                    <span class="cent">.00</span>
                                     <span class="month">/MON</span>
                                 </span>
                             </div>
@@ -792,10 +790,9 @@ body{background-color:#eee;}
                         <!--FEATURE LIST START-->
                         <div class="generic_feature_list">
                         	<ul>
-                            	<li><span>Unlimited</span> Recipe Downloads</li>
-                                <li><span>Several</span> Discounts</li>
-                                <li><span>3</span> Accounts</li>
-                                <li><span>24/7</span> Support</li>
+                            	<li><span>Unlimited</span> Recipe access</li>
+                                <li><span>Unlimited</span> Recipe downloads</li>
+                                <li><span>Several</span> Discounts (when buying in bulk)</li>
                             </ul>
                         </div>
                         <!--//FEATURE LIST END-->

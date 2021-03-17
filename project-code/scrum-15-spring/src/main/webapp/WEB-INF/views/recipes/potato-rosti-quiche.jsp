@@ -371,7 +371,7 @@ body {margin:0;}
   </ul>
   <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
   <ol style="font-size: 16px;">
-      <li>Preheat the oven to 160/180&#8451; Fan/Gas 4. Generously grease a 24cm or 9½in round tart tin or pie dish, preferably not loose-bottomed to prevent any leaks.</li>
+      <li>Preheat the oven to 160/180&#8451; Fan/Gas 4. Generously grease a 24cm or 9&#189;in round tart tin or pie dish, preferably not loose-bottomed to prevent any leaks.</li>
       <li>To make the base, grate the potatoes and squeeze out any excess moisture. Pop the potato into a bowl along with the salt, paprika, garlic, onion and flour and mix really well, making sure it is all evenly distributed. Add the egg and mix through well − you should have a mixture that is well coated and clumps together.</li>
       <li>Tip the mixture out into the tart tin and, using the back of a spoon, press tightly into the base and sides. Bake for 25−30 minutes. Using the back of a spoon, press the mixture into the base and sides again. Brush the base and sides with the beaten egg, generously filling in any gaps that might be there and all over. More is more! Pop back into the oven for 5 minutes.</li>
       <li>Meanwhile, to make the filling, place the eggs and milk in a jug and whisk until well blended. Take the tart shell out of the oven and scatter the cheese into the shell. Pour the egg and milk mixture straight in, sprinkle over the chives and add a sprinkling of salt and a generous sprinkling of pepper. Bake for 20 minutes until the centre is just wobbly.</li>

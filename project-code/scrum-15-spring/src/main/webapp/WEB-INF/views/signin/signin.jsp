@@ -582,7 +582,7 @@
 					</a>
 				</form>	
 							
-				<div class="login100-more" style="background-image: url('https://honestcooking.com/wp-content/uploads/2015/06/shutterstock_230510470.jpg');"></div>
+				<div class="login100-more" style="background-image: url('http://www.mmrdrs.com/wp-content/uploads/2017/01/10492h-cooking-ingredients-picture-in-hd.jpg');"></div>
 
 			</div>
 		</div>

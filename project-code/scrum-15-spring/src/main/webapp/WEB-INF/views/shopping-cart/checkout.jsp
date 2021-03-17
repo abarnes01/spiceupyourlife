@@ -58,7 +58,6 @@
           <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
           <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
           <a href="/index.html">Home</a>
-          <a href="/guest">Continue as guest</a>
           <a href="/register">Register</a>
           <a href="/login">Sign in</a>
         </div>

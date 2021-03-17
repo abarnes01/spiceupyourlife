@@ -364,7 +364,7 @@ body {margin:0;}
         <li>${ing_2} tinned red kidney beans in chilli sauce</li>
         <li>${ing_3} chopped tomato</li>
         <li>${param.servings} tbsp tomato pur&eacute;e</li>
-        <li>${g} ml beef stock</li>
+        <li>${g} ml boiling water with beef stock cube</li>
         <li>${ing_4} brown basmati rice</li>
         <li>freshly ground salt and pepper</li>
         <li>${param.servings} tbsp natural yoghurt and chopped coriander</li>

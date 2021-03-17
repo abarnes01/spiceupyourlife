@@ -348,9 +348,9 @@ body {margin:0;}
               <li>${c} tsp ground cinnamon</li>
               <li>${c} tsp ground ginger</li>
               <li>1 tsp ground allspice</li>
-              <li>⅛ tsp ground cloves</li>
-              <li>¼ tsp ready-ground black pepper</li>
-              <li>¼ tsp fine sea salt</li>
+              <li>&#8539; tsp ground cloves</li>
+              <li>&#188; tsp ready-ground black pepper</li>
+              <li>&#188; tsp fine sea salt</li>
               <li>${b}ml oat milk</li>
               <li>${ing_5} plain flour</li>
               <li>1 tsp bicarbonate of soda</li>
@@ -359,8 +359,8 @@ body {margin:0;}
           </ul>
           <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
           <ol style="font-size: 16px;">
-              <li>Preheat the oven to 150/170&#8451; (Fan)/Gas 3½. Line a 23cm or 9in square tin with baking paper, so that it covers the base and comes up the sides of the tin. Leave something heavy on it to keep it down while you melt everything together.</li>
-              <li>Measure the oil in a jug, then pour it into a fairly wide, heavy-based saucepan (mine is 22cm or 8½in in diameter). Measure the syrup and treacle using the oily jug, as this will stop them sticking, and pour them into the saucepan. Tip the sugar into the pan and add the prunes, the grated ginger, spices and salt. Warm over low heat, gently whisking to combine. Don’t whisk too much: you do not want to get a lot of air in the mixture. Once everything’s melted and mixed, take the pan off the heat, it should be warm at this stage, rather than boiling hot. Add the oat milk, gently whisking until it’s incorporated.</li>
+              <li>Preheat the oven to 150/170&#8451; (Fan)/Gas 3&#189;. Line a 23cm or 9in square tin with baking paper, so that it covers the base and comes up the sides of the tin. Leave something heavy on it to keep it down while you melt everything together.</li>
+              <li>Measure the oil in a jug, then pour it into a fairly wide, heavy-based saucepan (mine is 22cm or 8&#189;in in diameter). Measure the syrup and treacle using the oily jug, as this will stop them sticking, and pour them into the saucepan. Tip the sugar into the pan and add the prunes, the grated ginger, spices and salt. Warm over low heat, gently whisking to combine. Don’t whisk too much: you do not want to get a lot of air in the mixture. Once everything’s melted and mixed, take the pan off the heat, it should be warm at this stage, rather than boiling hot. Add the oat milk, gently whisking until it’s incorporated.</li>
               <li>Whisk in the flour in 3 or 4 batches, patiently getting rid of any lumps as you go. This will take a few minutes; the only lumps you should see are the little bits of prune, and these will melt into the gingerbread as it bakes.</li>
               <li>Dissolve the bicarb in the warm water in a bigger cup than you think it needs, then add the vinegar and quickly whisk the fizzing mixture into the pan.</li>
               <li>Carefully pour the gingerbread batter into the lined tin and bake for 50–55 minutes, though start checking at 45. It may look cooked at 45 minutes, but as it’s so damp, a cake tester won’t help enormously – you’d expect some crumbs to stick to it – so take it out of the oven and touch the top quickly; if cooked, it should bounce back a bit under your fingers.</li>

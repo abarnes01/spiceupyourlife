@@ -372,7 +372,7 @@ sunflower oil, for cooking</li>
   </ul>
   <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>
   <ol style="font-size: 16px;">
-      <li>Grind the cumin seeds, coriander seeds, peppercorns and cloves in a spice grinder or with a pestle and mortar. Tip into a food processor with the remaining recheadao ingredients and pulse to form a paste.</li>
+      <li>Grind the cumin seeds, coriander, peppercorns and cloves in a spice grinder or with a pestle and mortar. Tip into a food processor with the remaining recheadao ingredients and pulse to form a paste.</li>
       <li>Spread slightly less than a teaspoon of the paste on one mackerel fillet, then top with the other. Take two pieces of kitchen string and tie around the fish to keep the fillets together. Repeat with the other five fish.</li>
       <li>To make the salad, layer the ingredients in a large shallow dish, starting with the tomato, then the shallot, coriander, cumin and cayenne. Sprinkle over the vinegar, then some salt. Don't mix it up, just leave it to stand while you cook the fish.</li>
       <li>Heat 2 teaspoons oil in a heavy-based pan. When hot, add the mackerel and cook for 3 minutes on each side, or until golden-brown, being careful not to overcook. You may need to do this in two batches.</li>

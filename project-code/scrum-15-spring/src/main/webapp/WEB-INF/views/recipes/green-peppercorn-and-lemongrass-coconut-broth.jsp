@@ -365,10 +365,10 @@ body {margin:0;}
       <li>${b} green peppercorns (fresh or brined)</li>
       <li>${c}ml coconut milk</li>
       <li>2 limes, juice only</li>
-      <li>½ vegetable stock cube</li>
+      <li>&#189; vegetable stock cube</li>
       <li>1 tbsp tamari or soy sauce</li>
       <li>1 lemongrass stalk</li>
-      <li>½ butternut squash, peeled and thinly sliced</li>
+      <li>&#189; butternut squash, peeled and thinly sliced</li>
       <li>${ing_2} spinach or winter greens, shredded</li>
       <li>${ing_3} wholemeal rice noodles</li>
       <li>1 tbsp honey (optional)</li>

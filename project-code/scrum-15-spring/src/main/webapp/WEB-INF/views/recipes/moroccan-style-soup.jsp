@@ -346,7 +346,7 @@ body {margin:0;}
               <li>${b} tbsp harissa paste, ideally rose harissa</li>
               <li>${ing_1} chopped tomatoes</li>
               <li>${ing_1} chickpeas or lentils, drained and rinsed</li>
-              <li>${c}ml water or stock, made with 1 chicken or vegetable stock cube</li>
+              <li>${c}ml water or stock, made by adding 1 chicken or vegetable stock cube to boiling water</li>
               <li>salt and freshly ground black pepper</li>
           </ul>
           <br><br><h3 style="font-size: 24px;font-weight: 100;text-decoration-line: underline;">Instructions</h3>

@@ -365,7 +365,7 @@ sunflower oil, for cooking</li>
       <li>1 very large beef tomato (or 2 large tomatoes), sliced very thinly</li>
       <li>1 shallot, sliced very thinly</li>
       <li>${b} tbsp chopped coriander</li>
-      <li>¼ tsp ground cumin</li>
+      <li>&#188; tsp ground cumin</li>
       <li>pinch cayenne pepper</li>
       <li>${a} tbsp white wine vinegar</li>
       <li>Salt</li>

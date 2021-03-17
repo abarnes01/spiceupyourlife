@@ -357,10 +357,10 @@ body {margin:0;}
         <li>${c} garlic cloves, sliced</li>
         <li>${ing_1} fresh root ginger, peeled and finely chopped</li>
         <li>${a} tsp medium curry powder</li>
-        <li>½ tsp ground turmeric</li>
+        <li>&#189; tsp ground turmeric</li>
         <li>${a} tsp Chinese five-spice</li>
         <li>${ing_2} plain flour</li>
-        <li>${d}ml vegetable stock</li>
+        <li>${d}ml boiling water + vegetable stock cube</li>
         <li>${c} tsp tomato purée</li>
         <li>${a} tsp soft light brown sugar</li>
         <li>flaked sea salt and freshly ground black pepper</li>

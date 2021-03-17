@@ -364,7 +364,7 @@ body {margin:0;}
       <li>${c} green cardamom pods</li>
       <li>1 clove</li>
       <li>1 tbsp ground coriander</li>
-      <li>¼ tsp chilli powder</li>
+      <li>&#188; tsp chilli powder</li>
       <li>1 tsp salt</li>
       <li>${a} tbsp ground almonds</li>
       <li>1 tbsp sugar</li>

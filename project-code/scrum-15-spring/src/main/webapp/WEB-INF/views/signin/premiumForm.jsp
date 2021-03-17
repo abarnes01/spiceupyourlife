@@ -1,12 +1,51 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
 <!DOCTYPE html>
+<style> 
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+</style>
+
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
 
 <style>
     .banner {
       background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url('http://static8.depositphotos.com/1177973/811/i/450/depositphotos_8119912-Notebook-for-recipes-and-spices-on-wooden-table.jpg');
       background-size: cover;
-      height: 700px;
+      height: 1500px;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -234,15 +273,25 @@ body {margin:0;}
   
   <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
   <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
-  <a href="index.html">Home</a>
-  <a href="/login">Login</a>
-  <a href="index.html#contact">Contact</a>
+  <a class="tooltip" href="index.html">Home
+  	  <span class="tooltiptext">Go to Home Page</span></a>  	 
+  <a class="tooltip" href="/login">Login
+  	<span class="tooltiptext">Go to Login Page</span></a>
+  <a class="tooltip" href="index.html#contact">Contact
+  	  	<span class="tooltiptext">Contact Us</span></a>
  <a href="/checkout" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+ <br>
+</br>
+ <br>
+</br>
+ <br>
+</br>
+
 
 </div>
 
        
-        <meta charset="UTF-8">
+               <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <style>
@@ -257,7 +306,7 @@ body {margin:0;}
             
             /* Darker background on mouse-over */
             .btn:hover {
-              background-color: rgb(202, 205, 214);
+              background-color: rgb(195, 199, 211);
             }
             <style>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -277,14 +326,19 @@ body {margin:0;}
             <a href="spices_list.html">Spices</a>
             <a href="recipe_list.html">Recipes</a>
             <a href="/login">Login</a>
-            <a href="index.html#contact">Contact</a>
+            <a href="#contact">Contact</a>
            
           </div>
     
-          <div class="top-menu" style="align-content: center;text-align: center;">
-          <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/premium" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;">Premium account</a></div>
+          <div class="top-menu" style="align-content: centre;text-align: centre;">
+            <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: centre;text-align: centre;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;">Sign up to Premium</a></div>
         </div>
+          
+
+    
     </body>
+
+
 
 <!--SIDENAV---->
     <head>
@@ -340,56 +394,62 @@ body {margin:0;}
           .sidenav a {font-size: 18px;}
         }
         </style>
+<style> 
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+</style>
         </head>
 
-        <div class="top-menu" style="align-content: center;text-align: center; padding-top: 35%;">
 
-            <div class="title" style="font-size: 26px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/premium" style="text-decoration: none; color: black;opacity: 0.8;"> Create a premium account! </a></div>
 
-        </div>
     <div style="float: left;width: 100%;text-align: center;padding-right: 10%; ">
-      <form:form action="/addPremium" modelAttribute="newPremium" method="POST" class="register-form" style="display: inline; color: black ">
-          <form:label path="first_name">First name:</form:label>
-          <form:input path="first_name"/><br>
-          <form:errors path="first_name"/><br/>
-          <form:label path="last_name">Last name:</form:label>
-          <form:input path="last_name"/><br>
-          <form:errors path="last_name"/><br/>
-          <form:label path="email">Email:</form:label>
-          <form:input path="email"/><br>
-          <form:errors path="email"/><br/>
-          <form:label path="phone_number">Phone Number:</form:label>
-          <form:input path="phone_number"/><br>
-          <form:errors path="phone_number"/><br/>
-          <form:label path="country">Country:</form:label>
-          <form:input path="country"/><br>
-          <form:errors path="country"/><br/>
-          <form:label path="street_name">Street name:</form:label>
-          <form:input path="street_name"/><br>
-          <form:errors path="street_name"/><br/>
-          <form:label path="postcode">Post Code:</form:label>
-          <form:input path="postcode"/><br>
-          <form:errors path="postcode"/><br/>
-          <form:label path="city">City:</form:label>
-          <form:input path="city"/><br>
-          <form:errors path="city"/><br/>
-          <form:label path="password">Password:</form:label>
-          <form:input path="password"/><br>
-          <form:errors path="password"/><br/>
-          <form:label path="card_name">Name on card:</form:label>
-          <form:input path="card_name"/><br>
-          <form:errors path="card_name"/><br/>
-          <form:label path="card_number">Card number:</form:label>
-          <form:input path="card_number"/><br>
-          <form:errors path="card_number"/><br/>
-          <form:label path="expiry_date">Expiry date:</form:label>
-          <form:input path="expiry_date"/><br>
-          <form:errors path="expiry_date"/><br/>
-          <form:label path="security_code">Security code:</form:label>
-          <form:input path="security_code"/><br>
-          <form:errors path="security_code"/><br/>
-          <input type="submit" value="Pay £5 per month" style="height:30px;font-size:14px;font-weight=500; color: blue;"/><form:errors/>
-      </form:form>
+        <form:form action="/addPremium" modelAttribute="newPremium" method="POST" class="register-form" style="display: inline; color: black ">
+        <form:label path="first_name">First name:</form:label>
+        <form:input path="first_name"/><br>
+        <form:errors path="first_name"/><br/>
+        <form:label path="last_name">Last name:</form:label>
+        <form:input path="last_name"/><br>
+        <form:errors path="last_name"/><br/>
+        <form:label path="email">Email:</form:label>
+        <form:input path="email"/><br>
+        <form:errors path="email"/><br/>
+        <form:label path="phone_number">Phone Number:</form:label>
+        <form:input path="phone_number"/><br>
+        <form:errors path="phone_number"/><br/>
+        <form:label path="country">Country:</form:label>
+        <form:input path="country"/><br>
+        <form:errors path="country"/><br/>
+        <form:label path="street_name">Street name:</form:label>
+        <form:input path="street_name"/><br>
+        <form:errors path="street_name"/><br/>
+        <form:label path="postcode">Post Code:</form:label>
+        <form:input path="postcode"/><br>
+        <form:errors path="postcode"/><br/>
+        <form:label path="city">City:</form:label>
+        <form:input path="city"/><br>
+        <form:errors path="city"/><br/>
+        <form:label path="password">Password:</form:label>
+        <form:input path="password"/><br>
+        <form:errors path="password"/><br/>
+        <form:label path="card_name">Name on card:</form:label>
+        <form:input path="card_name"/><br>
+        <form:errors path="card_name"/><br/>
+        <form:label path="card_number">Card number:</form:label>
+        <form:input path="card_number"/><br>
+        <form:errors path="card_number"/><br/>
+        <form:label path="expiry_date">Expiry date:</form:label>
+        <form:input path="expiry_date"/><br>
+        <form:errors path="expiry_date"/><br/>
+        <form:label path="security_code">Security code:</form:label>
+        <form:input path="security_code"/><br>
+        <form:errors path="security_code"/><br/>
+        <input type="submit" value="Pay £5 per month" style="height:30px;font-size:14px;font-weight=500; color: blue;"/><form:errors/>
+    </form:form>
+
       <div><br></div>
   </div>
 </body>

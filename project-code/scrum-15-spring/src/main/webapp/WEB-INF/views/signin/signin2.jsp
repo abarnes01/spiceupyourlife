@@ -1,6 +1,44 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
+<style> 
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+</style>
+
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
 <html lang="en">
 <head>
 <title>Spice Up Your Life</title>
@@ -59,10 +97,22 @@ body {margin:0;}
 <div class="navbar">
   <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
   <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
-  <a href="index.html">Home</a>
-  <a href="/standard">Register</a>
-  <a href="index.html#contact">Contact</a>
+  <a class="tooltip" href="index.html">Home
+  	  <span class="tooltiptext">Go to Home Page</span></a> 
+  <a class="tooltip" href="/subchoice">Register
+    <span class="tooltiptext">Sign me up!</span></a> 
+  <a class="tooltip" href="index.html#contact">Contact
+    	  <span class="tooltiptext">Contact Us</span></a> 
+  
  <a href="/checkout" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+ <br>
+</br>
+ <br>
+</br>
+ <br>
+</br>
+ <br>
+</br>
 </div>
         
 </head>
@@ -74,7 +124,7 @@ body {margin:0;}
             <a href="index.html">Home</a>
             <a href="spices_list.html">Spices</a>
             <a href="recipe_list.html">Recipes</a>
-            <a href="/standard">Register</a>
+            <a href="/subchoice">Register</a>
             <a href="index.html#contact">Contact</a>
                
           </div>

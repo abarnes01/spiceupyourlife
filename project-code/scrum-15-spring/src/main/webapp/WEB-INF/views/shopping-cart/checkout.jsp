@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 
     <style>
@@ -32,11 +33,7 @@
           margin-top: 30px;
           height: 1500px; /* Used in this example to enable scrolling */
         }
-        
-        
-        
-        
-       
+
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         .btn {
@@ -52,73 +49,29 @@
                     .btn:hover {
                       background-color: rgb(202, 205, 214);
                     }
-        
-        
-        
-        
-        
-        
-        
-        
+
         </style>
         </head>
         <body>
         
         <div class="navbar">
-        
-          
           <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
           <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
           <a href="/index.html">Home</a>
           <a href="/guest">Continue as guest</a>
-          <a href="/login">Login</a>
-          <a href="/standard">Register</a>
-          <a href="/index.html#contact">Contact</a>
-        
-        
-        
-        
+          <a href="/register">Register</a>
+          <a href="/login">Sign in</a>
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-               
-                <meta charset="UTF-8">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                
-                <style>
-                    .btn {
-                      background-color: rgb(255, 255, 255);
-                      border: none;
-                      color: rgb(192, 87, 17);
-                      padding: 12px 16px;
-                      font-size: 16px;
-                      cursor: pointer;
-                    }
+              
+<style>
+.btn {
+background-color: rgb(255, 255, 255);
+border: none;
+color: rgb(192, 87, 17);
+padding: 12px 16px;
+font-size: 16px;
+ursor: pointer;
+}
                     
                     /* Darker background on mouse-over */
                     .btn:hover {
@@ -141,22 +94,18 @@
                     <a href="/index.html">Home</a>
                     <a href="/spices_list.html">Spices</a>
                     <a href="/recipe_list.html">Recipes</a>
-                    <a href="/login">Login</a>
-                    <a href="/standard">Register</a>
+                    <a href="/register">Register</a>
+                    <a href="/login">Sign in</a>
                     <a href="/index.html#contact">Contact</a>
                    
                   </div>
             
                   <div class="top-menu" style="align-content: center;text-align: center;">
-                    <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="index.html" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;">Checkout</a></div>
+                    <div class="title" style="font-family: monospace; font-size: 36px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="" style="text-decoration: none; color: black;opacity: 0.8;padding-top: 5px;">Checkout</a></div>
                 </div>
-                  
-        
-            
             </body>
-        
-        
-        
+        </div>
+
         <!--SIDENAV---->
             <head>
                 
@@ -312,7 +261,19 @@ span.price {
   color: grey;
 }
 
+select {
 
+  width: 100%;
+
+  padding: 16px 20px;
+
+  border: none;
+
+  border-radius: 4px;
+
+  background-color: #f1f1f1;
+
+}
 /*Reponsive bit */
 /*Update the actual id of the fields later*/
 
@@ -331,37 +292,36 @@ span.price {
 <div class="row">
   <div class="col-75">
     <div class="container">
-      <form action="/action_page.php">
       
         <div class="row">
           <div class="col-50">
             <h3>Billing Address</h3>
-            <form:form action="/addGuest" modelAttribute="newGuest" method="POST" class="guest-form" style="display: inline">
+            <form:form action="/addGuest" modelAttribute="newGuest" method="POST" class="guest-form" style="display:inline">
             <form:label path="first_name">First name:</form:label>
-            <input type="text" id="first_name" name="firstname" placeholder="Bob">
+            <form:input path="first_name" placeholder="Bob"/>
+            <form:errors path="first_name"/>
             <form:label path="last_name">Last name:</form:label>
-            <input type="text" id="last_name" name="firstname" placeholder="M. Donald">
+            <form:input path="last_name" placeholder="Smith"/>
+            <form:errors path="last_name"/>
             <form:label path="email">Email:</form:label>
-            <input type="text" id="email" name="email" placeholder="bob@example.com">
+            <form:input path="email" placeholder="bob.smith@email.com"/>
+            <form:errors path="email"/>
             <form:label path="phone_number">Phone Number:</form:label>
-            <input type="text" id="phone_number" name="phonenumber" placeholder="0783249742">
+            <form:input path="phone_number" placeholder="0783249742"/>
+            <form:errors path="phone_number"/>
             <form:label path="street_name">Street name:</form:label>
-            <input type="text" id="street_name" name="street_name" placeholder="10 Downing Street">
+            <form:input path="street_name"  placeholder="10 Downing Street"/>
+            <form:errors path="street_name"/>
             <form:label path="city">City:</form:label>
-            <input type="text" id="city" name="city" placeholder="London">
-
-            <div class="row">
-              <div class="col-50">
-                <form:label path="country">Country:</form:label>
-                <input type="text" id="country" name="Country" placeholder="England">
-              </div>
-              <div class="col-50">
-                <form:label path="postcode">Post Code:</form:label>
-                <input type="text" id="postcode" name="PostCode" placeholder="LDN 123">
-              </div>
-            </div>
-          </div>
-
+            <form:input path="city" placeholder="London"/>
+            <form:errors path="city"/>
+            <form:label path="country">Country:</form:label>
+            <form:input path="country" name="Country" placeholder="England"/>
+            <form:errors path="country"/>
+            <form:label path="postcode">Post Code:</form:label>
+           	<form:input path="postcode" placeholder="LDN 123"/>
+            <form:errors path="postcode"/>
+            
           <div class="col-50">
             <h3>Payment</h3>
             <label for="fname">Accepted Cards</label>
@@ -371,35 +331,27 @@ span.price {
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="Bob M. Donald">
-            <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-            <div class="row">
-              <div class="col-50">
-                <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2022">
-              </div>
-              <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
-              </div>
-            </div>
           </div>
-          
-        </div>
-        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
-        <input type="submit" value="Continue to checkout" class="btn">
-      </form>
+            <form:label path="card_name">Name on card:</form:label>
+            <form:input path="card_name" placeholder="Bob M. Donald"/>
+            <form:errors path="card_name"/>
+            <form:label path="card_number">Card number:</form:label>
+            <form:input path="card_number" placeholder="1111-2222-3333-4444"/>
+            <form:errors path="card_number"/>
+            <form:label path="expiry_date">Expiry date:</form:label>
+            <form:input path="expiry_date" placeholder="04/21"/>
+            <form:errors path="expiry_date"/>
+         	<form:label path="security_code">Security code</form:label>
+            <form:input path="security_code" placeholder="352"/>
+            <form:errors path="security_code"/>
+        	<input type="submit" value="Continue to checkout" class="btn">
+      </form:form>
+     </div>
+     </div>
     </div>
   </div>
   <div class="col-25">
     <div class="container">
-        
       <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
       <p><a href="#">Tumeric</a> <span class="price">&#163;15</span></p>
       <p><a href="#">Chilli Powder</a> <span class="price">&#163;5</span></p>
@@ -410,7 +362,6 @@ span.price {
     </div>
   </div>
 </div>
-
 
 
 

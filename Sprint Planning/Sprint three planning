@@ -22,9 +22,15 @@ General tasks
 
 6. Add prices to each spice
 
+7. Improve css styling
+
+    - On spice pages
+
+    - On login page
+
 Tasks for User Story 7 - "As a client I can download a PDF file of a recipe page so that I can view in an appealing format"
 
-7. Add ability to download as a PDF on the recipe pages
+8. Add ability to download as a PDF on the recipe pages
 
     - Add download as PDF button
 
@@ -32,7 +38,7 @@ Tasks for User Story 7 - "As a client I can download a PDF file of a recipe page
 
 Tasks for User Story 8 - "As a client I can purchase a premium account so that I have unlimited access to all recipes; ability to download all recipes; and discounts on spices when buying in bulk"
 
-8. Add ability to choose an account
+9. Add ability to choose an account
 
     - Make register button navigate to a choose an acount page
 
@@ -42,7 +48,7 @@ Tasks for User Story 8 - "As a client I can purchase a premium account so that I
 
     - Add button that navigates to the premium account form 
 
-9. Create a premium account form
+10. Create a premium account form
 
     - Add functionality to the page
 
@@ -52,7 +58,7 @@ Tasks for User Story 8 - "As a client I can purchase a premium account so that I
 
 Tasks for User Story 9 - "As a client I can filter spices and recipes in various ways so that I can increase the speed of finding a desired spice or recipe"
 
-10. Add filtering for the spice pages
+11. Add filtering for the spice pages
 
     - Sort by price - low to high
 
@@ -70,7 +76,7 @@ Tasks for User Story 9 - "As a client I can filter spices and recipes in various
 
     - Disply by country of origin
 
-11. Add filtering for the recipe pages
+12. Add filtering for the recipe pages
 
     - Sort by star rating - low to high
 
@@ -86,12 +92,12 @@ Tasks for User Story 9 - "As a client I can filter spices and recipes in various
 
 Assignment of tasks
 
-Anjana - 1, 8 
+Anjana - 1, 7 and 9
 
-Matthew - 4, 9
+Matthew - 4, 10
 
-Hamzah - 2, 10
+Hamzah - 2, 11
 
-Adam - 3, 7, 11
+Adam - 3, 8 and 12
 
 Elisei - 5, 6

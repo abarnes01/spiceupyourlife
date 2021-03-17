@@ -39,7 +39,7 @@ public class GuestController {
 		customer.setPremium(false);
 		customer.setPassword(null);
 		if (result.hasErrors()) {
-			return "signin/guestForm";
+			return "shopping-cart/checkout";
 		}
 		cRepo.save(customer);
 		return "shopping-cart/checkout";

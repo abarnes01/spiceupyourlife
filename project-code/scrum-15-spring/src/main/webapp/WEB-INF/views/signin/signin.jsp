@@ -1,157 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Spice Up Your Life</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style type="text/css">
-* {margin: 0;padding: 0;font-family: monospace;box-sizing: border-box;}
-body {margin:0;}
-
-.navbar {
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #090181;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: rgb(252, 252, 252);
-}
-
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
-}
-
-.btn {
-	background-color: rgb(255, 255, 255);
-    border: none;
-    color: rgb(192, 87, 17);
-    padding: 12px 16px;
-    font-size: 16px;
-    cursor: pointer;
-}
-            
-/* Darker background on mouse-over */
-.btn:hover {
-    background-color: rgb(202, 205, 214);
-}
-
-</style>
-<body>
-
-<div class="navbar">
-  <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
-  <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
-  <a href="index.html">Home</a>
-  <a href="/standard">Register</a>
-  <a href="index.html#contact">Contact</a>
- <a href="/checkout" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-</div>
-        
-</head>
-<body>
-    <div id="main">
-       
-            <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Home</a>
-            <a href="spices_list.html">Spices</a>
-            <a href="recipe_list.html">Recipes</a>
-            <a href="/standard">Register</a>
-            <a href="index.html#contact">Contact</a>
-               
-          </div>
-  	</div>
-    
-          
-          
-
-    
-    </body>
-
-
-
-<!--SIDENAV---->
-    <head>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-        body {
-          font-family: "Lato", monospace;
-          transition: background-color .5s;
-        }
-        
-        .sidenav {
-          height: 100%;
-          width: 0;
-          position: fixed;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          background-color: #111;
-          overflow-x: hidden;
-          transition: 0.5s;
-          padding-top: 60px;
-        }
-        
-        .sidenav a {
-          padding: 8px 8px 8px 32px;
-          text-decoration: none;
-          font-size: 25px;
-          color: #818181;
-          display: block;
-          transition: 0.3s;
-        }
-        
-        .sidenav a:hover {
-          color: #f1f1f1;
-        }
-        
-        .sidenav .closebtn {
-          position: absolute;
-          top: 0;
-          right: 25px;
-          font-size: 36px;
-          margin-left: 50px;
-        }
-        
-        #main {
-          transition: margin-left .5s;
-          padding: 16px;
-        }
-        
-        @media screen and (max-height: 450px) {
-          .sidenav {padding-top: 15px;}
-          .sidenav a {font-size: 18px;}
-        }
-        </style>
-        </head>
-
-
-
-
-
-
-
-
-
 
 <style>
     /*//////////////////////////////////////////////////////////////////
@@ -511,7 +360,7 @@ body {margin:0;}
       justify-content: center;
       align-items: center;
       padding: 0 20px;
-      width: 100%;
+      width: 80%;
       height: 50px;
       border-radius: 3px;
       background: #00ad5f;
@@ -731,31 +580,219 @@ body {margin:0;}
 					<a href="/standard" class="txt1">
 							Register
 					</a>
-				</form>
+				</form>	
+							
+				<div class="login100-more" style="background-image: url('https://honestcooking.com/wp-content/uploads/2015/06/shutterstock_230510470.jpg');"></div>
 
-				<div class="login100-more" style="background-image: url('https://asianinspirations.com.au/wp-content/uploads/2019/07/Chinese-Cooking-Hacks.jpg');"></div>
 			</div>
 		</div>
 	</div>
-	
-	
-
 	<div id="dropDownSelect1"></div>
-	
-  <script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "300px";
-        document.getElementById("main").style.marginLeft = "250px";
-        document.body.style.backgroundColor = "white";
-    }
+
+<style> 
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+</style>
+
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: grey;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<html lang="en">
+<head>
+<title>Spice Up Your Life</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+* {margin: 0;padding: 0;font-family: monospace;box-sizing: border-box;}
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #090181;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: rgb(252, 252, 252);
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.btn {
+	background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(192, 87, 17);
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+            
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: rgb(202, 205, 214);
+}
+
+</style>
+<body>
+
+<div class="navbar">
+  <a href="#Menu" style="font-family: monospace;float: left;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;"><span onclick="openNav()"><button class="btn"><i class="fa fa-bars"></i></button></span></a>
+  <a><span style="font-family:Papyrus">Spice Up Your Life</span></a>
+  <a class="tooltip" href="index.html">Home
+  	  <span class="tooltiptext">Go to Home Page</span></a> 
+  <a class="tooltip" href="/subchoice">Register
+    <span class="tooltiptext">Sign me up!</span></a> 
+  <a class="tooltip" href="index.html#contact">Contact
+    	  <span class="tooltiptext">Contact Us</span></a> 
+  
+ <a href="/checkout" style="font-family: monospace;float: right;display: inline;opacity: 0.7;padding-top: 10px;cursor: pointer;font-size: 30px;padding-right: 10px;text-decoration-line: none;color: blue;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+ <br>
+</br>
+ <br>
+</br>
+ <br>
+</br>
+ <br>
+</br>
+
+</div>
         
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-        document.body.style.backgroundColor = "white";
-    }
+</head>
+<body>
+    <div id="main">
+       
+            <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="spices_list.html">Spices</a>
+            <a href="recipe_list.html">Recipes</a>
+            <a href="/subchoice">Register</a>
+            <a href="index.html#contact">Contact</a>
+               
+          </div>
+  	</div>
+    
+          
+          
+
+    
+    </body>
+
+
+
+<!--SIDENAV---->
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: "Lato", monospace;
+          transition: background-color .5s;
+        }
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #111;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        #main {
+          transition: margin-left .5s;
+          padding: 16px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>
+        </head>
+<script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "white";
+        }
+            
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+        }
 </script>
-</body>
 
 </body>
 </html>

@@ -28,8 +28,14 @@ public class AccountController {
 	}
 	
 	@RequestMapping("/checkout")
-	public String checkout() {
+	public String checkout(Model model) {
+		model.addAttribute("newGuest", new Customer());
 		return "shopping-cart/checkout";
+	}
+
+		@RequestMapping("/subchoice")
+	public String picksub() {
+		return "signin/registerchoice";
 	}
 	
 	@RequestMapping(value = "/standard")

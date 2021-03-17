@@ -194,10 +194,10 @@ public class Scrum15SpringApplication implements ApplicationRunner{
 		c2.setCountry("England");
 		c2.setGuest(true);
 		c2.setPremium(false);
-		c1.setCard_name(null);
-		c1.setCard_number(null);
-		c1.setExpiry_date(null);
-		c1.setSecurity_code(null);
+		c2.setCard_name("Jamie M Thomas");
+		c2.setCard_number("7387298374922932");
+		c2.setExpiry_date("11/25");
+		c2.setSecurity_code("094");
 		c2 = cRepo.save(c2);
 		
 		c3 = new Customer();
@@ -212,10 +212,10 @@ public class Scrum15SpringApplication implements ApplicationRunner{
 		c3.setCountry("England");
 		c3.setGuest(false);
 		c3.setPremium(true);
-		c1.setCard_name("Harvey J Morrison");
-		c1.setCard_number("8930248910329232");
-		c1.setExpiry_date("10/22");
-		c1.setSecurity_code("390");
+		c3.setCard_name("Harvey J Morrison");
+		c3.setCard_number("8930248910329232");
+		c3.setExpiry_date("10/22");
+		c3.setSecurity_code("390");
 		c3 = cRepo.save(c3);
 		
 		//one to many relationship - Customer to Orders

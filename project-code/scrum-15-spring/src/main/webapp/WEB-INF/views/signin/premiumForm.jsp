@@ -124,7 +124,106 @@ body {margin:0;}
             .btn:hover {
               background-color: rgb(202, 205, 214);
             }
+   	.txt1 {
+      font-family: Poppins-Regular;
+      font-size: 13px;
+      line-height: 1.4;
+      color: #999999;
+      text-align: center;
+      margin-left: 600px;
+      width: 25%;
+    }
+    
+    .txt2 {
+      font-family: Poppins-Regular;
+      font-size: 13px;
+      line-height: 1.4;
+      color: #00ad5f;
+      text-align: center;
+      margin-left: 600px;
+      width: 25%;
+    }
+    
+    .txt3 {
+      font-family: Poppins-Regular;
+      font-size: 15px;
+      line-height: 1.4;
+      color: #00ad5f;
+      text-transform: uppercase;
+      text-align: center;
+      margin-left: 600px;
+      width: 25%;
+    }
 
+    .wrap-input100 {
+      width: 100%;
+      position: relative;
+      border: 1px solid #e6e6e6;
+    }
+    
+    .rs1-wrap-input100,
+    .rs2-wrap-input100 {
+      width: 50%;
+    }
+    
+    .rs2-wrap-input100 {
+      border-left: none;
+    }
+    
+    
+    .input100 {
+      display: block;
+      margin-left: 600px;
+      width: 25%;
+      background: transparent;
+      font-family: Poppins-Regular;
+      font-size: 18px;
+      color: #666666;
+      line-height: 1.2;
+      padding: 0 25px;
+    }
+    
+    input.input100 {
+      height: 55px;
+    }
+    
+    /*---------------------------------------------*/
+    
+    .focus-input100 {
+      position: absolute;
+      display: block;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      top: -1px;
+      left: -1px;
+      pointer-events: none;
+      border: 1px solid #00ad5f;
+    
+      visibility: hidden;
+      opacity: 0;
+    
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      transition: all 0.4s;
+    
+      -webkit-transform: scaleX(1.1) scaleY(1.3);
+      -moz-transform: scaleX(1.1) scaleY(1.3);
+      -ms-transform: scaleX(1.1) scaleY(1.3);
+      -o-transform: scaleX(1.1) scaleY(1.3);
+      transform: scaleX(1.1) scaleY(1.3);
+    }
+    
+    .input100:focus + .focus-input100 {
+      visibility: visible;
+      opacity: 1;
+    
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
+    }
 
 </style>
 </head>

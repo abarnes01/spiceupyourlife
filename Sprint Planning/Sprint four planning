@@ -30,11 +30,11 @@ User Story 10 - "As a registered client I can redeem a mini stater kit so that I
 
     - Add functionality that enables a user to confirm that their billing address is the same as their delivery address, else the user is prompted to enter their delivery address
 
-10. Send a confirmation email to the user about the redeemed mini starter kit
+9. Send a confirmation email to the user about the redeemed mini starter kit
 
 User Story 11 - "As an administrator of the web app I can set account privileges so that users cannot access unattained privileges"
 
-11. Add free account privileges
+10. Add free account privileges
 
     - Ability to redeem mini taster kit
 
@@ -42,7 +42,7 @@ User Story 11 - "As an administrator of the web app I can set account privileges
 
     - Ability to undertake free trial
 
-12. Add premium account privileges
+11. Add premium account privileges
 
     - Unlimited access to all recipes
 
@@ -50,7 +50,7 @@ User Story 11 - "As an administrator of the web app I can set account privileges
 
     - Gain discount on spices when buying in bulk
 
-13. Add 2-week free trial privileges
+12. Add 2-week free trial privileges
 
     - Access to all recipes
 
@@ -60,7 +60,7 @@ User Story 11 - "As an administrator of the web app I can set account privileges
 
 User Story 12 - "As a registered client I can view and edit my account details so that I can make sure the information is correct and up to date"
 
-14. Create an account page for account holders
+13. Create an account page for account holders
 
     - Add account button on home page
 
@@ -78,24 +78,24 @@ User Story 12 - "As a registered client I can view and edit my account details s
 
 User Story 13 - "As a client I can make a spice/s transaction so that I can obtain it/them for personal use"
 
-15. Add spices to the users basket
+14. Add spices to the users basket
 
     - Add functionality to button "Add spice to basket" on the spice page
 
     - Display relevant spice in the users basket
 
-16. Entering card details and biling address is based on privileges
+15. Entering card details and biling address is based on privileges
 
     - Standard and non-account holders are required to
 
     - Premium account holders are not required to
 
-17. Make checkout page
+16. Make checkout page
 
     - Add functionality to confirm card details
 
     - Add functionality to allow a user to choose if their billing address is the same as their delivery address, else the user is prompted to enter their delivery address
 
-18. Send a confirmation email to the user about their orders
+17. Send a confirmation email to the user about their orders
 
-19. Orders can be seen on an account holders account page
+18. Orders can be seen on an account holders account page

@@ -60,54 +60,58 @@ User Story 11 - "As an administrator of the web app I can set account privileges
 
 User Story 12 - "As a registered client I can view and edit my account details so that I can make sure the information is correct and up to date"
 
-13. Create an account page for account holders
+13. Add account page
 
     - Add account button on home page
 
-    - Create account page with account holder functionality
+    - Create an account page for account holders
 
-        - Account holders can view their orders
+14. Add functionality to account page
 
-        - Account holders can edit their account detiails
+    - Add funcitonality for account holders to view their orders
 
-        - Account holders have the ability to sign out
+    - Add functionality for account holders to edit their account detiails
 
-        - Standard account holders are given the option to upgrade to premium
+    - Add functionality for account holders to delete their account
 
-        - Premium account holders are given the ability to manager their subscription
+    - Add functionality for account holders to sign out
+
+    - Add functionality for standard account holders to upgrade to premium
+
+    - Add functionality for premium account holders to manage their subscription
 
 User Story 13 - "As a client I can make a spice/s transaction so that I can obtain it/them for personal use"
 
-14. Add spices to the users basket
+15. Add spices to the users basket
 
     - Add functionality to button "Add spice to basket" on the spice page
 
     - Display relevant spice in the users basket
 
-15. Entering card details and biling address is based on privileges
+16. Entering card details and biling address is based on privileges
 
     - Standard and non-account holders are required to
 
     - Premium account holders are not required to
 
-16. Make checkout page
+17. Make checkout page
 
     - Add functionality to confirm card details
 
     - Add functionality to allow a user to choose if their billing address is the same as their delivery address, else the user is prompted to enter their delivery address
 
-17. Send a confirmation email to the user about their orders
+18. Send a confirmation email to the user about their orders
 
-18. Orders can be seen on an account holders account page
+19. Orders can be seen on an account holders account page
 
 Assignment of tasks
 
 Hamzah - 1, 14 and 16
 
-Anjana - 2, 3, 4, 5, 6 and 7
+Anjana - 2, 3, 4, 5, 6, 7 and 13
 
 Matthew - 8, 9 and 17
 
 Adam - 10, 11, 12 and 15
 
-Elisei - 13 and 18
+Elisei - 14 and 18

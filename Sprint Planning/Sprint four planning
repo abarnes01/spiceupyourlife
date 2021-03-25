@@ -31,3 +31,29 @@ User Story 10 - "As a registered client I can redeem a mini stater kit so that I
     - Add functionality that enables a user to confirm that their billing address is the same as their delivery address, else the user is prompted to enter their delivery address
 
 10. Send a confirmation email to the user about the redeemed mini starter kit
+
+User Story 11 - "As an administrator of the web app I can set account privileges so that users cannot access unattained privileges"
+
+11. Add free account privileges
+
+    - Ability to redeem mini taster kit
+
+    - Access to 5 recipes
+
+    - Ability to undertake free trial
+
+12. Add premium account privileges
+
+    - Unlimited access to all recipes
+
+    - Ability to download all recipes
+
+    - Gain discount on spices when buying in bulk
+
+13. Add 2-week free trial privileges
+
+    - Access to all recipes
+
+    - Ability to downlaod 5 recipes available to free account holders
+
+    - Discounts on spices when buying in bulk

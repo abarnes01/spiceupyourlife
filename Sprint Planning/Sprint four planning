@@ -1,0 +1,117 @@
+General tasks
+
+1. Create accounting report at the end of each month
+
+2. Add optionality to enter card details when registering for a standard account
+
+3. Add social media links near the contact section
+
+4. Add CSS improvements
+
+    - Premium and standard registering forms
+
+        - Place input boxes on alternating columns
+
+        - Add space between error messages and labels
+
+5. Add more filters to spice
+
+    - Display by each recipe that uses a spice
+
+6. Update prices on spice pages with client suggestions
+
+User Story 10 - "As a registered client I can redeem a mini stater kit so that I can get an idea of the quality of spices"
+
+7. Create pop-up screen that enables a user to redeem a mini starter kit
+
+8. Create confimration page for the mini starter kit
+
+    - Add functionality to allow a user to choose a spice of their choice (alongside 10g chilli)
+
+    - Add functionality that enables a user to confirm that their billing address is the same as their delivery address, else the user is prompted to enter their delivery address
+
+9. Send a confirmation email to the user about the redeemed mini starter kit
+
+User Story 11 - "As an administrator of the web app I can set account privileges so that users cannot access unattained privileges"
+
+10. Add free account privileges
+
+    - Ability to redeem mini taster kit
+
+    - Access to 5 recipes
+
+    - Ability to undertake free trial
+
+11. Add premium account privileges
+
+    - Unlimited access to all recipes
+
+    - Ability to download all recipes
+
+    - Gain discount on spices when buying in bulk
+
+12. Add 2-week free trial privileges
+
+    - Access to all recipes
+
+    - Ability to downlaod 5 recipes available to free account holders
+
+    - Discounts on spices when buying in bulk
+
+User Story 12 - "As a registered client I can view and edit my account details so that I can make sure the information is correct and up to date"
+
+13. Create account page
+
+    - Add account button on home page
+
+    - Create an account page 
+
+14. Only grant account page access to account holders
+
+15. Add functionality to account page
+
+    - Add button and functionality to view orders
+
+    - Add button and functionality to edit account detiails
+
+    - Add button and functionality to delete the account
+
+    - Add button and functionality to sign out
+
+    - Add button and functionality for standard account holders to upgrade to premium
+
+    - Add button and functionality for premium account holders to manage their subscription
+
+User Story 13 - "As a client I can make a spice/s transaction so that I can obtain it/them for personal use"
+
+16. Add spices to the basket page
+
+    - Add functionality to button "Add spice to basket" on the spice page
+
+    - Display relevant spice in the users basket
+
+17. Create different basket pages depending on users account type
+
+    - Standard and non-account holders are required to enter their card details and biling address
+
+    - Premium account holders are not required to enter their card details and biling address
+
+18. Create checkout page
+
+    - Add functionality to confirm card details
+
+    - Add functionality to allow a user to choose if their billing address is the same as their delivery address, else the user is prompted to enter their delivery address
+
+19. Send a confirmation email to the user about their order
+
+Assignment of tasks
+
+Hamzah - 1, 16 and 18
+
+Anjana - 2, 3, 4, 5, 6, 7 and 13
+
+Matthew - 8, 9 and 19
+
+Adam - 10, 11, 12, 14 and 17
+
+Elisei - 15

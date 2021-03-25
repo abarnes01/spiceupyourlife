@@ -57,3 +57,21 @@ User Story 11 - "As an administrator of the web app I can set account privileges
     - Ability to downlaod 5 recipes available to free account holders
 
     - Discounts on spices when buying in bulk
+
+User Story 12 - "As a registered client I can view and edit my account details so that I can make sure the information is correct and up to date"
+
+14. Create an account page for account holders
+
+    - Add account button on home page
+
+    - Create account page with account holder functionality
+
+        - Account holders can view their orders
+
+        - Account holders can edit their account detiails
+
+        - Account holders have the ability to sign out
+
+        - Standard account holders are given the option to upgrade to premium
+
+        - Premium account holders are given the ability to manager their subscription

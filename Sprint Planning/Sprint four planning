@@ -19,3 +19,15 @@ General tasks
     - Display by each recipe that uses a spice
 
 6. Update prices on spice pages with client suggestions
+
+User Story 10 - "As a registered client I can redeem a mini stater kit so that I can get an idea of the quality of spices"
+
+7. Create pop-up screen that enables a user to redeem a mini starter kit
+
+8. Create confimration page for the mini starter kit
+
+    - Add functionality to allow a user to choose a spice of their choice (alongside 10g chilli)
+
+    - Add functionality that enables a user to confirm that their billing address is the same as their delivery address, else the user is prompted to enter their delivery address
+
+10. Send a confirmation email to the user about the redeemed mini starter kit

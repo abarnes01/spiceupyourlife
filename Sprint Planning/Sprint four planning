@@ -64,9 +64,11 @@ User Story 12 - "As a registered client I can view and edit my account details s
 
     - Add account button on home page
 
-    - Create an account page for account holders
+    - Create an account page 
 
-14. Add functionality to account page
+14. Only grant account page access to account holders
+
+15. Add functionality to account page
 
     - Add button and functionality to view orders
 
@@ -82,34 +84,34 @@ User Story 12 - "As a registered client I can view and edit my account details s
 
 User Story 13 - "As a client I can make a spice/s transaction so that I can obtain it/them for personal use"
 
-15. Add spices to the basket page
+16. Add spices to the basket page
 
     - Add functionality to button "Add spice to basket" on the spice page
 
     - Display relevant spice in the users basket
 
-16. Create different basket pages depending on users privileges
+17. Create different basket pages depending on users privileges
 
     - Standard and non-account holders are required to enter their card details and biling address
 
     - Premium account holders are not required to enter their card details and biling address
 
-17. Create checkout page
+18. Create checkout page
 
     - Add functionality to confirm card details
 
     - Add functionality to allow a user to choose if their billing address is the same as their delivery address, else the user is prompted to enter their delivery address
 
-18. Send a confirmation email to the user about their order
+19. Send a confirmation email to the user about their order
 
 Assignment of tasks
 
-Hamzah - 1, 15 and 17
+Hamzah - 1, 16 and 18
 
 Anjana - 2, 3, 4, 5, 6, 7 and 13
 
-Matthew - 8, 9 and 18
+Matthew - 8, 9 and 19
 
-Adam - 10, 11, 12 and 16
+Adam - 10, 11, 12, 14 and 17
 
-Elisei - 14
+Elisei - 15

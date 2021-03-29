@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Payment</title>
+<title>Finance Info</title>
 </head>
 <body>
     <a href="/payment/export">Export to Excel</a>

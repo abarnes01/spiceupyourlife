@@ -20,6 +20,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'javax.validation:validation-api:2.0.1.Final'
 	implementation 'net.sf.supercsv:super-csv:2.4.0'
+	implementation 'org.apache.poi:poi:5.0.0'
+	implementation 'org.apache.poi:poi-ooxml:5.0.0'
 
 	
 	implementation 'org.springframework.boot:spring-boot-starter-security'

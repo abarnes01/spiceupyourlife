@@ -19,6 +19,8 @@ dependencies {
 	runtimeOnly 'mysql:mysql-connector-java'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'javax.validation:validation-api:2.0.1.Final'
+	implementation 'net.sf.supercsv:super-csv:2.4.0'
+
 	
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'

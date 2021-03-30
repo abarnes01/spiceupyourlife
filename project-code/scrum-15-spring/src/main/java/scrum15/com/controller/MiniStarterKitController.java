@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Optional;
@@ -33,17 +34,15 @@ public class MiniStarterKitController {
 	
 	@RequestMapping("/StarterKit")
 	public String miniStaterKit(HttpServletRequest request, Model model) {
-		Customer standardCustomer = (Customer)model.asMap().get("standardCustomer");
-		model.addAttribute("newStandard", standardCustomer);
 		return "miniStarterKit";
 	}
-	@RequestMapping("/miniStarterKit")
-	public String checkLogin(@Valid @RequestParam String delivery_address, @RequestParam String spice) {
-		if (delivery_address == "yes") {
-			return "redirect:/";
+	@PostMapping("/miniStarterKit")
+	public String checkLogin(@RequestParam String delivery_address, @RequestParam String spice, @RequestParam String email) {
+		if (delivery_address.equals("yes")) {
+			return "signin/registerchoice";
 		}
 		else {
-			return "redirect:/standardForm";
+			return "redirect:/";
 		}
 	}
 }

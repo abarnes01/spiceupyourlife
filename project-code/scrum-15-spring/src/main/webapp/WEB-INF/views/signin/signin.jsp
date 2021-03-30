@@ -553,7 +553,7 @@
 
       
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" action="/checkLogin" method="post">
+				<form class="login100-form validate-form" action="/myLogin" method="post">
 
           <span class="login100-form-title p-b-34" style= "padding-top: 20%">
 
@@ -572,9 +572,10 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" type="submit">
 							Sign in
 						</button>
+						<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 					</div>
 
 					<a href="/standard" class="txt1">

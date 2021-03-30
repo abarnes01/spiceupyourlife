@@ -15,20 +15,16 @@
 <option value = "cloves">Cloves</option></select>
 
 <form id="staterKit" action="/miniStarterKit" method="post">
-	
-<h1>Is this your delivery address?</h1>
-<p>${streetName}</p>
-<p>${city}</p> 
-<p>${postcode}</p>
-<p>${country}</p>
-<input type="radio" id="yes" name="delivery_address" value="yes">
-<label for="yes">yes</label>
-<input type="radio" id="no" name="delivery_address" value="no">
-<label for="no">no</label>
-					
-
-<button>
-		Confirm
-</button>
-				
+	<h1>Is this your delivery address?</h1>
+	<p>${streetName}</p>
+	<p>${city}</p> 
+	<p>${postcode}</p>
+	<p>${country}</p>
+	<input type="radio" id="yes" name="delivery_address" value="yes">
+	<label for="yes">yes</label>
+	<input type="radio" id="no" name="delivery_address" value="no">
+	<label for="no">no</label>
+	<input type="submit" value="confirm" style="height:30px;font-size:14px;font-weight=500; color: blue;"/>
+	<input type="hidden" id="email" name="email" value="${email}"/>
+	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 </form>

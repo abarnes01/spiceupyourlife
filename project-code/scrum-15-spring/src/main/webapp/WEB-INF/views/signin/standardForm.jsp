@@ -378,12 +378,14 @@ input[type=text] {
                 <form:label path="password">Password:</form:label>
                 <form:input path="password"/><br>
                 <form:errors path="password"/><br/><br><br></br><br></br>
-                <input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;" onclick="myFunction()"/><form:errors/><br></br>
                 
                 
                 
                 <label for="myCheck">Add my card details for future use:</label> 
 					<input type="checkbox" id="myCheck" onclick="myFunctionForOptionalCard()"> <br></br>
+
+               <input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;" onclick="myFunction()"/><form:errors/><br></br>
+
 					
 					<p id="text" style="display:none">
 					<form:label path="card_name">Name on card:</form:label>
@@ -398,7 +400,6 @@ input[type=text] {
 					         	<form:label path="security_code">Security code</form:label>
 					            <form:input path="security_code" placeholder="352"/>
 					            <form:errors path="security_code"/>
-					            <input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;" onclick="myFunction()"/><form:errors/>
 					            
 					
 					

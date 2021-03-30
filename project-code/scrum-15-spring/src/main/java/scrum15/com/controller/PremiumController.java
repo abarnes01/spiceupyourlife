@@ -1,6 +1,7 @@
 package scrum15.com.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -26,6 +27,9 @@ public class PremiumController {
 	@Autowired
 	private PaymentRepo pRepo;
 	
+	@Autowired
+	private PasswordEncoder passwordEncoder;
+	
 	@InitBinder
 	protected void initBinder(WebDataBinder binder) {
 		binder.addValidators(new PremiumValidator(cRepo));
@@ -41,6 +45,7 @@ public class PremiumController {
 	public String addGuest(@Valid @ModelAttribute("newPremium") Customer customer, BindingResult result) {
 		customer.setGuest(false);
 		customer.setPremium(true);
+		customer.setPassword(passwordEncoder.encode(customer.getPassword()));
 		if (result.hasErrors()) {
 			return "signin/premiumForm";
 		}

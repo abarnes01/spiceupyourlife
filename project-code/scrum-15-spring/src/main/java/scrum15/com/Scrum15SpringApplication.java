@@ -7,6 +7,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import scrum15.com.model.Customer;
 import scrum15.com.model.Orders;
@@ -49,6 +50,9 @@ public class Scrum15SpringApplication implements ApplicationRunner{
 	
 	@Autowired 
 	private SpiceOrdersRepo soRepo;
+	
+	@Autowired
+	private PasswordEncoder pe;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Scrum15SpringApplication.class, args);
@@ -168,7 +172,7 @@ public class Scrum15SpringApplication implements ApplicationRunner{
 		c1 = new Customer();
 		c1.setFirst_name("Bethany");
 		c1.setLast_name("Wilson");
-		c1.setPassword("Group15");
+		c1.setPassword(pe.encode("Group15"));
 		c1.setPhone_number("07234091358");
 		c1.setEmail("bethany.wilson@gmail.com");
 		c1.setStreet_name("5 Heralds Rd");
@@ -188,6 +192,7 @@ public class Scrum15SpringApplication implements ApplicationRunner{
 		c2.setLast_name("Thomas");
 		c2.setPhone_number("07603947283");
 		c2.setEmail("jamie.thomas@yahoo.co.uk");
+		c2.setPassword(pe.encode("jamie"));
 		c2.setStreet_name("23 Rock Steet");
 		c2.setCity("Leicester");
 		c2.setPostcode("LE2 4AD");
@@ -203,7 +208,7 @@ public class Scrum15SpringApplication implements ApplicationRunner{
 		c3 = new Customer();
 		c3.setFirst_name("Harvey");
 		c3.setLast_name("Morrison");
-		c3.setPassword("Secure");
+		c3.setPassword(pe.encode("Secure"));
 		c3.setPhone_number("07294820193");
 		c3.setEmail("harvey.morrison@outlook.co.uk");
 		c3.setStreet_name("5 Speed St");

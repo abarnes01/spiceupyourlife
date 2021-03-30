@@ -67,6 +67,7 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
 			.antMatchers("/subchoice").permitAll()
 			.antMatchers("/standard").permitAll()
 			.antMatchers("/addStandard").permitAll()
+			.antMatchers("/addGuest").permitAll()
 			.anyRequest().authenticated()
 		.and().exceptionHandling().accessDeniedPage("/access-denied");
 	}

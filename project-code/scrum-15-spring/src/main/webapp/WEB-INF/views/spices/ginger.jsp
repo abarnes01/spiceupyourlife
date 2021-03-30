@@ -138,7 +138,7 @@ function closeNav() {
 <div class="information">
 	<h1>Ginger</h1>
 	<h2 style="color: grey">Weight</h2>
-	<p style="color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+	<p style="color: gray">Ginger is a 2-4 feet tall slender perennial with grass-like leaves and greenish-yellow flowers. Once the leaves of the plant die, the thick rhizomes, about 6 inches long, are dug up. Ginger is often referred to as a root but this is technically incorrect.</p>
 	<form action = "ginger" method="get">
 	Change to: <select name="quantity" id="quantity">
   <option value="${param.quantity}"></option>

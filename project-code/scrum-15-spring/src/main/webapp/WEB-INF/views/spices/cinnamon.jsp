@@ -138,7 +138,7 @@ function closeNav() {
 <div class="information">
 	<h1>Cinnamon</h1>
 	<h2 style="color: grey">Weight</h2>
-	<p style="color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+	<p style="color: gray">A sweet and woody flavour, cinnamon has a slight citrusy note, and its spicy taste is often likened to the powerful punch of cloves. Other than the texture, there's no difference between ground cinnamon and cinnamon sticks in flavour, but it's the way they are used which differs.</p>
 	<div class="form">
 	<label for="quantity"><h3>Quantity: ${param.quantity}</h3></label>
 	<form action = "cinnamon" method="get">

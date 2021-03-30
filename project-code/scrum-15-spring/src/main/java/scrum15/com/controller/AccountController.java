@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
 import javax.validation.Valid;
 
 import scrum15.com.Scrum15SpringApplication;
@@ -45,7 +47,7 @@ public class AccountController {
 	}
 	
 	@PostMapping("/addStandard")
-	public String addCustomer(@Valid @ModelAttribute("newStandard") Customer customer, BindingResult result) {
+	public String addCustomer(@Valid @ModelAttribute("newStandard") Customer customer, BindingResult result, RedirectAttributes redirectAttributes) {
 		customer.setGuest(false);
 		customer.setPremium(false);
 		customer.setCard_name(null);
@@ -56,7 +58,13 @@ public class AccountController {
 				return "signin/standardForm";
 			}
 			cRepo.save(customer);
-			return "redirect:/";
+			redirectAttributes.addFlashAttribute("email", customer.getEmail());
+			redirectAttributes.addFlashAttribute("streetName", customer.getStreet_name());
+			redirectAttributes.addFlashAttribute("city", customer.getCity());
+			redirectAttributes.addFlashAttribute("standardCustomer", customer);
+			redirectAttributes.addFlashAttribute("postcode", customer.getPostcode());
+			redirectAttributes.addFlashAttribute("country", customer.getCountry());
+			return "redirect:/StarterKit";
 		}
 	
 	@RequestMapping("/login")

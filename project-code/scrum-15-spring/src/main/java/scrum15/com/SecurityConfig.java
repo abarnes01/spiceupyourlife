@@ -68,6 +68,8 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
 			.antMatchers("/standard").permitAll()
 			.antMatchers("/addStandard").permitAll()
 			.antMatchers("/addGuest").permitAll()
+			.antMatchers("/StarterKit").permitAll()
+			.antMatchers("/miniStarterKit").permitAll()
 			.anyRequest().authenticated()
 		.and().exceptionHandling().accessDeniedPage("/access-denied");
 	}

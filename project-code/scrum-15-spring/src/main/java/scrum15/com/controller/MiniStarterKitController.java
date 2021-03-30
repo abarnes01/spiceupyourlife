@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
 
@@ -20,10 +21,11 @@ import javax.validation.Valid;
 import scrum15.com.Scrum15SpringApplication;
 import scrum15.com.model.Customer;
 import scrum15.com.repo.CustomerRepo;
+import scrum15.com.service.EmailService;
 
 @Controller
 public class MiniStarterKitController {
-
+	
 	@Autowired
 	private CustomerRepo cRepo;
 	
@@ -33,16 +35,7 @@ public class MiniStarterKitController {
 	}
 	
 	@RequestMapping("/StarterKit")
-	public String miniStaterKit(HttpServletRequest request, Model model) {
+	public String miniStaterKit(Model model) {
 		return "miniStarterKit";
-	}
-	@PostMapping("/miniStarterKit")
-	public String checkLogin(@RequestParam String delivery_address, @RequestParam String spice, @RequestParam String email) {
-		if (delivery_address.equals("yes")) {
-			return "signin/registerchoice";
-		}
-		else {
-			return "redirect:/";
-		}
 	}
 }

@@ -384,7 +384,6 @@ input[type=text] {
                 <label for="myCheck">Add my card details for future use:</label> 
 					<input type="checkbox" id="myCheck" onclick="myFunctionForOptionalCard()"> <br></br>
 
-               <input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;" onclick="myFunction()"/><form:errors/><br></br>
 
 					
 					<p id="text" style="display:none">
@@ -404,6 +403,8 @@ input[type=text] {
 					
 					
 					</p>
+          <input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;" onclick="myFunction()"/><form:errors/><br></br>
+
 					
 					<script>
 					function myFunctionForOptionalCard() {

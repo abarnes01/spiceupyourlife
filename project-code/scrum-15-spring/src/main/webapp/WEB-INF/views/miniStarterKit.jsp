@@ -149,9 +149,7 @@ body {margin:0;}
   <a class="tooltip" href="index.html">Home
       <span class="tooltiptext">Go to Login Page</span></a>
   <a class="tooltip" href="/spices_list.html">Recipes
-    <span class="tooltiptext">All recipes</span></a> 
-  <a class="tooltip" href="/recipe_list.html">Recipes
-    <span class="tooltiptext">All recipes</span></a> 
+    <span class="tooltiptext">All recipes</span></a>  
   <a class="tooltip" href="/updatedetails">My Account
     <span class="tooltiptext">My account details!</span></a>
   
@@ -304,14 +302,14 @@ h1, h2, h3, h4, h5, h6 {
   <!-- About Section -->
   <div class="w3-row w3-padding-64" id="about">
       <br></br>
-     <h1>Mini Starter Kit</h1>
-<div id="text2" style="display:block">    
+     <h1>Mini Starter Kit</h1>    
      <form:form action="/miniStarterKit" modelAttribute="miniStarterKit" method="post" class="delivery-address" style="display: inline; color: black">    
          <h1>Is this your delivery address?</h1>
          <p>${streetName}</p>
-         <p>${city}</p> 
+         <p>${city}</p>
          <p>${postcode}</p>
          <p>${country}</p>
+         <p id="text2" style="display:block"> 	<br></br>
          <form:label path="spice">Choose 10g of a spice of your choice: (alongside 10g of chilli)</form:label>
          <form:select path="spice">
          <form:option value = "cayenne pepper">Cayenne pepper</form:option>
@@ -324,13 +322,14 @@ h1, h2, h3, h4, h5, h6 {
          </form:select>
          <input type="hidden" value="${mskId}" name="mskId" id="mskId"/>
          <input type="submit" value="confirm" style="height:30px;font-size:14px;font-weight=500; color: blue;"/>
+ 		</p>
      </form:form>
   </div>
 </div>	
-<label for="myCheck"> If this is not your address, tick here:</label>
-<input type="checkbox" id="myCheck" onclick = "myFunctionForSelectingForm()">
- <div id="text" style="display:none">
  <form:form action="/deliveryAddress" modelAttribute="miniStarterKit" method="POST" class="delivery-address" style="display: inline; color: black">
+<label for="myCheck"> If this is not your address, tick here:</label>
+<input type="checkbox" id="myCheck" onclick="myFunctionForSelectingForm()"> <br></br>
+                <p id="text" style="display:none"> 	<br></br>			
  				<form:label path="spice">Choose 10g of a spice of your choice: (alongside 10g of chilli)</form:label>
      			<form:select path="spice">
      			<form:option value = "cayenne pepper">Cayenne pepper</form:option>
@@ -355,8 +354,27 @@ h1, h2, h3, h4, h5, h6 {
                 <form:errors path="country"/><br/><br></br><br></br>
                 <input type="hidden" value="${mskId}" name="mskId" id="mskId"/>
                 <input type="submit" value="confirm" style="height:30px;font-size:14px;font-weight=500; color: blue;"/>
+           </p> 
+  
+  	
+  
   </form:form>
- </div>
+  
+  <script>                               
+					
+					function myFunctionForSelectingForm() {
+					  var checkBox = document.getElementById("myCheck");
+					  var text = document.getElementById("text");
+					  var text2 = document.getElementById("text2");
+					  if (checkBox.checked == true){
+					    text.style.display = "block";
+					    text2.style.display = "none";
+					  } else {
+					     text.style.display = "none";
+					     text2.style.display = "block"
+					  }
+					}
+		</script>
   <hr>
   
   
@@ -385,18 +403,6 @@ h1, h2, h3, h4, h5, h6 {
         document.body.style.backgroundColor = "white";
     }
 
-	function myFunctionForSelectingForm() {
-	var checkBox = document.getElementById("myCheck")
-	var text = document.getElementById("text")
-	var text2 = document.getElementById("text2")
-	if (checkBox.checked = true)
-		text.style.display = "block";
-		text2.style.display = "none";
-	}
-	else {
-		text.style.display = "none";
-		text2.style.display = "block";
-	}
     
 </script>
 

@@ -447,7 +447,7 @@ input[type=text] {
 
                 </div>
             <div style="float: left;width: 100%;text-align: center;padding-right: 10%; ">
-            <form:form action="/addStandard" modelAttribute="newStandard" method="POST" class="register-form" style="display: inline; color: black ">
+            <form:form action="/addStandard" modelAttribute="newStandard" method="POST" id="newStandard" class="register-form" style="display: inline; color: black ">
             <body>
                 <div class="row">
                     <div class="column">
@@ -504,7 +504,7 @@ input[type=text] {
 					
 					</p>
 					
-				<input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;" onclick="document.getElementById('id01').style.display='block'"/><form:errors/><br></br>
+				<button type="button" style="height:30px;font-size:14px;font-weight=500; color: blue;" onclick="document.getElementById('id01').style.display='block'">Redeem mini starter kit</button><form:errors/><br></br>
 				
 					
 
@@ -531,8 +531,9 @@ input[type=text] {
 					      <p>As our treat for registering with us!</p>
 					    
 					      <div class="clearfix">
-					        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-					        <button type="button"  onclick="location.href='miniStarterKit.jsp'" class="deletebtn">Claim</button>
+					      	<input type="hidden" value="1" name="cancel" id="cancel"/>
+					        <button type="button" onclick="document.getElementById('cancel').value = '1'; document.getElementById('newStandard').submit(); " class="cancelbtn">Cancel</button>
+					        <button type="button"  onclick="document.getElementById('cancel').value = '0'; document.getElementById('newStandard').submit();" class="deletebtn">Claim</button>
 					      </div>
 					    </div>
 					  </form>

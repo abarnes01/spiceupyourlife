@@ -59,7 +59,7 @@ public class AccountController {
 	}
 	
 	@PostMapping("/addStandard")
-	public String addCustomer(@Valid @ModelAttribute("newStandard") Customer customer, BindingResult result, RedirectAttributes redirectAttributes) {
+	public String addCustomer(@Valid @ModelAttribute("newStandard") Customer customer, BindingResult result, RedirectAttributes redirectAttributes, @RequestParam String cancel) {
 		customer.setGuest(false);
 		customer.setPremium(false);
 		customer.setCard_name(null);
@@ -70,13 +70,19 @@ public class AccountController {
 			if (result.hasErrors()) {
 				return "signin/standardForm";
 			}
-			cRepo.save(customer);
-			redirectAttributes.addFlashAttribute("customerId", customer.getId());
-			redirectAttributes.addFlashAttribute("streetName", customer.getStreet_name());
-			redirectAttributes.addFlashAttribute("city", customer.getCity());
-			redirectAttributes.addFlashAttribute("postcode", customer.getPostcode());
-			redirectAttributes.addFlashAttribute("country", customer.getCountry());
-			return "redirect:/StarterKit";
+			if (cancel.equals("1")) {
+				cRepo.save(customer);
+				return "redirect:/";
+			}
+			else {
+				cRepo.save(customer);
+				redirectAttributes.addFlashAttribute("customerId", customer.getId());
+				redirectAttributes.addFlashAttribute("streetName", customer.getStreet_name());
+				redirectAttributes.addFlashAttribute("city", customer.getCity());
+				redirectAttributes.addFlashAttribute("postcode", customer.getPostcode());
+				redirectAttributes.addFlashAttribute("country", customer.getCountry());
+				return "redirect:/StarterKit";
+			}
 		}
 	
 	@RequestMapping("/login")

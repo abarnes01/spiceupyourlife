@@ -70,7 +70,7 @@ select {
 
 <style>
     .banner {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url('http://static8.depositphotos.com/1177973/811/i/450/depositphotos_8119912-Notebook-for-recipes-and-spices-on-wooden-table.jpg');
+      background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url('https://image.freepik.com/free-photo/spoons-bowls-with-different-spices-ingredients-white-background-space-text_185193-9920.jpg');
       background-size: cover;
       height: 1500px;
       width: 100%;

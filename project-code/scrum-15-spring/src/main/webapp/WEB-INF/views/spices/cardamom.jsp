@@ -142,7 +142,7 @@ function closeNav() {
 	
 	<div class="form">
 	<label for="quantity"><h3>Quantity: ${param.quantity}</h3></label>
-	<form action = "cardamom" method="get">
+	<form action="cardamom" method="get">
 	Change to: <select name="quantity" id="quantity">
   <option value="${param.quantity}"></option>
   <option value="1">1</option>
@@ -171,17 +171,18 @@ function closeNav() {
 	<br>
 	<br>
 	<h2>Price: ${price}</h2>
-	<button type="submit">&#128472</button></form>
+	<button type="submit">Change</button></form>
 	<br>
 	<br>
-
-
-
-	</div>
 	<div class="cart">
-		<button type="button" onclick="alert('Item added to cart')">Add item to cart</button>
+		<form action="spiceDetails" id="spice" name="spice" method="get">
+			<input type="hidden" value="cardamon" name="spice" id="spice"/>
+			<input type="hidden" value="${price}" name="price" id="price"/>
+			<button type="submit" onclick="alert('Item added to cart')">Add item to cart</button>
+		</form>
 	</div>	
 	
+</div>
 </div>
 	
 	<div class="product">

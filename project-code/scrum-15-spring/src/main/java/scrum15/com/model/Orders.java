@@ -1,5 +1,6 @@
 package scrum15.com.model;
 
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -21,7 +22,7 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 public class Orders {
 	private int id;
-	private String order_date;
+	private LocalDate order_date;
 	private String shipment_name;
 	private String shipment_street_name;
 	private String shipment_city;
@@ -35,7 +36,7 @@ public class Orders {
 	public Orders() {
 	}
 	
-	public Orders(String order_date, String shipment_name, String shipment_street_name, String shipment_city,
+	public Orders(LocalDate order_date, String shipment_name, String shipment_street_name, String shipment_city,
 			String shipment_postcode, Payment payment, Customer customer) {
 		super();
 		this.order_date = order_date;
@@ -56,10 +57,10 @@ public class Orders {
 		this.id = id;
 	}
 	@Column(columnDefinition = "DATE NOT NULL")
-	public String getOrder_date() {
+	public LocalDate getOrder_date() {
 		return order_date;
 	}
-	public void setOrder_date(String order_date) {
+	public void setOrder_date(LocalDate order_date) {
 		this.order_date = order_date;
 	}
 	@Column(columnDefinition = "VARCHAR(50) NOT NULL")

@@ -140,6 +140,7 @@ function closeNav() {
 	<h2 style="color: grey">Weight</h2>
 	<p style="color: gray">Paprika is made from the dried, ground, ripened fruit pods of less pungent varieties of the Capsicum annum species. It is mildly flavored and prized for its brilliant red color. It is closely related to red pepper which also derives from the Capsicum annum species.</p>
 	<form action = "paprika" method="get">
+	<label for="quantity"><h3>Quantity: ${param.quantity}</h3></label>
 	Change to: <select name="quantity" id="quantity">
   <option value="${param.quantity}"></option>
   <option value="1">1</option>
@@ -167,23 +168,21 @@ function closeNav() {
 	<br>
 	<br>
 	<br>
-	<h2>Price: ${price}
-	<button type="submit">&#128472</button></form></h2>
+	<h2>Price: ${price}</h2>
+	<button type="submit">Change</button></form>
 	<br>
 	<br>
-		
 
-
-
-
-
-	</div>
 	<div class="cart">
-		<button type="button" onclick="alert('Item added to cart')">Add item to cart</button>
+		<form action="spiceDetails" id="spice" name="spice" method="get">
+			<input type="hidden" value="paprika" name="spice" id="spice"/>
+			<input type="hidden" value="${price}" name="price" id="price"/>
+			<button type="submit" onclick="alert('Item added to cart')">Add item to cart</button>
+		</form>
 	</div>	
 	
 </div>
-	
+</div>	
 	<div class="product">
 		<div class="image"><img src="https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/paprika-benefits-1296x728-feature.jpg?w=1155&h=1528" style="width: 600px; height: 500px; float: left;margin-bottom: px;"></div>	 
 	</div>

@@ -111,7 +111,7 @@ public class Scrum15SpringApplication implements ApplicationRunner{
 		//Orders instances
 		Orders o1, o2, o3, o4, o5, o6, o7, o8, o9, o10, o11;
 		o1 = new Orders();
-		o1.setOrder_date("2021-02-10");
+		o1.setOrder_date(java.time.LocalDate.now());
 		o1.setShipment_name("SHIP-001");
 		o1.setShipment_street_name("60 St Gerald Rd");
 		o1.setShipment_city("Nottingham");
@@ -120,7 +120,7 @@ public class Scrum15SpringApplication implements ApplicationRunner{
 		o1 = oRepo.save(o1);
 		
 		o2 = new Orders();
-		o2.setOrder_date("2021-02-21");
+		o2.setOrder_date(java.time.LocalDate.now());
 		o2.setShipment_name("SHIP-002");
 		o2.setShipment_street_name("23 Rock Steet");
 		o2.setShipment_city("Leicester");

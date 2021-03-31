@@ -140,6 +140,7 @@ function closeNav() {
 	<h2 style="color: grey">Weight</h2>
 	<p style="color: gray">Saffron, golden-coloured, pungent stigmas (pollen-bearing structures) of the autumn crocus (Crocus sativus), which are dried and used as a spice to flavour foods and as a dye to colour foods and other products.</p>
 	<form action = "saffron" method="get">
+	<label for="quantity"><h3>Quantity: ${param.quantity}</h3></label>
 	Change to: <select name="quantity" id="quantity">
   <option value="${param.quantity}"></option>
   <option value="1">1</option>
@@ -167,21 +168,20 @@ function closeNav() {
 	<br>
 	<br>
 	<br>
-	<h2>Price: ${price}
-	<button type="submit">&#128472</button></form></h2>
+	<h2>Price: ${price}</h2>
+	<button type="submit">Change</button></form>
 	<br>
 	<br>
 		
-
-
-
-
-
-	</div>
 	<div class="cart">
-		<button type="button" onclick="alert('Item added to cart')">Add item to cart</button>
+		<form action="spiceDetails" id="spice" name="spice" method="get">
+			<input type="hidden" value="saffron" name="spice" id="spice"/>
+			<input type="hidden" value="${price}" name="price" id="price"/>
+			<button type="submit" onclick="alert('Item added to cart')">Add item to cart</button>
+		</form>
 	</div>	
 	
+</div>
 </div>
 	
 	<div class="product">

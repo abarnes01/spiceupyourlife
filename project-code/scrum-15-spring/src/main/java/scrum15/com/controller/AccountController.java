@@ -13,12 +13,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import scrum15.com.model.BasketItem;
 import scrum15.com.model.Customer;
 import scrum15.com.model.Login;
+import scrum15.com.repo.BasketItemRepo;
 import scrum15.com.repo.CustomerRepo;
 import scrum15.com.repo.LoginRepo;
 
 import java.security.Principal;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.validation.Valid;
 import scrum15.com.Scrum15SpringApplication;
 
@@ -42,6 +48,9 @@ public class AccountController {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 	
+	@Autowired
+	private BasketItemRepo biRepo;
+	
 	@InitBinder
 	protected void initBinder(WebDataBinder binder) {
 		binder.addValidators(new CustomerValidator(cRepo));
@@ -49,7 +58,17 @@ public class AccountController {
 	
 	@RequestMapping("/checkout")
 	public String checkout(Model model) {
+		Iterable<BasketItem> basketItem = biRepo.findAll();
+		double total = 0;
+		int count = 0;
+		for (BasketItem bi : basketItem) {
+			total += bi.getAmount();
+			count += 1;
+		}
 		model.addAttribute("newGuest", new Customer());
+		model.addAttribute("total", total);
+		model.addAttribute("count", count);
+		model.addAttribute("spiceList", basketItem);
 		return "shopping-cart/checkout";
 	}
 

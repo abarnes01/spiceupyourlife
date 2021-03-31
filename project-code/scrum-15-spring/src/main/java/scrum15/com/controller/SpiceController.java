@@ -1,14 +1,23 @@
 package scrum15.com.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import scrum15.com.model.BasketItem;
+import scrum15.com.repo.BasketItemRepo;
 
 @Controller
 public class SpiceController {
 	
-	@RequestMapping("/cardamom")
+	@Autowired
+	private BasketItemRepo biRepo;
+	
+	@RequestMapping("/spices/cardamom")
 	public String cardamom(@RequestParam int quantity, @RequestParam float type, Model model) {
 		
 		model.addAttribute("quantity", quantity);
@@ -28,6 +37,15 @@ public class SpiceController {
 		model.addAttribute("price", price);
 		
 		return "spices/cardamom";
+	}
+	
+	@GetMapping("/spices/spiceDetails")
+	public String spiceDetails(@RequestParam String spice, @RequestParam double price) {
+		BasketItem basketItem = new BasketItem();
+		basketItem.setSpice(spice);
+		basketItem.setAmount(price);
+		basketItem = biRepo.save(basketItem);
+		return "redirect:/spices_list.html";
 	}
 	
 	@RequestMapping("/spices/chilli-powder")

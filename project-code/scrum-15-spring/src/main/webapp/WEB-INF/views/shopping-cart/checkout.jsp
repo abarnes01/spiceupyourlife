@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 
     <style>
@@ -343,7 +344,8 @@ select {
          	<form:label path="security_code">Security code</form:label>
             <form:input path="security_code" placeholder="352"/>
             <form:errors path="security_code"/>
-        	<input type="submit" value="Continue to checkout" class="btn">
+            <input type="hidden" name="total" value="${total}"/>
+        	<input type="submit" value="Confirm purchase" class="btn">
       </form:form>
      </div>
      </div>
@@ -351,13 +353,12 @@ select {
   </div>
   <div class="col-25">
     <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p><a href="#">Tumeric</a> <span class="price">&#163;15</span></p>
-      <p><a href="#">Chilli Powder</a> <span class="price">&#163;5</span></p>
-      <p><a href="#">Spice 3</a> <span class="price">&#163;8</span></p>
-      <p><a href="#">Spice 4</a> <span class="price">&#163;2</span></p>
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>${count}</b></span></h4>
+		<c:forEach items="${spiceList}" var="s">
+			<p>${s.spice} - £${s.amount}</p>
+		</c:forEach>	
       <hr>
-      <p>Total <span class="price" style="color:black"><b>&#163;30</b></span></p>
+      <p>Total <span class="price" style="color:black"><b>&#163;${total}</b></span></p>
     </div>
   </div>
 </div>

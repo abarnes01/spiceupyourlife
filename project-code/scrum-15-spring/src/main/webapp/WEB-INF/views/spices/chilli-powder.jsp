@@ -169,21 +169,19 @@ function closeNav() {
 	<br>
 	<br>
 	<br>
-	<h2>Price: ${price}
-	<button type="submit">&#128472</button></form></h2>
+	<h2>Price: ${price}</h2>
+	<button type="submit">Change</button></form>
 	<br>
 	<br>
-		
-
-
-
-
-
-	</div>
 	<div class="cart">
-		<button type="button" onclick="alert('Item added to cart')">Add item to cart</button>
+		<form action="spiceDetails" id="spice" name="spice" method="get">
+			<input type="hidden" value="chilli powder" name="spice" id="spice"/>
+			<input type="hidden" value="${price}" name="price" id="price"/>
+			<button type="submit" onclick="alert('Item added to cart')">Add item to cart</button>
+		</form>
 	</div>	
 	
+</div>
 </div>
 	
 	<div class="product">

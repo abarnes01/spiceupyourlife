@@ -70,6 +70,7 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
 			.antMatchers("/addGuest").permitAll()
 			.antMatchers("/StarterKit").permitAll()
 			.antMatchers("/miniStarterKit").permitAll()
+			.antMatchers("/deliveryAddress").permitAll()
 			.anyRequest().authenticated()
 		.and().exceptionHandling().accessDeniedPage("/access-denied");
 	}

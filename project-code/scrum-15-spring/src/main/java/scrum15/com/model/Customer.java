@@ -156,5 +156,8 @@ public class Customer {
 	public void setSecurity_code(String security_code) {
 		this.security_code = security_code;
 	}
+	public Customer orElse(Object object) {
+		return null;
+	}
 	
 }

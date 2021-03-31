@@ -74,7 +74,7 @@ public class AccountController {
 			redirectAttributes.addFlashAttribute("email", customer.getEmail());
 			redirectAttributes.addFlashAttribute("streetName", customer.getStreet_name());
 			redirectAttributes.addFlashAttribute("city", customer.getCity());
-			redirectAttributes.addFlashAttribute("standardCustomer", customer);
+			redirectAttributes.addFlashAttribute("customerId", customer.getId());
 			redirectAttributes.addFlashAttribute("postcode", customer.getPostcode());
 			redirectAttributes.addFlashAttribute("country", customer.getCountry());
 			return "redirect:/StarterKit";

@@ -162,7 +162,7 @@ function closeNav() {
 	Change to: <select name="type" id="type">
   <option value="${param.type}"></option>
   <option value="1">Jar(30g)</option>
-  <option value="1.5">Packet(20g)</option>
+  <option value="1.5">Packet(100g)</option>
 
 	</select>
 	

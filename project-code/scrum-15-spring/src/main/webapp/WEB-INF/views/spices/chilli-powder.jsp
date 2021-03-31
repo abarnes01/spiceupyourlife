@@ -138,7 +138,7 @@ function closeNav() {
 <div class="information">
 	<h1>Chilli Powder</h1>
 	<h2 style="color: grey">Weight</h2>
-	<p style="color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+	<p style="color: gray">Chili powder (also spelled chile, chilli, or, alternatively, powdered chili) is the dried, pulverized fruit of one or more varieties of chili pepper, sometimes with the addition of other spices (where it is also sometimes known as chili powder blend or chili seasoning mix).</p>
 	<div class="form">
 	<label for="quantity"><h3>Quantity: ${param.quantity}</h3></label>
 	<form action = "chilli-powder" method="get">

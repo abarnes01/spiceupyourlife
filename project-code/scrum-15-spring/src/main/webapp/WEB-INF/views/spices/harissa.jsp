@@ -138,7 +138,7 @@ function closeNav() {
 <div class="information">
 	<h1>Harissa</h1>
 	<h2 style="color: grey">Weight</h2>
-	<p style="color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+	<p style="color: gray">Harissa is a fiery and garlicky North African spice paste that's traditionally served alongside bread, stews and couscous dishes. Recipes vary widely but it's usually made with spices including caraway, cumin and coriander, and sometimes herbs, like mint.</p>
 	<form action = "harissa" method="get">
 	Change to: <select name="quantity" id="quantity">
   <option value="${param.quantity}"></option>

@@ -1,6 +1,35 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
+
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+       /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+.row:aft{
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
+</style>
+
+
+
+
+
 <style> 
 select {
   width: 100%;
@@ -42,7 +71,7 @@ select {
 
 <style>
     .banner {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url('http://static8.depositphotos.com/1177973/811/i/450/depositphotos_8119912-Notebook-for-recipes-and-spices-on-wooden-table.jpg');
+      background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url('https://image.freepik.com/free-photo/spoons-bowls-with-different-spices-ingredients-white-background-space-text_185193-9920.jpg');
       background-size: cover;
       height: 1500px;
       width: 100%;
@@ -306,44 +335,103 @@ input[type=text] {
 
 
 
-        <div class="top-menu" style="align-content: centre;text-align: centre; padding-top: 5%;">
 
-            <div class="title" style="font-size: 26px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/standard" style="text-decoration: none; color: black;opacity: 0.8;font-family: "monospace"">Join us to Spice Up Your life even more! </a></div>
 
+
+                <div class="top-menu" style="align-content: centre;text-align: centre; padding-top: 5%;">
+
+                    <div class="title" style="font-size: 26px;display:inline;align-content: center;text-align: center;cursor: pointer;"><a href="/standard" style="text-decoration: none; color: black;opacity: 0.8;font-family: "monospace"">Join us to Spice Up Your life even more! </a></div>
+
+                </div>
+            <div style="float: left;width: 100%;text-align: center;padding-right: 10%; ">
+            <form:form action="/addStandard" modelAttribute="newStandard" method="POST" class="register-form" style="display: inline; color: black ">
+            <body>
+                <div class="row">
+                    <div class="column">
+                <form:label path="first_name">First name:</form:label>
+                <form:input path="first_name"/><br>
+                <form:errors path="first_name"/><br/><br></br><br></br>
+                <form:label path="last_name">Last name:</form:label>
+                <form:input path="last_name"/><br>
+                <form:errors path="last_name"/><br/><br></br><br></br>
+                <form:label path="email">Email:</form:label>
+                <form:input path="email"/><br>
+                <form:errors path="email"/><br/><br></br><br></br>
+                <form:label path="phone_number">Phone Number:</form:label>
+                <form:input path="phone_number"/><br>
+                <form:errors path="phone_number"/><br/><br></br><br></br>
+            </div>
+            <div class="column">
+
+                <form:label path="country">Country:</form:label>
+                <form:input path="country"/><br>
+                <form:errors path="country"/><br/><br></br><br></br>
+                <form:label path="street_name">Street name:</form:label>
+                <form:input path="street_name"/><br>
+                <form:errors path="street_name"/><br/><br></br><br></br>
+                <form:label path="postcode">Post Code:</form:label>
+                <form:input path="postcode"/><br>
+                <form:errors path="postcode"/><br/><br></br><br></br>
+                <form:label path="city">City:</form:label>
+                <form:input path="city"/><br>
+                <form:errors path="city"/><br/><br></br><br></br>
+                <form:label path="password">Password:</form:label>
+                <form:input path="password"/><br>
+                <form:errors path="password"/><br/><br><br></br><br></br>
+                
+                
+                
+                <label for="myCheck">Add my card details for future use:</label> 
+					<input type="checkbox" id="myCheck" onclick="myFunctionForOptionalCard()"> <br></br>
+
+
+					
+					<p id="text" style="display:none">
+					<form:label path="card_name">Name on card:</form:label>
+					            <form:input path="card_name" placeholder="Bob M. Donald"/>
+					            <form:errors path="card_name"/>
+					            <form:label path="card_number">Card number:</form:label>
+					            <form:input path="card_number" placeholder="1111-2222-3333-4444"/>
+					            <form:errors path="card_number"/>
+					            <form:label path="expiry_date">Expiry date:</form:label>
+					            <form:input path="expiry_date" placeholder="04/21"/>
+					            <form:errors path="expiry_date"/>
+					         	<form:label path="security_code">Security code</form:label>
+					            <form:input path="security_code" placeholder="352"/>
+					            <form:errors path="security_code"/>
+					            
+					
+					
+					</p>
+          <input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;" onclick="myFunction()"/><form:errors/><br></br>
+
+					
+					<script>
+					function myFunctionForOptionalCard() {
+					  var checkBox = document.getElementById("myCheck");
+					  var text = document.getElementById("text");
+					  if (checkBox.checked == true){
+					    text.style.display = "block";
+					  } else {
+					     text.style.display = "none";
+					  }
+					}
+					</script>
+                
+                
+                
+           <script>
+               function myFunction() {
+                  confirm("Redeem your FREE starter kit with a spice of your choice!");
+                 }
+           </script>
+                    
+                    
+         </form:form>
+            <div><br></div>
         </div>
-    <div style="float: left;width: 100%;text-align: center;padding-right: 10%; ">
-      <form:form action="/addStandard" modelAttribute="newStandard" method="POST" class="register-form" style="display: inline; color: black ">
-          <form:label path="first_name">First name:</form:label>
-          <form:input path="first_name"/><br>
-          <form:errors path="first_name"/><br/>
-          <form:label path="last_name">Last name:</form:label>
-          <form:input path="last_name"/><br>
-          <form:errors path="last_name"/><br/>
-          <form:label path="email">Email:</form:label>
-          <form:input path="email"/><br>
-          <form:errors path="email"/><br/>
-          <form:label path="phone_number">Phone Number:</form:label>
-          <form:input path="phone_number"/><br>
-          <form:errors path="phone_number"/><br/>
-          <form:label path="country">Country:</form:label>
-          <form:input path="country"/><br>
-          <form:errors path="country"/><br/>
-          <form:label path="street_name">Street name:</form:label>
-          <form:input path="street_name"/><br>
-          <form:errors path="street_name"/><br/>
-          <form:label path="postcode">Post Code:</form:label>
-          <form:input path="postcode"/><br>
-          <form:errors path="postcode"/><br/>
-          <form:label path="city">City:</form:label>
-          <form:input path="city"/><br>
-          <form:errors path="city"/><br/>
-          <form:label path="password">Password:</form:label>
-          <form:input path="password"/><br>
-          <form:errors path="password"/><br/><br>
-          <input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;"/><form:errors/>
-      </form:form>
-      <div><br></div>
-  </div>
+    </div>
+</div>
 </body>
 
 

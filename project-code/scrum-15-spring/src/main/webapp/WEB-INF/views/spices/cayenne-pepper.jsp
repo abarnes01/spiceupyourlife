@@ -138,7 +138,7 @@ function closeNav() {
 <div class="information">
 	<h1>Cayenne Pepper</h1>
 	<h2 style="color: grey">Weight</h2>
-	<p style="color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+	<p style="color: gray">Cayenne peppers are a group of tapering, 10 to 25 cm long, generally skinny, mostly red-colored peppers, often with a curved tip and somewhat rippled skin, which hang from the bush as opposed to growing upright.</p>
 	<div class="form">
 	<label for="quantity"><h3>Quantity: ${param.quantity}</h3></label>
 	<form action = "cayenne-pepper" method="get">

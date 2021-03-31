@@ -67,10 +67,16 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
 			.antMatchers("/subchoice").permitAll()
 			.antMatchers("/standard").permitAll()
 			.antMatchers("/addStandard").permitAll()
+			.antMatchers("/premium").permitAll()
+			.antMatchers("/addPremium").permitAll()
 			.antMatchers("/addGuest").permitAll()
 			.antMatchers("/StarterKit").permitAll()
 			.antMatchers("/miniStarterKit").permitAll()
+<<<<<<< HEAD
 			.antMatchers("/deliveryAddress").permitAll()
+=======
+			.antMatchers("/updatedetails").permitAll()
+>>>>>>> e297767fa68dd88a76586ce829ade917776c08eb
 			.anyRequest().authenticated()
 		.and().exceptionHandling().accessDeniedPage("/access-denied");
 	}

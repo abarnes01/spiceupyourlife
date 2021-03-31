@@ -138,7 +138,7 @@ function closeNav() {
 <div class="information">
 	<h1>cloves</h1>
 	<h2 style="color: grey">Weight</h2>
-	<p style="color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+	<p style="color: gray">Strong of aroma and hot and pungent in taste, cloves are used to flavour many foods, particularly meats and bakery products; in Europe and the United States the spice is a characteristic flavouring in Christmas holiday fare, such as wassail and mincemeat.</p>
 	<div class="form">
 	<label for="quantity"><h3>Quantity: ${param.quantity}</h3></label>
 	<form action = "cloves" method="get">

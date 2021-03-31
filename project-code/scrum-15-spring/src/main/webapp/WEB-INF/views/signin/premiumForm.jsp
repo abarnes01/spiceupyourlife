@@ -2,6 +2,33 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
+
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+       /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+.row:aft{
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
+</style>
+
+
+
 <style> 
 select {
   width: 100%;
@@ -43,7 +70,7 @@ select {
 
 <style>
     .banner {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url('http://static8.depositphotos.com/1177973/811/i/450/depositphotos_8119912-Notebook-for-recipes-and-spices-on-wooden-table.jpg');
+      background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0)), url('https://image.freepik.com/free-photo/spoons-bowls-with-different-spices-ingredients-white-background-space-text_185193-9920.jpg');
       background-size: cover;
       height: 1500px;
       width: 100%;
@@ -408,47 +435,53 @@ input[type=text] {
 
     <div style="float: left;width: 100%;text-align: center;padding-right: 10%; ">
         <form:form action="/addPremium" modelAttribute="newPremium" method="POST" class="register-form" style="display: inline; color: black ">
+         <body>
+                <div class="row">
+                    <div class="column">
         <form:label path="first_name">First name:</form:label>
         <form:input path="first_name"/><br>
-        <form:errors path="first_name"/><br/>
+        <form:errors path="first_name"/><br/><br></br>
         <form:label path="last_name">Last name:</form:label>
         <form:input path="last_name"/><br>
-        <form:errors path="last_name"/><br/>
+        <form:errors path="last_name"/><br/><br></br>
         <form:label path="email">Email:</form:label>
         <form:input path="email"/><br>
-        <form:errors path="email"/><br/>
+        <form:errors path="email"/><br/><br></br>
         <form:label path="phone_number">Phone Number:</form:label>
         <form:input path="phone_number"/><br>
-        <form:errors path="phone_number"/><br/>
+        <form:errors path="phone_number"/><br/><br></br>
         <form:label path="country">Country:</form:label>
         <form:input path="country"/><br>
-        <form:errors path="country"/><br/>
+        <form:errors path="country"/><br/><br></br>
         <form:label path="street_name">Street name:</form:label>
         <form:input path="street_name"/><br>
-        <form:errors path="street_name"/><br/>
+        <form:errors path="street_name"/><br/><br></br>
+        </div>
+            <div class="column">
         <form:label path="postcode">Post Code:</form:label>
         <form:input path="postcode"/><br>
-        <form:errors path="postcode"/><br/>
+        <form:errors path="postcode"/><br/><br></br>
         <form:label path="city">City:</form:label>
         <form:input path="city"/><br>
-        <form:errors path="city"/><br/>
+        <form:errors path="city"/><br/><br></br>
         <form:label path="password">Password:</form:label>
         <form:input path="password"/><br>
-        <form:errors path="password"/><br/>
+        <form:errors path="password"/><br/><br></br>
         <form:label path="card_name">Name on card:</form:label>
         <form:input path="card_name"/><br>
-        <form:errors path="card_name"/><br/>
+        <form:errors path="card_name"/><br/><br></br>
         <form:label path="card_number">Card number:</form:label>
         <form:input path="card_number"/><br>
-        <form:errors path="card_number"/><br/>
+        <form:errors path="card_number"/><br/><br></br>
         <form:label path="expiry_date">Expiry date:</form:label>
         <form:input path="expiry_date"/><br>
-        <form:errors path="expiry_date"/><br/>
+        <form:errors path="expiry_date"/><br/><br></br>
         <form:label path="security_code">Security code:</form:label>
         <form:input path="security_code"/><br>
-        <form:errors path="security_code"/><br/>
-        <input type="submit" value="Pay £5 per month" style="height:30px;font-size:14px;font-weight=500; color: blue;"/><form:errors/>
+        <form:errors path="security_code"/><br/><br></br>
+        <input type="submit" value="Pay Â£5 per month" style="height:30px;font-size:14px;font-weight=500; color: blue;"/><form:errors/>
     </form:form>
+    </div>
 
       <div><br></div>
   </div>

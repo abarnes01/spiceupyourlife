@@ -138,7 +138,7 @@ function closeNav() {
 <div class="information">
 	<h1>Paprika</h1>
 	<h2 style="color: grey">Weight</h2>
-	<p style="color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+	<p style="color: gray">Paprika is made from the dried, ground, ripened fruit pods of less pungent varieties of the Capsicum annum species. It is mildly flavored and prized for its brilliant red color. It is closely related to red pepper which also derives from the Capsicum annum species.</p>
 	<form action = "paprika" method="get">
 	Change to: <select name="quantity" id="quantity">
   <option value="${param.quantity}"></option>

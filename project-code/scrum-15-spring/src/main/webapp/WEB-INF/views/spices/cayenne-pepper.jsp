@@ -160,8 +160,8 @@ function closeNav() {
 
 	Change to: <select name="type" id="type">
   <option value="${param.type}"></option>
-  <option value="1">Jar</option>
-  <option value="1.5">Bag</option>
+  <option value="1">Jar(30g)</option>
+  <option value="1.5">Packet(20g)</option>
 
 	</select>
 	
@@ -169,7 +169,7 @@ function closeNav() {
 	<br>
 	<br>
 	<br>
-	<h2>Price: £${price}
+	<h2>Price: ${price}
 	<button type="submit">&#128472</button></form></h2>
 	<br>
 	<br>

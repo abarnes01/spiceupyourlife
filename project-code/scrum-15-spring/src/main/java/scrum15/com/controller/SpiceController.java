@@ -20,10 +20,10 @@ public class SpiceController {
 		if (type == 1) {
 			model.addAttribute("type", "Jar" + plural);
 		} else {
-			model.addAttribute("type", "Bag" + plural);
+			model.addAttribute("type", "Packet" + plural);
 		}		
 		
-		double Pcard = 3.49;
+		double Pcard = 1.29;
 		String price = String.format("%.02f", (Pcard * quantity) / type);
 		model.addAttribute("price", price);
 		
@@ -42,10 +42,10 @@ public class SpiceController {
 		if (type == 1) {
 			model.addAttribute("type", "Jar" + plural);
 		} else {
-			model.addAttribute("type", "Bag" + plural);
+			model.addAttribute("type", "Packet" + plural);
 		}		
 		
-		double Pcard = 2.69;
+		double Pcard = 0.57;
 		String price = String.format("%.02f", (Pcard * quantity) / type);
 		model.addAttribute("price", price);
 		
@@ -64,10 +64,10 @@ public class SpiceController {
 		if (type == 1) {
 			model.addAttribute("type", "Jar" + plural);
 		} else {
-			model.addAttribute("type", "Bag" + plural);
+			model.addAttribute("type", "Packet" + plural);
 		}		
 		
-		double Pcard = 2.35;
+		double Pcard = 0.54;
 		String price = String.format("%.02f", (Pcard * quantity) / type);
 		model.addAttribute("price", price);
 		
@@ -86,10 +86,10 @@ public class SpiceController {
 		if (type == 1) {
 			model.addAttribute("type", "Jar" + plural);
 		} else {
-			model.addAttribute("type", "Bag" + plural);
+			model.addAttribute("type", "Packet" + plural);
 		}		
 		
-		double Pcard = 1.15;
+		double Pcard = 0.63;
 		String price = String.format("%.02f", (Pcard * quantity) / type);
 		model.addAttribute("price", price);
 		
@@ -108,10 +108,10 @@ public class SpiceController {
 		if (type == 1) {
 			model.addAttribute("type", "Jar" + plural);
 		} else {
-			model.addAttribute("type", "Bag" + plural);
+			model.addAttribute("type", "Packet" + plural);
 		}		
 		
-		double Pcard = 2.29;
+		double Pcard = 0.84;
 		String price = String.format("%.02f", (Pcard * quantity) / type);
 		model.addAttribute("price", price);
 		
@@ -130,10 +130,10 @@ public class SpiceController {
 		if (type == 1) {
 			model.addAttribute("type", "Jar" + plural);
 		} else {
-			model.addAttribute("type", "Bag" + plural);
+			model.addAttribute("type", "Packet" + plural);
 		}		
 		
-		double Pcard = 1.75;
+		double Pcard = 0.66;
 		String price = String.format("%.02f", (Pcard * quantity) / type);
 		model.addAttribute("price", price);
 		
@@ -152,10 +152,10 @@ public class SpiceController {
 		if (type == 1) {
 			model.addAttribute("type", "Jar" + plural);
 		} else {
-			model.addAttribute("type", "Bag" + plural);
+			model.addAttribute("type", "Packet" + plural);
 		}		
 		
-		double Pcard = 4.49;
+		double Pcard = 0.90;
 		String price = String.format("%.02f", (Pcard * quantity) / type);
 		model.addAttribute("price", price);
 		
@@ -174,10 +174,10 @@ public class SpiceController {
 		if (type == 1) {
 			model.addAttribute("type", "Jar" + plural);
 		} else {
-			model.addAttribute("type", "Bag" + plural);
+			model.addAttribute("type", "Packet" + plural);
 		}		
 		
-		double Pcard = 2.67;
+		double Pcard = 0.51;
 		String price = String.format("%.02f", (Pcard * quantity) / type);
 		model.addAttribute("price", price);
 		
@@ -196,10 +196,10 @@ public class SpiceController {
 		if (type == 1) {
 			model.addAttribute("type", "Jar" + plural);
 		} else {
-			model.addAttribute("type", "Bag" + plural);
+			model.addAttribute("type", "Packet" + plural);
 		}		
 		
-		double Pcard = 35.99;
+		double Pcard = 180.00;
 		String price = String.format("%.02f", (Pcard * quantity) / type);
 		model.addAttribute("price", price);
 		

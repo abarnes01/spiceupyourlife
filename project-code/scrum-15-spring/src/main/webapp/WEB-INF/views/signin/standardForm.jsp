@@ -4,6 +4,109 @@
 
 
 <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
+</style>
+
+
+<style>
     * {
       box-sizing: border-box;
     }
@@ -383,10 +486,7 @@ input[type=text] {
                 
                 <label for="myCheck">Add my card details for future use:</label> 
 					<input type="checkbox" id="myCheck" onclick="myFunctionForOptionalCard()"> <br></br>
-
-
-					
-					<p id="text" style="display:none">
+									<p id="text" style="display:none">
 					<form:label path="card_name">Name on card:</form:label>
 					            <form:input path="card_name" placeholder="Bob M. Donald"/>
 					            <form:errors path="card_name"/>
@@ -403,7 +503,10 @@ input[type=text] {
 					
 					
 					</p>
-          <input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;" onclick="myFunction()"/><form:errors/><br></br>
+					
+				<input type="submit" style="height:30px;font-size:14px;font-weight=500; color: blue;" onclick="document.getElementById('id01').style.display='block'"/><form:errors/><br></br>
+				
+					
 
 					
 					<script>
@@ -420,11 +523,32 @@ input[type=text] {
                 
                 
                 
-           <script>
-               function myFunction() {
-                  confirm("Redeem your FREE starter kit with a spice of your choice!");
-                 }
-           </script>
+					<div id="id01" class="modal">
+					  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+					  <form class="modal-content" action="/action_page.php">
+					    <div class="container">
+					      <h1>Claim FREE starter Kit</h1>
+					      <p>As our treat for registering with us!</p>
+					    
+					      <div class="clearfix">
+					        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					        <button type="button"  onclick="location.href='miniStarterKit.jsp'" class="deletebtn">Claim</button>
+					      </div>
+					    </div>
+					  </form>
+					</div>
+					
+					<script>
+					// Get the modal
+					var modal = document.getElementById('id01');
+					
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					  if (event.target == modal) {
+					    modal.style.display = "none";
+					  }
+					}
+					</script>
                     
                     
          </form:form>

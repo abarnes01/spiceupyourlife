@@ -43,6 +43,7 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
 		.and().authorizeRequests()
 		
 			// free recipe pages
+			.antMatchers("/account.html").hasAnyRole("PREMIUM", "STANDARD")
 			.antMatchers("/chilli-con-carne/**").hasAnyRole("PREMIUM", "STANDARD")
 			.antMatchers("/mackerel-recheado/**").hasAnyRole("PREMIUM", "STANDARD")
 			.antMatchers("/vegetable-biryani/**").hasAnyRole("PREMIUM", "STANDARD")
@@ -74,6 +75,7 @@ public class SecurityConfig  extends WebSecurityConfigurerAdapter {
 			.antMatchers("/miniStarterKit").permitAll()
 			.antMatchers("/deliveryAddress").permitAll()
 			.antMatchers("/updatedetails").permitAll()
+			.antMatchers("/orders").permitAll()
 			.anyRequest().authenticated()
 		.and().exceptionHandling().accessDeniedPage("/access-denied");
 	}

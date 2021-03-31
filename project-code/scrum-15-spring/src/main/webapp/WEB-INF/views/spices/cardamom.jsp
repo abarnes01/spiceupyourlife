@@ -170,8 +170,8 @@ function closeNav() {
 	<br>
 	<br>
 	<br>
-	<h2>Price: ${price}
-	<button type="submit">&#128472</button></form></h2>
+	<h2>Price: ${price}</h2>
+	<button type="submit">&#128472</button></form>
 	<br>
 	<br>
 

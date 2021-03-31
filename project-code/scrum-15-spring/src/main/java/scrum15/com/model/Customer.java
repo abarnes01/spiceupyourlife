@@ -8,7 +8,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -33,6 +35,7 @@ public class Customer {
 	private String card_number;
 	private String expiry_date;
 	private String security_code;
+	private MiniStarterKit miniStarterKit;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -159,5 +162,12 @@ public class Customer {
 	public Customer orElse(Object object) {
 		return null;
 	}
-	
+	@OneToOne
+	@JoinColumn(name = "miniStarterKit_id")
+	public MiniStarterKit getMiniStarterKit() {
+		return miniStarterKit;
+	}
+	public void setMiniStarterKit(MiniStarterKit miniStarterKit) {
+		this.miniStarterKit = miniStarterKit;
+	}	
 }

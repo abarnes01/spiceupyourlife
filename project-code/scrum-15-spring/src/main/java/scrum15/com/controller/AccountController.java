@@ -71,10 +71,9 @@ public class AccountController {
 				return "signin/standardForm";
 			}
 			cRepo.save(customer);
-			redirectAttributes.addFlashAttribute("email", customer.getEmail());
+			redirectAttributes.addFlashAttribute("customerId", customer.getId());
 			redirectAttributes.addFlashAttribute("streetName", customer.getStreet_name());
 			redirectAttributes.addFlashAttribute("city", customer.getCity());
-			redirectAttributes.addFlashAttribute("customerId", customer.getId());
 			redirectAttributes.addFlashAttribute("postcode", customer.getPostcode());
 			redirectAttributes.addFlashAttribute("country", customer.getCountry());
 			return "redirect:/StarterKit";

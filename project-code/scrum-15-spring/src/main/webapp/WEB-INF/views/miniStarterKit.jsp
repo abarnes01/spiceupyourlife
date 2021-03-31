@@ -305,33 +305,58 @@ h1, h2, h3, h4, h5, h6 {
   <div class="w3-row w3-padding-64" id="about">
       <br></br>
      <h1>Mini Starter Kit</h1>
-
-     <label for="spice">Choose 10g of a spice of your choice: (alongside 10g of chilli)</label>
-     <select name="spice" id="spice" form="staterKit">
-     <option value = "cayenne pepper">Cayenne pepper</option>
-     <option value = "cardamon">Cardamon</option>
-     <option value = "cinnamon">Cinnamon</option>
-     <option value = "paparika">Paparika</option>
-     <option value = "harissa powder">Harissa powder</option>
-     <option value = "ginger">Ginger</option>
-     <option value = "cloves">Cloves</option></select>
-     
-     <form id="staterKit" action="/miniStarterKit" method="post">
+<div id="text2" style="display:block">    
+     <form:form action="/miniStarterKit" modelAttribute="miniStarterKit" method="post" class="delivery-address" style="display: inline; color: black">    
          <h1>Is this your delivery address?</h1>
          <p>${streetName}</p>
          <p>${city}</p> 
          <p>${postcode}</p>
          <p>${country}</p>
-         <input type="radio" id="yes" name="delivery_address" value="yes">
-         <label for="yes">yes</label>
-         <input type="radio" id="no" name="delivery_address" value="no">
-         <label for="no">no</label>
+         <form:label path="spice">Choose 10g of a spice of your choice: (alongside 10g of chilli)</form:label>
+         <form:select path="spice">
+         <form:option value = "cayenne pepper">Cayenne pepper</form:option>
+         <form:option value = "cardamon">Cardamon</form:option>
+         <form:option value = "cinnamon">Cinnamon</form:option>
+         <form:option value = "paparika">Paparika</form:option>
+         <form:option value = "harissa powder">Harissa powder</form:option>
+         <form:option value = "ginger">Ginger</form:option>
+         <form:option value = "cloves">Cloves</form:option>
+         </form:select>
+         <input type="hidden" value="${mskId}" name="mskId" id="mskId"/>
          <input type="submit" value="confirm" style="height:30px;font-size:14px;font-weight=500; color: blue;"/>
-         <input type="hidden" id="email" name="email" value="${email}"/>
-         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-     </form>
+     </form:form>
   </div>
-  
+</div>	
+<label for="myCheck"> If this is not your address, tick here:</label>
+<input type="checkbox" id="myCheck" onclick = "myFunctionForSelectingForm()">
+ <div id="text" style="display:none">
+ <form:form action="/deliveryAddress" modelAttribute="miniStarterKit" method="POST" class="delivery-address" style="display: inline; color: black">
+ 				<form:label path="spice">Choose 10g of a spice of your choice: (alongside 10g of chilli)</form:label>
+     			<form:select path="spice">
+     			<form:option value = "cayenne pepper">Cayenne pepper</form:option>
+     			<form:option value = "cardamon">Cardamon</form:option>
+     			<form:option value = "cinnamon">Cinnamon</form:option>
+     			<form:option value = "paparika">Paparika</form:option>
+     			<form:option value = "harissa powder">Harissa powder</form:option>
+     			<form:option value = "ginger">Ginger</form:option>
+     			<form:option value = "cloves">Cloves</form:option>
+     			</form:select>
+ 				<form:label path="street_name">Street Name:</form:label>
+                <form:input path="street_name"/><br>
+                <form:errors path="street_name"/><br/><br></br><br></br>
+                <form:label path="city">City:</form:label>
+                <form:input path="city"/><br>
+                <form:errors path="city"/><br/><br></br><br></br>
+                <form:label path="postcode">Post Code:</form:label>
+                <form:input path="postcode"/><br>
+                <form:errors path="postcode"/><br/><br></br><br></br>
+                <form:label path="country">Country:</form:label>
+                <form:input path="country"/><br>
+                <form:errors path="country"/><br/><br></br><br></br>
+                <input type="hidden" value="${mskId}" name="mskId" id="mskId"/>
+                <input type="submit" value="confirm" style="height:30px;font-size:14px;font-weight=500; color: blue;"/>
+  </form:form>
+ </div>
   <hr>
   
   
@@ -359,6 +384,20 @@ h1, h2, h3, h4, h5, h6 {
         document.getElementById("main").style.marginLeft= "0";
         document.body.style.backgroundColor = "white";
     }
+
+	function myFunctionForSelectingForm() {
+	var checkBox = document.getElementById("myCheck")
+	var text = document.getElementById("text")
+	var text2 = document.getElementById("text2")
+	if (checkBox.checked = true)
+		text.style.display = "block";
+		text2.style.display = "none";
+	}
+	else {
+		text.style.display = "none";
+		text2.style.display = "block";
+	}
+    
 </script>
 
 </body>
